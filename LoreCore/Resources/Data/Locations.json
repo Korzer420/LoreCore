@@ -1,0 +1,2906 @@
+[
+  {
+    "$type": "LoreCore.Locations.GhostDialogueLocation, LoreCore",
+    "name": "Gravedigger",
+    "sceneName": "Town",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Gravedigger",
+            
+          },
+          "SceneNames": "Town",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Town",
+                "Item2": 1.2,
+                "Item3": -0.4
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "GhostName": null,
+    "ObjectName": "Gravedigger NPC",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.DialogueLocation, LoreCore",
+    "name": "Mask_Maker",
+    "sceneName": "Room_Mask_Maker",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Mask_Maker",
+            
+          },
+          "SceneNames": "Room_Mask_Maker",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Room_Mask_Maker",
+                "Item2": -0.3,
+                "Item3": -0.1
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "ObjectName": "Maskmaker NPC",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.GhostDialogueLocation, LoreCore",
+    "name": "Grasshopper",
+    "sceneName": "Fungus1_24",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Grasshopper",
+            
+          },
+          "SceneNames": "Fungus1_24",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Fungus1_24",
+                "Item2": 0.6,
+                "Item3": 0.0
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "GhostName": null,
+    "ObjectName": "Ghost NPC",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.GhostDialogueLocation, LoreCore",
+    "name": "Vespa",
+    "sceneName": "Hive_05",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Vespa",
+            
+          },
+          "SceneNames": "Hive_05",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Hive_05",
+                "Item2": 0.5,
+                "Item3": 0.0
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "GhostName": null,
+    "ObjectName": "Vespa NPC",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.SpecialLocations.MylaLocation, LoreCore",
+    "name": "Myla",
+    "sceneName": "Crossroads_45",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Myla",
+            
+          },
+          "SceneNames": "Crossroads_45",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Crossroads_45",
+                "Item2": 0.3,
+                "Item3": -0.3
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "ObjectName": "Miner",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.GhostDialogueLocation, LoreCore",
+    "name": "Marissa",
+    "sceneName": "Ruins_Bathhouse",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Marissa",
+            
+          },
+          "SceneNames": "Ruins_Bathhouse",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Ruins_Bathhouse",
+                "Item2": 0.2,
+                "Item3": -0.3
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "GhostName": null,
+    "ObjectName": "Ghost NPC",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.DialogueLocation, LoreCore",
+    "name": "Fluke_Hermit",
+    "sceneName": "Room_GG_Shortcut",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Fluke_Hermit",
+            
+          },
+          "SceneNames": "GG_Waterways",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "GG_Waterways",
+                "Item2": 1.0,
+                "Item3": 1.0
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "ObjectName": "Fluke Hermit",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.DialogueLocation, LoreCore",
+    "name": "Midwife",
+    "sceneName": "Deepnest_41",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Midwife",
+            
+          },
+          "SceneNames": "Deepnest_41",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Deepnest_41",
+                "Item2": 0.4,
+                "Item3": -1.0
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "ObjectName": "NPC",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.DialogueLocation, LoreCore",
+    "name": "Emilitia",
+    "sceneName": "Ruins_House_03",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Emilitia",
+            
+          },
+          "SceneNames": "Ruins2_04",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Ruins2_04",
+                "Item2": 0.0,
+                "Item3": 0.0
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "ObjectName": "Emilitia NPC",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.GhostDialogueLocation, LoreCore",
+    "name": "Poggy",
+    "sceneName": "Ruins_Elevator",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Poggy",
+            
+          },
+          "SceneNames": "Ruins_Elevator",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Ruins_Elevator",
+                "Item2": 0.4,
+                "Item3": 0.6
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "GhostName": null,
+    "ObjectName": "Ghost NPC",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.SpecialLocations.JoniDreamLocation, LoreCore",
+    "name": "Joni",
+    "sceneName": "Cliffs_05",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Joni",
+            
+          },
+          "SceneNames": "Cliffs_05",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Cliffs_05",
+                "Item2": 0.4,
+                "Item3": -0.5
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "GhostName": null,
+    "ObjectName": "Ghost NPC Joni",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.SpecialLocations.DungDefenderLocation, LoreCore",
+    "name": "Dung_Defender",
+    "sceneName": "Waterways_05",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Dung_Defender",
+            
+          },
+          "SceneNames": "Waterways_05",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Waterways_05",
+                "Item2": 0.4,
+                "Item3": 0.0
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "ObjectName": "Dung Defender NPC",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.DialogueLocation, LoreCore",
+    "name": "Bardoon",
+    "sceneName": "Deepnest_East_04",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Bardoon",
+            
+          },
+          "SceneNames": "Deepnest_East_04",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Deepnest_East_04",
+                "Item2": 0.0,
+                "Item3": 1.4
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "ObjectName": "Big Caterpillar",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.DialogueLocation, LoreCore",
+    "name": "Bretta_Diary",
+    "sceneName": "Room_Bretta",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Bretta_Diary",
+            
+          },
+          "SceneNames": "Town",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Town",
+                "Item2": 0.0,
+                "Item3": 0.5
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "ObjectName": "Diary",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.DialogueLocation, LoreCore",
+    "name": "Menderbug_Diary",
+    "sceneName": "Room_Mender_House",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Menderbug_Diary",
+            
+          },
+          "SceneNames": "Crossroads_04",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Crossroads_04",
+                "Item2": -0.4,
+                "Item3": -0.1
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "ObjectName": "Diary",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.DialogueLocation, LoreCore",
+    "name": "Willoh",
+    "sceneName": "Fungus2_34",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Willoh",
+            
+          },
+          "SceneNames": "Fungus2_34",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Fungus2_34",
+                "Item2": -0.1,
+                "Item3": 0.0
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "ObjectName": "Giraffe NPC",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.SpecialLocations.MossProphetLocation, LoreCore",
+    "name": "Moss_Prophet",
+    "sceneName": "Fungus3_39",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Moss_Prophet",
+            
+          },
+          "SceneNames": "Fungus3_39",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Fungus3_39",
+                "Item2": 0.4,
+                "Item3": -0.4
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "ObjectName": "Moss Cultist",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.DialogueLocation, LoreCore",
+    "name": "Queen",
+    "sceneName": "Room_Queen",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Queen",
+            
+          },
+          "SceneNames": "Fungus3_48",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Fungus3_48",
+                "Item2": -0.1,
+                "Item3": 1.1
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "ObjectName": "Queen",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.TravellerLocation, LoreCore",
+    "name": "Tiso_Dirtmouth",
+    "sceneName": "Town",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Tiso",
+            
+          },
+          "SceneNames": "Town",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Town",
+                "Item2": 0.8,
+                "Item3": 0.5
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "TravellerName": 2,
+    "ObjectName": "/_NPCs/Tiso Town NPC",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.TravellerLocation, LoreCore",
+    "name": "Tiso_Crossroads",
+    "sceneName": "Crossroads_47",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Tiso",
+            
+          },
+          "SceneNames": "Crossroads_47",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Crossroads_47",
+                "Item2": 0.3,
+                "Item3": 0.0
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "TravellerName": 2,
+    "ObjectName": "/_NPCs/Tiso Bench NPC",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.TravellerLocation, LoreCore",
+    "name": "Tiso_Blue_Lake",
+    "sceneName": "Crossroads_50",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Tiso",
+            
+          },
+          "SceneNames": "Crossroads_50",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Crossroads_50",
+                "Item2": -1.9,
+                "Item3": -0.1
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "TravellerName": 2,
+    "ObjectName": "Tiso Lake NPC",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.TravellerLocation, LoreCore",
+    "name": "Tiso_Colosseum",
+    "sceneName": "Room_Colosseum_02",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Tiso",
+            
+          },
+          "SceneNames": "Deepnest_East_07",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Deepnest_East_07",
+                "Item2": 0.4,
+                "Item3": 1.8
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "TravellerName": 2,
+    "ObjectName": "Tiso Col NPC",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.SpecialLocations.TisoCorpseLocation, LoreCore",
+    "name": "Tiso_Corpse",
+    "sceneName": "Deepnest_East_07",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "tiso_corpse",
+            
+          },
+          "SceneNames": "Deepnest_East_07",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Deepnest_East_07",
+                "Item2": -0.2,
+                "Item3": -0.5
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "GameObjectName": "/tiso_corpse/Dream Dialogue"
+  },
+  {
+    "$type": "LoreCore.Locations.SpecialLocations.ZoteGreenpathLocation, LoreCore",
+    "name": "Zote_Greenpath",
+    "sceneName": "Fungus1_20_v02",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Zote",
+            
+          },
+          "SceneNames": "Fungus1_20_v02",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Fungus1_20_v02",
+                "Item2": -0.5,
+                "Item3": 0.0
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "ObjectName": "Zote Buzzer Convo(Clone)",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.TravellerLocation, LoreCore",
+    "name": "Zote_Dirtmouth_Intro",
+    "sceneName": "Town",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Zote",
+            
+          },
+          "SceneNames": "Town",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Town",
+                "Item2": 0.3,
+                "Item3": 0.5
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "TravellerName": 3,
+    "ObjectName": "/_NPCs/Zote Town",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.TravellerLocation, LoreCore",
+    "name": "Zote_City",
+    "sceneName": "Ruins1_06",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Zote",
+            
+          },
+          "SceneNames": "Ruins1_06",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Ruins1_06",
+                "Item2": 0.3,
+                "Item3": 0.0
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "TravellerName": 3,
+    "ObjectName": "Zote Ruins",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.SpecialLocations.ZoteDeepnestLocation, LoreCore",
+    "name": "Zote_Deepnest",
+    "sceneName": "Deepnest_33",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Zote",
+            
+          },
+          "SceneNames": "Deepnest_33",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Deepnest_33",
+                "Item2": 0.2,
+                "Item3": -0.1
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "ObjectName": "/Zote Deepnest/Faller/NPC",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.TravellerLocation, LoreCore",
+    "name": "Zote_Colosseum",
+    "sceneName": "Room_Colosseum_02",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Zote",
+            
+          },
+          "SceneNames": "Deepnest_East_07",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Deepnest_East_07",
+                "Item2": 0.1,
+                "Item3": 1.8
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "TravellerName": 3,
+    "ObjectName": "Zote Colosseum",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.TravellerLocation, LoreCore",
+    "name": "Zote_Dirtmouth_After_Colosseum",
+    "sceneName": "Town",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Zote",
+            
+          },
+          "SceneNames": "Town",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Town",
+                "Item2": 0.3,
+                "Item3": 0.2
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "TravellerName": 3,
+    "ObjectName": "/_NPCs/Zote Final Scene/Zote Final",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.TravellerLocation, LoreCore",
+    "name": "Cloth_Fungal_Wastes",
+    "sceneName": "Fungus2_09",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Cloth",
+            
+          },
+          "SceneNames": "Fungus2_09",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Fungus2_09",
+                "Item2": -0.1,
+                "Item3": 0.0
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "TravellerName": 1,
+    "ObjectName": "Cloth NPC 1",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.TravellerLocation, LoreCore",
+    "name": "Cloth_Basin",
+    "sceneName": "Abyss_17",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Cloth",
+            
+          },
+          "SceneNames": "Abyss_17",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Abyss_17",
+                "Item2": -1.2,
+                "Item3": 0.2
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "TravellerName": 1,
+    "ObjectName": "Cloth NPC Tramway",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.TravellerLocation, LoreCore",
+    "name": "Cloth_Deepnest",
+    "sceneName": "Deepnest_14",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Cloth",
+            
+          },
+          "SceneNames": "Deepnest_14",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Deepnest_14",
+                "Item2": 0.0,
+                "Item3": 0.2
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "TravellerName": 1,
+    "ObjectName": "Cloth NPC 2",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.TravellerLocation, LoreCore",
+    "name": "Cloth_Garden",
+    "sceneName": "Fungus3_34",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Cloth",
+            
+          },
+          "SceneNames": "Fungus3_34",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Fungus3_34",
+                "Item2": -1.2,
+                "Item3": 0.0
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "TravellerName": 1,
+    "ObjectName": "Cloth NPC QG Entrance",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.TravellerLocation, LoreCore",
+    "name": "Cloth_Ghost",
+    "sceneName": "Fungus3_23",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Cloth",
+            
+          },
+          "SceneNames": "Fungus3_23",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Fungus3_23",
+                "Item2": -0.4,
+                "Item3": 0.1
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": false
+      }
+    ],
+    "TravellerName": 1,
+    "ObjectName": "Cloth Ghost NPC",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.TravellerLocation, LoreCore",
+    "name": "Cloth_Town",
+    "sceneName": "Town",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Cloth",
+            
+          },
+          "SceneNames": "Town",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Town",
+                "Item2": -0.3,
+                "Item3": 0.5
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "TravellerName": 1,
+    "ObjectName": "Cloth NPC Town",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.TravellerLocation, LoreCore",
+    "name": "Quirrel_Crossroads",
+    "sceneName": "Room_temple",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Quirrel",
+            
+          },
+          "SceneNames": "Crossroads_02",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Crossroads_02",
+                "Item2": 0.2,
+                "Item3": -0.1
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "TravellerName": 0,
+    "ObjectName": "Quirrel",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.TravellerLocation, LoreCore",
+    "name": "Quirrel_Greenpath",
+    "sceneName": "Room_Slug_Shrine",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Quirrel",
+            
+          },
+          "SceneNames": "Fungus1_26",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Fungus1_26",
+                "Item2": 0.2,
+                "Item3": 0.2
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "TravellerName": 0,
+    "ObjectName": "Quirrel Slug Shrine",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.TravellerLocation, LoreCore",
+    "name": "Quirrel_Queen_Station",
+    "sceneName": "Fungus2_01",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Quirrel",
+            
+          },
+          "SceneNames": "Fungus2_01",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Fungus2_01",
+                "Item2": -0.3,
+                "Item3": 0.1
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "TravellerName": 0,
+    "ObjectName": "Quirrel Station NPC",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.TravellerLocation, LoreCore",
+    "name": "Quirrel_Mantis_Village",
+    "sceneName": "Fungus2_14",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Quirrel",
+            
+          },
+          "SceneNames": "Fungus2_14",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Fungus2_14",
+                "Item2": 0.5,
+                "Item3": -0.1
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "TravellerName": 0,
+    "ObjectName": "Quirrel Mantis NPC",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.TravellerLocation, LoreCore",
+    "name": "Quirrel_City",
+    "sceneName": "Ruins1_02",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Quirrel",
+            
+          },
+          "SceneNames": "Ruins1_02",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Ruins1_02",
+                "Item2": 0.4,
+                "Item3": -0.4
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "TravellerName": 0,
+    "ObjectName": "/RestBench/Quirrel Bench",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.TravellerLocation, LoreCore",
+    "name": "Quirrel_Peaks",
+    "sceneName": "Mines_13",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Quirrel",
+            
+          },
+          "SceneNames": "Mines_13",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Mines_13",
+                "Item2": -0.5,
+                "Item3": -0.1
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "TravellerName": 0,
+    "ObjectName": "Quirrel Mines",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.TravellerLocation, LoreCore",
+    "name": "Quirrel_Deepnest",
+    "sceneName": "Deepnest_30",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Quirrel",
+            
+          },
+          "SceneNames": "Deepnest_30",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Deepnest_30",
+                "Item2": -0.5,
+                "Item3": -1.3
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "TravellerName": 0,
+    "ObjectName": "Quirrel Spa",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.TravellerLocation, LoreCore",
+    "name": "Quirrel_Outside_Archive",
+    "sceneName": "Fungus3_47",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Quirrel",
+            
+          },
+          "SceneNames": "Fungus3_47",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Fungus3_47",
+                "Item2": 0.2,
+                "Item3": -0.4
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "TravellerName": 0,
+    "ObjectName": "Quirrel Archive Ext",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.SpecialLocations.QuirrelArchiveLocation, LoreCore",
+    "name": "Quirrel_After_Monomon",
+    "sceneName": "Fungus3_archive_02",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Quirrel",
+            
+          },
+          "SceneNames": "Fungus3_47",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Fungus3_47",
+                "Item2": 0.0,
+                "Item3": -0.4
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "TravellerName": 0,
+    "ObjectName": "/Dreamer Monomon/Quirrel Wounded",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.TravellerLocation, LoreCore",
+    "name": "Quirrel_Blue_Lake",
+    "sceneName": "Crossroads_50",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Quirrel",
+            
+          },
+          "SceneNames": "Crossroads_50",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Crossroads_50",
+                "Item2": 1.7,
+                "Item3": -0.1
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "TravellerName": 0,
+    "ObjectName": "Quirrel Lakeside",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.DreamNailLocation, LoreCore",
+    "name": "Dashmaster_Statue_Dream",
+    "sceneName": "Fungus2_23",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Dream_Nail",
+            
+          },
+          "SceneNames": "Fungus2_23",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Fungus2_23",
+                "Item2": -0.3,
+                "Item3": -0.6
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "GameObjectName": "/Dream Dialogue"
+  },
+  {
+    "$type": "LoreCore.Locations.SpecialLocations.PaleKingDreamLocation, LoreCore",
+    "name": "Pale_King_Dream",
+    "sceneName": "White_Palace_09",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Pale_King",
+            
+          },
+          "SceneNames": "Abyss_05",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Abyss_05",
+                "Item2": 0.2,
+                "Item3": 0.7
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "GameObjectName": "/White King Corpse/Dream Dialogue"
+  },
+  {
+    "$type": "LoreCore.Locations.DreamNailLocation, LoreCore",
+    "name": "Shriek_Statue_Dream",
+    "sceneName": "Abyss_12",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Dream_Nail",
+            
+          },
+          "SceneNames": "Abyss_12",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Abyss_12",
+                "Item2": -0.8,
+                "Item3": 0.0
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "GameObjectName": "/Dream Dialogue"
+  },
+  {
+    "$type": "LoreCore.Locations.DreamNailLocation, LoreCore",
+    "name": "Aspid_Queen_Dream",
+    "sceneName": "Crossroads_22",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Dream_Nail",
+            
+          },
+          "SceneNames": "Crossroads_22",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Crossroads_22",
+                "Item2": 0.4,
+                "Item3": 0.0
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "GameObjectName": "/Dream Dialogue"
+  },
+  {
+    "$type": "LoreCore.Locations.DreamNailLocation, LoreCore",
+    "name": "Hopper_Dummy_Dream",
+    "sceneName": "Deepnest_East_16",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Dream_Nail",
+            
+          },
+          "SceneNames": "Deepnest_East_16",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Deepnest_East_16",
+                "Item2": 0.0,
+                "Item3": -0.1
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "GameObjectName": "/Dream Dialogue"
+  },
+  {
+    "$type": "LoreCore.Locations.SpecialLocations.CrystalShamanLocation, LoreCore",
+    "name": "Crystalized_Shaman_Dream",
+    "sceneName": "Mines_35",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Dream_Nail",
+            
+          },
+          "SceneNames": "Mines_28",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Mines_28",
+                "Item2": 0.6,
+                "Item3": 0.2
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "GameObjectName": "/Crystal Shaman/Dream Dialogue"
+  },
+  {
+    "$type": "LoreCore.Locations.SpecialLocations.ShadeGolemDreamLocation, LoreCore",
+    "name": "Shade_Golem_Dream_Normal",
+    "sceneName": "Abyss_10",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Dream_Nail",
+            
+          },
+          "SceneNames": "Abyss_10",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Abyss_10",
+                "Item2": 1.2,
+                "Item3": 0.1
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "GameObjectName": "Dream Dialogue_01_pre_shade_charm"
+  },
+  {
+    "$type": "LoreCore.Locations.SpecialLocations.ShadeGolemDreamLocation, LoreCore",
+    "name": "Shade_Golem_Dream_Void",
+    "sceneName": "Abyss_10",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Dream_Nail",
+            
+          },
+          "SceneNames": "Abyss_10",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Abyss_10",
+                "Item2": 1.5,
+                "Item3": 0.1
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "GameObjectName": "Dream Dialogue_02_after_shade_charm"
+  },
+  {
+    "$type": "LoreCore.Locations.DreamNailLocation, LoreCore",
+    "name": "Kings_Mould_Machine_Dream",
+    "sceneName": "White_Palace_08",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Dream_Nail",
+            
+          },
+          "SceneNames": "Abyss_05",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Abyss_05",
+                "Item2": 0.8,
+                "Item3": 0.7
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "GameObjectName": "/Dream Dialogue"
+  },
+  {
+    "$type": "LoreCore.Locations.SpecialLocations.GrimmSummonerDreamLocation, LoreCore",
+    "name": "Grimm_Summoner_Dream",
+    "sceneName": "Cliffs_06",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Dream_Nail",
+            
+          },
+          "SceneNames": "Cliffs_06",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Cliffs_06",
+                "Item2": 0.8,
+                "Item3": -0.1
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "GameObjectName": "/Dream Dialogue Grimm Defeated"
+  },
+  {
+    "$type": "LoreCore.Locations.DreamNailLocation, LoreCore",
+    "name": "Ancient_Nailsmith_Golem_Dream",
+    "sceneName": "Deepnest_East_14b",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Dream_Nail",
+            
+          },
+          "SceneNames": "Deepnest_East_14b",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Deepnest_East_14b",
+                "Item2": 0.2,
+                "Item3": 0.1
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "GameObjectName": "/Dream Dialogue"
+  },
+  {
+    "$type": "LoreCore.Locations.DreamNailLocation, LoreCore",
+    "name": "Mine_Golem_Dream",
+    "sceneName": "Mines_31",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Dream_Nail",
+            
+          },
+          "SceneNames": "Mines_31",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Mines_31",
+                "Item2": 1.9,
+                "Item3": -0.5
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "GameObjectName": "/Dream Dialogue"
+  },
+  {
+    "$type": "LoreCore.Locations.DreamNailLocation, LoreCore",
+    "name": "Shroom_King_Dream",
+    "sceneName": "Fungus2_30",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Dream_Nail",
+            
+          },
+          "SceneNames": "Fungus2_30",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Fungus2_30",
+                "Item2": 0.3,
+                "Item3": -0.8
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "GameObjectName": "/Dream Dialogue"
+  },
+  {
+    "$type": "LoreCore.Locations.DreamNailLocation, LoreCore",
+    "name": "Radiance_Statue_Dream",
+    "sceneName": "Mines_34",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Dream_Nail",
+            
+          },
+          "SceneNames": "Mines_34",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Mines_34",
+                "Item2": -1.3,
+                "Item3": 0.5
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "GameObjectName": "/Dream Dialogue"
+  },
+  {
+    "$type": "LoreCore.Locations.DreamNailLocation, LoreCore",
+    "name": "Dream_Shield_Statue_Dream",
+    "sceneName": "RestingGrounds_17",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Dream_Nail",
+            
+          },
+          "SceneNames": "RestingGrounds_17",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "RestingGrounds_17",
+                "Item2": -0.2,
+                "Item3": 0.0
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "GameObjectName": "/Dream Dialogue"
+  },
+  {
+    "$type": "LoreCore.Locations.DreamNailLocation, LoreCore",
+    "name": "Isma_Dream",
+    "sceneName": "Waterways_13",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Dream_Nail",
+            
+          },
+          "SceneNames": "Waterways_13",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Waterways_13",
+                "Item2": 0.7,
+                "Item3": -0.5
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "GameObjectName": "/Dream Dialogue"
+  },
+  {
+    "$type": "LoreCore.Locations.DreamNailLocation, LoreCore",
+    "name": "Dryya_Dream",
+    "sceneName": "Fungus3_48",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Dream_Nail",
+            
+          },
+          "SceneNames": "Fungus3_48",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Fungus3_48",
+                "Item2": 0.1,
+                "Item3": 0.7
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "GameObjectName": "/Dream Dialogue"
+  },
+  {
+    "$type": "LoreCore.Locations.DreamNailLocation, LoreCore",
+    "name": "Snail_Shaman_Tomb_Dream",
+    "sceneName": "RestingGrounds_10",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Dream_Nail",
+            
+          },
+          "SceneNames": "RestingGrounds_10",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "RestingGrounds_10",
+                "Item2": 2.7,
+                "Item3": 0.0
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "GameObjectName": "/Dream Dialogue (1)"
+  },
+  {
+    "$type": "LoreCore.Locations.DreamNailLocation, LoreCore",
+    "name": "Overgrown_Shaman_Dream",
+    "sceneName": "Room_Fungus_Shaman",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Dream_Nail",
+            
+          },
+          "SceneNames": "Fungus3_44",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Fungus3_44",
+                "Item2": -0.7,
+                "Item3": -0.1
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "GameObjectName": "/Dream Dialogue"
+  },
+  {
+    "$type": "LoreCore.Locations.InspectLocation, LoreCore",
+    "forceShiny": false,
+    "name": "Grimm_Machine",
+    "sceneName": "Grimm_Main_Tent",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Lore",
+            "RandoSprite": false
+          },
+          "SceneNames": "Town",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Town",
+                "Item2": -0.8,
+                "Item3": 0.2
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "Position": {
+      "x": 83.0,
+      "y": 45.41,
+      "z": 0.0
+    },
+    "GameObjectName": null
+  },
+  {
+    "$type": "LoreCore.Locations.InspectLocation, LoreCore",
+    "forceShiny": false,
+    "name": "White_Palace_Nursery",
+    "sceneName": "White_Palace_09",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Lore",
+            "RandoSprite": false
+          },
+          "SceneNames": "Abyss_05",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Abyss_05",
+                "Item2": 0.5,
+                "Item3": 0.7
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "Position": {
+      "x": 87.22,
+      "y": 31.41,
+      "z": 0.0
+    },
+    "GameObjectName": null
+  },
+  {
+    "$type": "LoreCore.Locations.StagEggLocation, LoreCore",
+    "name": "Stag_Nest",
+    "sceneName": "Cliffs_03",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Lore",
+            "RandoSprite": false
+          },
+          "SceneNames": "Cliffs_02",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Cliffs_02",
+                "Item2": -1.7,
+                "Item3": 1.3
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ]
+  },
+  {
+    "$type": "LoreCore.Locations.InspectLocation, LoreCore",
+    "forceShiny": false,
+    "name": "Grimm_Summoner_Corpse",
+    "sceneName": "Cliffs_06",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Lore",
+            "RandoSprite": false
+          },
+          "SceneNames": "Cliffs_06",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Cliffs_06",
+                "Item2": 0.8,
+                "Item3": 0.1
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "Position": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "GameObjectName": "/Sycophant Dream/Inspect Region"
+  },
+  {
+    "$type": "LoreCore.Locations.InspectLocation, LoreCore",
+    "forceShiny": false,
+    "name": "Grub_Seal",
+    "sceneName": "Ruins2_11",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Lore",
+            "RandoSprite": false
+          },
+          "SceneNames": "Ruins2_11",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Ruins2_11",
+                "Item2": 0.2,
+                "Item3": 1.2
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "Position": {
+      "x": 53.91,
+      "y": 129.41,
+      "z": 0.0
+    },
+    "GameObjectName": null
+  },
+  {
+    "$type": "LoreCore.Locations.DialogueLocation, LoreCore",
+    "name": "Dreamer_Tablet",
+    "sceneName": "RestingGrounds_04",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Lore",
+            "RandoSprite": false
+          },
+          "SceneNames": "RestingGrounds_04",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "RestingGrounds_04",
+                "Item2": 0.0,
+                "Item3": -0.3
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "ObjectName": "Dreamer Plaque Inspect",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.DialogueLocation, LoreCore",
+    "name": "City_Fountain",
+    "sceneName": "Ruins1_27",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Lore",
+            "RandoSprite": false
+          },
+          "SceneNames": "Ruins1_27",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Ruins1_27",
+                "Item2": -0.2,
+                "Item3": -0.5
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "ObjectName": "Fountain Inspect",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.DialogueLocation, LoreCore",
+    "name": "Traitor_Grave",
+    "sceneName": "Fungus3_49",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Lore",
+            "RandoSprite": false
+          },
+          "SceneNames": "Fungus3_49",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Fungus3_49",
+                "Item2": -0.3,
+                "Item3": 0.0
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "ObjectName": "Inspect Region",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.InspectLocation, LoreCore",
+    "forceShiny": false,
+    "name": "Weaver_Seal",
+    "sceneName": "Deepnest_45_v02",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Lore",
+            "RandoSprite": false
+          },
+          "SceneNames": "Deepnest_39",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Deepnest_39",
+                "Item2": 1.4,
+                "Item3": 0.3
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "Position": {
+      "x": 12.29,
+      "y": 43.41,
+      "z": 0.0
+    },
+    "GameObjectName": null
+  },
+  {
+    "$type": "LoreCore.Locations.InspectLocation, LoreCore",
+    "forceShiny": false,
+    "name": "Beast_Den_Altar",
+    "sceneName": "Deepnest_Spider_Town",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Lore",
+            "RandoSprite": false
+          },
+          "SceneNames": "Deepnest_10",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Deepnest_10",
+                "Item2": 0.3,
+                "Item3": 0.6
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "Position": {
+      "x": 63.85,
+      "y": 114.41,
+      "z": 0.0
+    },
+    "GameObjectName": null
+  },
+  {
+    "$type": "LoreCore.Locations.InspectLocation, LoreCore",
+    "forceShiny": false,
+    "name": "Garden_Golem",
+    "sceneName": "Fungus1_23",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Lore",
+            "RandoSprite": false
+          },
+          "SceneNames": "Fungus1_23",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Fungus1_23",
+                "Item2": -0.9,
+                "Item3": -0.1
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "Position": {
+      "x": 20.18,
+      "y": 7.41,
+      "z": 0.0
+    },
+    "GameObjectName": null
+  },
+  {
+    "$type": "LoreCore.Locations.InspectLocation, LoreCore",
+    "forceShiny": false,
+    "name": "Lore_Tablet-Record_Bela",
+    "sceneName": "Ruins1_30",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Lore",
+            "RandoSprite": false
+          },
+          "SceneNames": "Ruins1_30",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Ruins1_30",
+                "Item2": 0.4,
+                "Item3": -0.2
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "Position": {
+      "x": 70.0,
+      "y": 4.31,
+      "z": 0.006
+    },
+    "GameObjectName": null
+  },
+  {
+    "$type": "LoreCore.Locations.InspectLocation, LoreCore",
+    "forceShiny": false,
+    "name": "Markoth_Corpse",
+    "sceneName": "Deepnest_East_10",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Markoth",
+            
+          },
+          "SceneNames": "Deepnest_East_10",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Deepnest_East_10",
+                "Item2": 0.3,
+                "Item3": 0.0
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "Position": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "GameObjectName": "Inspect Region Ghost"
+  },
+  {
+    "$type": "LoreCore.Locations.InspectLocation, LoreCore",
+    "forceShiny": false,
+    "name": "Galien_Corpse",
+    "sceneName": "Deepnest_40",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Galien",
+            
+          },
+          "SceneNames": "Deepnest_40",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Deepnest_40",
+                "Item2": -0.5,
+                "Item3": -0.3
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "Position": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    }
+  },
+  {
+    "$type": "LoreCore.Locations.InspectLocation, LoreCore",
+    "forceShiny": false,
+    "name": "Marmu_Grave",
+    "sceneName": "Fungus3_40",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Marmu",
+            
+          },
+          "SceneNames": "Fungus3_40",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Fungus3_40",
+                "Item2": -0.3,
+                "Item3": 0.1
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "Position": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "GameObjectName": "Inspect Region Ghost"
+  },
+  {
+    "$type": "LoreCore.Locations.InspectLocation, LoreCore",
+    "forceShiny": false,
+    "name": "Elder_Hu_Grave",
+    "sceneName": "Fungus2_32",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Elder_Hu",
+            
+          },
+          "SceneNames": "Fungus2_32",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Fungus2_32",
+                "Item2": 0.2,
+                "Item3": -0.2
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "Position": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "GameObjectName": "Inspect Region Ghost"
+  },
+  {
+    "$type": "LoreCore.Locations.InspectLocation, LoreCore",
+    "forceShiny": false,
+    "name": "No_Eyes_Statue",
+    "sceneName": "Fungus1_35",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "No_Eyes",
+            
+          },
+          "SceneNames": "Fungus1_34",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Fungus1_34",
+                "Item2": 0.7,
+                "Item3": -0.4
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "Position": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "GameObjectName": "Inspect Region Ghost"
+  },
+  {
+    "$type": "LoreCore.Locations.InspectLocation, LoreCore",
+    "forceShiny": false,
+    "name": "Xero_Grave",
+    "sceneName": "RestingGrounds_02",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Xero",
+            
+          },
+          "SceneNames": "RestingGrounds_02",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "RestingGrounds_02",
+                "Item2": 0.8,
+                "Item3": 0.0
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "Position": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "GameObjectName": "Inspect Region Ghost"
+  },
+  {
+    "$type": "LoreCore.Locations.InspectLocation, LoreCore",
+    "forceShiny": false,
+    "name": "Gorb_Grave",
+    "sceneName": "Cliffs_02",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Gorb",
+            
+          },
+          "SceneNames": "Cliffs_02",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Cliffs_02",
+                "Item2": -0.9,
+                "Item3": 1.1
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "Position": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0
+    },
+    "GameObjectName": "Inspect Region Ghost"
+  }
+]

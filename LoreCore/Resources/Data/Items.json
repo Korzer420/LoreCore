@@ -1,0 +1,3794 @@
+[
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Minor NPC",
+    "loreKey": "EMILITIA_MEET",
+    "textType": 0,
+    "name": "Dialogue-Emilitia",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Minor NPC",
+        "key": "EMILITIA_MEET"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Happy Fate"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Just take it quick before she wants this back. She will probably pay 1000 times the amount it's worth. Nobody should think, she couldn't afford this, right?"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Emilitia"
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Emilitia"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Minor NPC",
+    "loreKey": "MINER_MEET_1_B",
+    "textType": 0,
+    "name": "Dialogue-Myla",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Minor NPC",
+        "key": "MINER_MEET_1_B"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Diamond Dash"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "From the best girl in hallownest. Don't even dare, to hurt her..."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Myla"
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Myla"
+  },
+  {
+    "$type": "LoreCore.Items.TravellerItem, LoreCore",
+    "loreSheet": "Quirrel",
+    "loreKey": "QUIRREL_GREENPATH_1",
+    "textType": 0,
+    "name": "Dialogue-Quirrel_Greenpath",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Quirrel",
+        "key": "QUIRREL_GREENPATH_1"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Quirrel Level"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "The wisdom of a real adventurer, which can swim fairly good. :)"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Quirrel"
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "Traveller": 0,
+    "SoundClipName": "Quirrel"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Minor NPC",
+    "loreKey": "GIRAFFE_MEET",
+    "textType": 0,
+    "name": "Dialogue-Willoh",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Minor NPC",
+        "key": "GIRAFFE_MEET"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Bag of Mushrooms"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "As a bug, I'd be scared of eating unknown mushrooms."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Willoh"
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Willoh"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": null,
+    "textType": 1,
+    "name": "Inspect-Weaver_Seal",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "A huge seal created from silk is attached to the wall. It seems familiar."
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Weaver Seal"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "There was no sign, that said, that I couldn't take this with me. At least, no sign I could read."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Weaver_Seal"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Secret"
+  },
+  {
+    "$type": "LoreCore.Items.TravellerItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": null,
+    "textType": 0,
+    "name": "Dialogue-Tiso_Crossroads",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Minor NPC",
+        "key": "TISO_BENCH_GREET"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Tiso Level"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Brooding Mawlek offered me this. I'm not sure what this could mean..."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tiso"
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "Traveller": 2,
+    "SoundClipName": "Tiso"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Ghosts",
+    "loreKey": "MUMCAT_INSPECT",
+    "textType": 1,
+    "name": "Inspect-Marmu",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Ghosts",
+        "key": "MUMCAT_INSPECT"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Marmu"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "They say the lore master creator hates this damn *****. Whatever that means."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Marmu"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Marmu"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "DREAM_DUMMY",
+    "textType": 0,
+    "name": "Dream_Dialogue-Hopper_Dummy",
+    "UIDef": {
+      "$type": "LoreCore.UIDefs.DreamLoreUIDef, LoreCore",
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Hopper Dummy"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "The last words, they spoke. Radiance whispered me that... ehm, I mean I took a dream nail myself."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Hopper_Dummy",
+        
+      },
+      "Key": "DREAM_DUMMY",
+      "Sheet": "Lore Tablets"
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Dream_Enter"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "SHADE_BEAST_02",
+    "textType": 0,
+    "name": "Dream_Dialogue-Shade_Golem_Void",
+    "UIDef": {
+      "$type": "LoreCore.UIDefs.DreamLoreUIDef, LoreCore",
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Shade Golem Void"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "The last words, they spoke. Radiance whispered me that... ehm, I mean I took a dream nail myself."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Shade_Golem"
+        
+      },
+      "Key": "SHADE_BEAST_02",
+      "Sheet": "Lore Tablets"
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Dream_Enter"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Shaman",
+    "loreKey": "SHAMAN_CRYSTAL_DREAM",
+    "textType": 0,
+    "name": "Dream_Dialogue-Crystalized_Shaman",
+    "UIDef": {
+      "$type": "LoreCore.UIDefs.DreamLoreUIDef, LoreCore",
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Crystalized Shaman"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "The last words, they spoke. Radiance whispered me that... ehm, I mean I took a dream nail myself."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Crystalized_Shaman",
+        
+      },
+      "Key": "SHAMAN_CRYSTAL_DREAM",
+      "Sheet": "Shaman"
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Dream_Enter"
+  },
+  {
+    "$type": "LoreCore.Items.TravellerItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": null,
+    "textType": 0,
+    "name": "Dream_Dialogue-Tiso_Corpse",
+    "UIDef": {
+      "$type": "LoreCore.UIDefs.DreamLoreUIDef, LoreCore",
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Tiso"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Well... his glory didn't turn out the way he expected."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "tiso_corpse"
+        
+      },
+      "Key": "TISO_CORPSE",
+      "Sheet": "Lore Tablets"
+    },
+    "tags": [],
+    "obtainState": 0,
+    "Traveller": 2,
+    "SoundClipName": "Tiso"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "SCREAM_ALTAR",
+    "textType": 0,
+    "name": "Dream_Dialogue-Shriek_Statue",
+    "UIDef": {
+      "$type": "LoreCore.UIDefs.DreamLoreUIDef, LoreCore",
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Shriek Statue"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "The last words, they spoke. Radiance whispered me that... ehm, I mean I took a dream nail myself."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Shriek_Statue",
+        
+      },
+      "Key": "SCREAM_ALTAR",
+      "Sheet": "Lore Tablets"
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Dream_Enter"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Minor NPC",
+    "loreKey": "MASK_MAKER_GREET",
+    "textType": 0,
+    "name": "Dialogue-Mask_Maker",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Minor NPC",
+        "key": "MASK_MAKER_GREET"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Mask Overcharge"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "From the creator of all those masks, these words shall extend your knowledge of the world."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Mask_Maker"
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Mask_Maker"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "SHADE_BEAST_01",
+    "textType": 0,
+    "name": "Dream_Dialogue-Shade_Golem_Normal",
+    "UIDef": {
+      "$type": "LoreCore.UIDefs.DreamLoreUIDef, LoreCore",
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Shade Golem Normal"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "The last words, they spoke. Radiance whispered me that... ehm, I mean I took a dream nail myself."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Shade_Golem",
+        
+      },
+      "Key": "SHADE_BEAST_01",
+      "Sheet": "Lore Tablets"
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Dream_Enter"
+  },
+  {
+    "$type": "LoreCore.Items.TravellerItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": null,
+    "textType": 0,
+    "name": "Dialogue-Zote_City",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Zote",
+        "key": "ZOTE_CITY_GREET"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Zote Level"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Ugh..."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Zote"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "Traveller": 3,
+    "SoundClipName": "Zote"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "SARCOPHAGUS_01",
+    "textType": 0,
+    "name": "Dream_Dialogue-Snail_Shaman_Tomb",
+    "UIDef": {
+      "$type": "LoreCore.UIDefs.DreamLoreUIDef, LoreCore",
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Snail Shaman Tomb"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "The last words, they spoke. Radiance whispered me that... ehm, I mean I took a dream nail myself."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Snail_Shaman_Tomb",
+        
+      },
+      "Key": "SARCOPHAGUS_01",
+      "Sheet": "Lore Tablets"
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Dream_Enter"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "ISMA_DREAM",
+    "textType": 0,
+    "name": "Dream_Dialogue-Isma",
+    "UIDef": {
+      "$type": "LoreCore.UIDefs.DreamLoreUIDef, LoreCore",
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Isma"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "The last words, they spoke. Radiance whispered me that... ehm, I mean I took a dream nail myself."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Isma"
+        
+      },
+      "Key": "ISMA_DREAM",
+      "Sheet": "Lore Tablets"
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Dream_Enter"
+  },
+  {
+    "$type": "LoreCore.Items.TravellerItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": null,
+    "textType": 0,
+    "name": "Dialogue-Zote_Dirtmouth_After_Colosseum",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Zote",
+        "key": "PRECEPT_1_R"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Zote Level"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Ugh..."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Zote",
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "Traveller": 3,
+    "SoundClipName": "Zote"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Prompts",
+    "loreKey": "MENDER_DIARY",
+    "textType": 0,
+    "name": "Dialogue-Menderbug_Diary",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Prompts",
+        "key": "MENDER_DIARY"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Best Mender in the World"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Menderbug allowed me to take a look at their diary. What a kind heart bug. YOU'LL BE SORRY IF YOU TRY TO KILL THEM!"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Menderbug_Diary",
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Menderbug_Diary"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Ghosts",
+    "loreKey": "GRASSHOPPER_TALK",
+    "textType": 0,
+    "name": "Dialogue-Grasshopper",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Ghosts",
+        "key": "GRASSHOPPER_TALK"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Grass Bombardement"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Considering that these live in the garden, being an arsonist might not be the best for them."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Grasshopper"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Dream_Ghost"
+  },
+  {
+    "$type": "LoreCore.Items.TravellerItem, LoreCore",
+    "loreSheet": "Zote",
+    "loreKey": "ZOTE_DEEPNEST_1",
+    "textType": 0,
+    "name": "Dialogue-Zote_Deepnest",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Zote",
+        "key": "ZOTE_DEEPNEST_1"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Zote Level"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Ugh..."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Zote"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "Traveller": 3,
+    "SoundClipName": "Zote"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Ghosts",
+    "loreKey": "MARKOTH_INSPECT",
+    "textType": 1,
+    "name": "Inspect-Markoth",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Ghosts",
+        "key": "MARKOTH_INSPECT"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Markoth"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Did the shade gate exists before he went in? If so, HOW could've he pass that? Is Markoth void? O.o"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Markoth",
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Markoth"
+  },
+  {
+    "$type": "LoreCore.Items.TravellerItem, LoreCore",
+    "loreSheet": "Quirrel",
+    "loreKey": "QUIRREL_RUINS_1",
+    "textType": 0,
+    "name": "Dialogue-Quirrel_City",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Quirrel",
+        "key": "QUIRREL_RUINS_1"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Quirrel Level"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "The wisdom of a real adventurer, which can swim fairly good. :)"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Quirrel",
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "Traveller": 0,
+    "SoundClipName": "Quirrel"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "CP2",
+    "loreKey": "GRIMMSYCOPHANT_DREAM",
+    "textType": 0,
+    "name": "Dream_Dialogue-Grimm_Summoner",
+    "UIDef": {
+      "$type": "LoreCore.UIDefs.DreamLoreUIDef, LoreCore",
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Grimm Summoner"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "The last words, they spoke. Radiance whispered me that... ehm, I mean I took a dream nail myself."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Grimm_Summoner"
+        
+      },
+      "Key": "GRIMMSYCOPHANT_DREAM",
+      "Sheet": "CP2"
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Dream_Enter"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Minor NPC",
+    "loreKey": "BRETTA_DIARY_1",
+    "textType": 0,
+    "name": "Dialogue-Bretta_Diary",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Minor NPC",
+        "key": "BRETTA_DIARY_1"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Caring shell"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "This is a diary which I found on the street, seems to belong to some girl... No ehm, I didn't read it."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Bretta_Diary"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Bretta_Diary"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Ghosts",
+    "loreKey": "NOEYES_INSPECT",
+    "textType": 1,
+    "name": "Inspect-No_Eyes",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Ghosts",
+        "key": "NOEYES_INSPECT"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "No Eyes"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "I wonder what her name was before she... you know. If that's her real name, that is just asking for something to rip out your eyes."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "No_Eyes"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "No_Eyes"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "CP3",
+    "loreKey": "FLUKE_HERMIT_IDLE_1",
+    "textType": 0,
+    "name": "Dialogue-Fluke_Hermit",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "CP3",
+        "key": "FLUKE_HERMIT_IDLE_1"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Relentless Swarm"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "The words spoken by the child of the A L L U R I N G mother"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Fluke_Hermit"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Fluke_Hermit"
+  },
+  {
+    "$type": "LoreCore.Items.TravellerItem, LoreCore",
+    "loreSheet": "Zote",
+    "loreKey": "ZOTE_TOWN_1",
+    "textType": 0,
+    "name": "Dialogue-Zote_Dirtmouth_Intro",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Zote",
+        "key": "ZOTE_TOWN_1"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Zote Level"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Ugh..."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Zote"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "Traveller": 3,
+    "SoundClipName": "Zote"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Minor NPC",
+    "loreKey": "DUNG_DEFENDER_1",
+    "textType": 0,
+    "name": "Dialogue-Dung_Defender",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Minor NPC",
+        "key": "DUNG_DEFENDER_1"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Dung Defender"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "It's a gift with an extraordinary smell."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Dung_Defender"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Dung_Defender"
+  },
+  {
+    "$type": "LoreCore.Items.TravellerItem, LoreCore",
+    "loreSheet": "Quirrel",
+    "loreKey": "QUIRREL_TEACHER_3",
+    "textType": 0,
+    "name": "Dialogue-Quirrel_Archive",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Quirrel",
+        "key": "QUIRREL_TEACHER_3"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Quirrel Level"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "The wisdom of a real adventurer, which can swim fairly good. :)"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Quirrel"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "Traveller": 0,
+    "SoundClipName": "Quirrel"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "RUINS_FOUNTAIN",
+    "textType": 1,
+    "name": "Inscription-City_Fountain",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Lore Tablets",
+        "key": "RUINS_FOUNTAIN"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Tourist"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": null
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/CityOfTears",
+        "RandoSprite": false
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Secret"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": null,
+    "textType": 1,
+    "name": "Inspect-Beast_Den_Altar",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Some kind of altar picturing a giant creature is hanging from the ceiling. You feel that it emits a strong force on you. You should better step away a bit."
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Beast Den Altar"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "There was no sign, that said, that I couldn't take this with me. At least, no sign I could read."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Beast_Den_Altar"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Secret"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Ghosts",
+    "loreKey": "ALADAR_INSPECT",
+    "textType": 1,
+    "name": "Inspect-Gorb",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Ghosts",
+        "key": "ALADAR_INSPECT"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Gorb"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "It's gorbin time! (to ascent!) (with Gorb) \r\n- Gorb"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Gorb"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Gorb"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "DREAMERS_INSPECT_RG5",
+    "textType": 1,
+    "name": "Inscription-Dreamer_Tablet",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.BigUIDef, ItemChanger",
+      "bigSprite": {
+        "$type": "ItemChanger.ItemChangerSprite, ItemChanger",
+        "key": "Prompts.Dreamer"
+      },
+      "take": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "You thought this was a dreamer, didn't you?"
+      },
+      "press": null,
+      "buttonSkin": null,
+      "descOne": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "To protect the Vessel, the Dreamers lay sleeping."
+      },
+      "descTwo": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Dreamers",
+        "key": "DREAMERS_INSPECT_RG5"
+      },
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Dreamer Tablet"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "This tells the story of the sacrifice of the dreamers."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Dreamer_Plaque"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Secret"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "WHITE_KNIGHT_CORPSE",
+    "textType": 0,
+    "name": "Dream_Dialogue-Dryya",
+    "UIDef": {
+      "$type": "LoreCore.UIDefs.DreamLoreUIDef, LoreCore",
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Dryya"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "The last words, they spoke. Radiance whispered me that... ehm, I mean I took a dream nail myself."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Dryya"
+        
+      },
+      "Key": "WHITE_KNIGHT_CORPSE",
+      "Sheet": "Lore Tablets"
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Dream_Enter"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "MOTH_STATUE",
+    "textType": 0,
+    "name": "Dream_Dialogue-Radiance_Statue",
+    "UIDef": {
+      "$type": "LoreCore.UIDefs.DreamLoreUIDef, LoreCore",
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Radiance Statue"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "The last words, they spoke. Radiance whispered me that... ehm, I mean I took a dream nail myself."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Radiance_Statue"
+        
+      },
+      "Key": "MOTH_STATUE",
+      "Sheet": "Lore Tablets"
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Dream_Enter"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Ghosts",
+    "loreKey": "HU_INSPECT",
+    "textType": 1,
+    "name": "Inspect-Elder_Hu",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Ghosts",
+        "key": "HU_INSPECT"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Elder Hu"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "The mantis buried him even after he attacked them. How nice of them."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Elder_Hu"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Elder_Hu"
+  },
+  {
+    "$type": "LoreCore.Items.TravellerItem, LoreCore",
+    "loreSheet": "Minor NPC",
+    "loreKey": "CLOTH_QG_GREET",
+    "textType": 0,
+    "name": "Dialogue-Cloth_Garden",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Minor NPC",
+        "key": "CLOTH_QG_GREET"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Cloth Level"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Isn't she a very brave girl? Fear her roar!"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Cloth"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "Traveller": 1,
+    "SoundClipName": "Cloth"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "DASH_MASTER_STATUE",
+    "textType": 0,
+    "name": "Dream_Dialogue-Dashmaster_Statue",
+    "UIDef": {
+      "$type": "LoreCore.UIDefs.DreamLoreUIDef, LoreCore",
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Dashmaster Statue"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "The last words, they spoke. Radiance whispered me that... ehm, I mean I took a dream nail myself."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Dashmaster_Statue"
+        
+      },
+      "Key": "DASH_MASTER_STATUE",
+      "Sheet": "Lore Tablets"
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Dream_Enter"
+  },
+  {
+    "$type": "LoreCore.Items.TravellerItem, LoreCore",
+    "loreSheet": "Quirrel",
+    "loreKey": "QUIRREL_MINES_1",
+    "textType": 0,
+    "name": "Dialogue-Quirrel_Peaks",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Quirrel",
+        "key": "QUIRREL_MINES_1"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Quirrel Level"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "The wisdom of a real adventurer, which can swim fairly good. :)"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Quirrel"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "Traveller": 0,
+    "SoundClipName": "Quirrel"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "NAILSMITH_ANCIENT",
+    "textType": 0,
+    "name": "Dream_Dialogue-Ancient_Nailsmith_Golem",
+    "UIDef": {
+      "$type": "LoreCore.UIDefs.DreamLoreUIDef, LoreCore",
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Ancient Nailsmith Golem"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "The last words, they spoke. Radiance whispered me that... ehm, I mean I took a dream nail myself."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Ancient_Nailsmith_Golem"
+        
+      },
+      "Key": "NAILSMITH_ANCIENT",
+      "Sheet": "Lore Tablets"
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Dream_Enter"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Ghosts",
+    "loreKey": "XERO_INSPECT",
+    "textType": 1,
+    "name": "Inspect-Xero",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Ghosts",
+        "key": "XERO_INSPECT"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Xero"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "The words of the king, for what happens with traitors."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Xero"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Xero"
+  },
+  {
+    "$type": "LoreCore.Items.TravellerItem, LoreCore",
+    "loreSheet": "Minor NPC",
+    "loreKey": "CLOTH_FUNG_MEET",
+    "textType": 0,
+    "name": "Dialogue-Cloth_Fungal_Wastes",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Minor NPC",
+        "key": "CLOTH_FUNG_MEET"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Cloth Level"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Isn't she a very brave girl? Fear her roar!"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Cloth"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "Traveller": 1,
+    "SoundClipName": "Cloth"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Minor NPC",
+    "loreKey": "BIGCAT_TALK_01",
+    "textType": 0,
+    "name": "Dialogue-Bardoon",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Minor NPC",
+        "key": "BIGCAT_TALK_01"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Concussive Strikes"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Some caterpillar guy told me this, maybe you can comprehent what this means."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Bardoon"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Bardoon"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "HATCHLING_QUEEN_CORPSE",
+    "textType": 0,
+    "name": "Dream_Dialogue-Aspid_Queen",
+    "UIDef": {
+      "$type": "LoreCore.UIDefs.DreamLoreUIDef, LoreCore",
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Aspid Queen"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "The last words, they spoke. Radiance whispered me that... ehm, I mean I took a dream nail myself."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Aspid_Queen"
+        
+      },
+      "Key": "HATCHLING_QUEEN_CORPSE",
+      "Sheet": "Lore Tablets"
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Dream_Enter"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Minor NPC",
+    "loreKey": "MOSS_CULTIST_01",
+    "textType": 0,
+    "name": "Dialogue-Moss_Prophet",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Minor NPC",
+        "key": "MOSS_CULTIST_01"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Follow the Light"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "I'm not sure about this... just take it away."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Moss_Prophet"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Moss_Prophet"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Ghosts",
+    "loreKey": "GRAVEDIGGER_TALK",
+    "textType": 0,
+    "name": "Dialogue-Gravedigger",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Ghosts",
+        "key": "GRAVEDIGGER_TALK"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Requiem"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "You might be thinking: Can't I just go outside and talk to him myself? Hey, if people buy water bottles, it was worth a shot."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Gravedigger"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Dream_Ghost"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Ghosts",
+    "loreKey": "GALIEN_INSPECT",
+    "textType": 1,
+    "name": "Inspect-Galien",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Ghosts",
+        "key": "GALIEN_INSPECT"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Galien"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Something from an idiot who thought it would be a good idea to an area full a beasts. And then he died... \\\"Insert Surprised Pikachu Meme here\\\"\""
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Galien"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Galien"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": null,
+    "textType": 1,
+    "name": "Inspect-Grub_Seal",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "On the wall is a seal like painting depicting a grub."
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Grub Seal"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "There was no sign, that said, that I couldn't take this with me. At least, no sign I could read."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Grub_Seal"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Secret"
+  },
+  {
+    "$type": "LoreCore.Items.TravellerItem, LoreCore",
+    "loreSheet": "Minor NPC",
+    "loreKey": "TISO_LAKE_GREET",
+    "textType": 0,
+    "name": "Dialogue-Tiso_Blue_Lake",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Minor NPC",
+        "key": "TISO_LAKE_GREET"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Tiso Level"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Brooding Mawlek offered me this. I'm not sure what this could mean..."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tiso"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "Traveller": 2,
+    "SoundClipName": "Tiso"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "MAGE_COMP_02",
+    "textType": 1,
+    "name": "Lore_Tablet-Record_Bela",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Lore Tablets",
+        "key": "MAGE_COMP_02"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Overwhelming Power"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "A special lore tablet, which was hidden deep in Soul Sanctum."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/CityOfTears",
+        "RandoSprite": false
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Lore"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Minor NPC",
+    "loreKey": "SPIDER_MEET",
+    "textType": 0,
+    "name": "Dialogue-Midwife",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Minor NPC",
+        "key": "SPIDER_MEET"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Infested!"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Please just take this... I don't want this in my shop anymore..."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Midwife"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Midwife"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Ghosts",
+    "loreKey": "POGGY_TALK",
+    "textType": 0,
+    "name": "Dialogue-Poggy",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Ghosts",
+        "key": "POGGY_TALK"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Delicious Meal"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Want to know a secret? I've no clue who Poggy is."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Poggy"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Dream_Ghost"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Stag",
+    "loreKey": "STAG_EGG_INSPECT",
+    "textType": 1,
+    "name": "Lore_Tablet-Stag_Egg_Inspect",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Stag",
+        "key": "STAG_EGG_INSPECT"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Stag Adoption"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": null
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/Cliffs",
+        "RandoSprite": false
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Lore"
+  },
+  {
+    "$type": "LoreCore.Items.TravellerItem, LoreCore",
+    "loreSheet": "Minor NPC",
+    "loreKey": "TISO_COLOSSEUM",
+    "textType": 0,
+    "name": "Dialogue-Tiso_Colosseum",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Minor NPC",
+        "key": "TISO_COLOSSEUM"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Tiso Level"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Brooding Mawlek offered me this. I'm not sure what this could mean..."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tiso"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "Traveller": 2,
+    "SoundClipName": "Tiso"
+  },
+  {
+    "$type": "LoreCore.Items.TravellerItem, LoreCore",
+    "loreSheet": "Quirrel",
+    "loreKey": "QUIRREL_MANTIS_01",
+    "textType": 0,
+    "name": "Dialogue-Quirrel_Mantis_Village",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Quirrel",
+        "key": "QUIRREL_MANTIS_01"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Quirrel Level"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "The wisdom of a real adventurer, which can swim fairly good. :)"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Quirrel"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "Traveller": 0,
+    "SoundClipName": "Quirrel"
+  },
+  {
+    "$type": "LoreCore.Items.TravellerItem, LoreCore",
+    "loreSheet": "Quirrel",
+    "loreKey": "QUIRREL_FOGCANYON_A",
+    "textType": 0,
+    "name": "Dialogue-Quirrel_Outside_Archive",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Quirrel",
+        "key": "QUIRREL_FOGCANYON_A"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Quirrel Level"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "The wisdom of a real adventurer, which can swim fairly good. :)"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Quirrel"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "Traveller": 0,
+    "SoundClipName": "Quirrel"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Ghosts",
+    "loreKey": "HIVEQUEEN_TALK",
+    "textType": 0,
+    "name": "Dialogue-Vespa",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Ghosts",
+        "key": "HIVEQUEEN_TALK"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "You like Jazz?"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "A queen from a distant land tortured me with this. Let me share my pain with you."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Vespa"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Dream_Ghost"
+  },
+  {
+    "$type": "LoreCore.Items.TravellerItem, LoreCore",
+    "loreSheet": "Minor NPC",
+    "loreKey": "CLOTH_TRAMWAY_MEET",
+    "textType": 0,
+    "name": "Dialogue-Cloth_Basin",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Minor NPC",
+        "key": "CLOTH_TRAMWAY_MEET"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Cloth Level"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Isn't she a very brave girl? Fear her roar!"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Cloth"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "Traveller": 1,
+    "SoundClipName": "Cloth"
+  },
+  {
+    "$type": "LoreCore.Items.TravellerItem, LoreCore",
+    "loreSheet": "Quirrel",
+    "loreKey": "QUIRREL_TEMPLE_1",
+    "textType": 0,
+    "name": "Dialogue-Quirrel_Crossroads",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Quirrel",
+        "key": "QUIRREL_TEMPLE_1"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Quirrel Level"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "The wisdom of a real adventurer, which can swim fairly good. :)"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Quirrel"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "Traveller": 0,
+    "SoundClipName": "Quirrel"
+  },
+  {
+    "$type": "LoreCore.Items.TravellerItem, LoreCore",
+    "loreSheet": "Quirrel",
+    "loreKey": "QUIRREL_QUEENSTATION_01",
+    "textType": 0,
+    "name": "Dialogue-Quirrel_Queen_Station",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Quirrel",
+        "key": "QUIRREL_QUEENSTATION_01"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Quirrel Level"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "The wisdom of a real adventurer, which can swim fairly good. :)"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Quirrel"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "Traveller": 0,
+    "SoundClipName": "Quirrel"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "FUNG_SHROOM_DREAM",
+    "textType": 0,
+    "name": "Dream_Dialogue-Shroom_King",
+    "UIDef": {
+      "$type": "LoreCore.UIDefs.DreamLoreUIDef, LoreCore",
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Shroom King"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "The last words, they spoke. Radiance whispered me that... ehm, I mean I took a dream nail myself."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Shroom_King"
+        
+      },
+      "Key": "FUNG_SHROOM_DREAM",
+      "Sheet": "Lore Tablets"
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Dream_Enter"
+  },
+  {
+    "$type": "ItemChanger.Items.BoolItem, ItemChanger",
+    "fieldName": "Listen",
+    "setValue": true,
+    "name": "Listen_Ability",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.BigUIDef, ItemChanger",
+      "bigSprite": {
+        "$type": "ItemChanger.ItemChangerSprite, ItemChanger",
+        "key": "Prompts.WorldSense"
+      },
+      "take": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "You learnt:"
+      },
+      "press": null,
+      "buttonSkin": null,
+      "descOne": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "You finally learnt how to listen!"
+      },
+      "descTwo": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "You can now \"communicate\" with the residents of Hallownest."
+      },
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Listening"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "You should not be able to see this... I mean, you can't understand me."
+      },
+      "sprite": {
+        "$type": "ItemChanger.ItemChangerSprite, ItemChanger",
+        "key": "ShopIcons.WorldSense"
+      }
+    },
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "MajorItemName": "Listening",
+          "ModSource": "LoreCore",
+          "IsMajorItem": true,
+          "PoolGroup": "Skills"
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      },
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "CanMimic": {
+            "$type": "ItemChanger.BoxedBool, ItemChanger",
+            "Value": true
+          },
+          "MimicNames": {
+            "$type": "System.String[], mscorlib",
+            "$values": [
+              "Listen",
+              "Listen!",
+              "Litsening"
+            ]
+          }
+        },
+        "Message": "CurseData",
+        "Loaded": true
+      }
+    ],
+    "obtainState": 0
+  },
+  {
+    "$type": "LoreCore.Items.TravellerItem, LoreCore",
+    "loreSheet": "Quirrel",
+    "loreKey": "QUIRREL_EPILOGUE_A",
+    "textType": 0,
+    "name": "Dialogue-Quirrel_Blue_Lake",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Quirrel",
+        "key": "QUIRREL_EPILOGUE_A"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Quirrel Level"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "The wisdom of a real adventurer, which can swim fairly good. :)"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Quirrel"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "Traveller": 0,
+    "SoundClipName": "Quirrel"
+  },
+  {
+    "$type": "LoreCore.Items.TravellerItem, LoreCore",
+    "loreSheet": "Minor NPC",
+    "loreKey": "CLOTH_GHOST",
+    "textType": 0,
+    "name": "Dialogue-Cloth_Ghost",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Minor NPC",
+        "key": "CLOTH_GHOST"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Cloth Level"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Isn't she a very brave girl? Fear her roar!"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Cloth"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "Traveller": 1,
+    "SoundClipName": "Cloth"
+  },
+  {
+    "$type": "LoreCore.Items.TravellerItem, LoreCore",
+    "loreSheet": "Minor NPC",
+    "loreKey": "TISO_TOWN_GREET",
+    "textType": 0,
+    "name": "Dialogue-Tiso_Dirtmouth",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Minor NPC",
+        "key": "TISO_TOWN_GREET"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Tiso Level"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Brooding Mawlek offered me this. I'm not sure what this could mean..."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tiso"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "Traveller": 2,
+    "SoundClipName": "Tiso"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Shaman",
+    "loreKey": "SHAMAN_FUNG_DREAM",
+    "textType": 0,
+    "name": "Dream_Dialogue-Overgrown_Shaman",
+    "UIDef": {
+      "$type": "LoreCore.UIDefs.DreamLoreUIDef, LoreCore",
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Overgrown Shaman"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "The last words, they spoke. Radiance whispered me that... ehm, I mean I took a dream nail myself."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Overgrown_Shaman"
+        
+      },
+      "Key": "SHAMAN_FUNG_DREAM",
+      "Sheet": "Shaman"
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Dream_Enter"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "DREAM_MINES_ROBOT",
+    "textType": 0,
+    "name": "Dream_Dialogue-Mine_Golem",
+    "UIDef": {
+      "$type": "LoreCore.UIDefs.DreamLoreUIDef, LoreCore",
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Mine Golem"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "The last words, they spoke. Radiance whispered me that... ehm, I mean I took a dream nail myself."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Mine_Golem"
+        
+      },
+      "Key": "DREAM_MINES_ROBOT",
+      "Sheet": "Lore Tablets"
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Dream_Enter"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Minor NPC",
+    "loreKey": "QUEEN_MEET",
+    "textType": 0,
+    "name": "Dialogue-Queen",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Minor NPC",
+        "key": "QUEEN_MEET"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Queen's Thorns"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "The queen sent this through the kingdom for the day, someone like you arrives. How do I know? Well... don't ask."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Queen"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Queen"
+  },
+  {
+    "$type": "LoreCore.Items.TravellerItem, LoreCore",
+    "loreSheet": "Zote",
+    "loreKey": "ZOTE_BUZZER_1",
+    "textType": 0,
+    "name": "Dialogue-Zote_Greenpath",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Zote",
+        "key": "ZOTE_BUZZER_1"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Zote Level"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Ugh..."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Zote"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "Traveller": 3,
+    "SoundClipName": "Zote"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": null,
+    "textType": 1,
+    "name": "Inspect-White_Palace_Nursery",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "...It feels familiar?"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "White Palace Nursery"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "There was no sign, that said, that I couldn't take this with me. At least, no sign I could read."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "White_Palace_Nursery"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Secret"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "KING_WORKSHOP_MOULD",
+    "textType": 0,
+    "name": "Dream_Dialogue-Kings_Mould",
+    "UIDef": {
+      "$type": "LoreCore.UIDefs.DreamLoreUIDef, LoreCore",
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Kings Mould"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "The last words, they spoke. Radiance whispered me that... ehm, I mean I took a dream nail myself."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Kings_Mould"
+        
+      },
+      "Key": "KING_WORKSHOP_MOULD",
+      "Sheet": "Lore Tablets"
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Dream_Enter"
+  },
+  {
+    "$type": "LoreCore.Items.TravellerItem, LoreCore",
+    "loreSheet": "Minor NPC",
+    "loreKey": "CLOTH_DEEPNEST_MEET",
+    "textType": 0,
+    "name": "Dialogue-Cloth_Deepnest",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Minor NPC",
+        "key": "CLOTH_DEEPNEST_MEET"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Cloth Level"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Isn't she a very brave girl? Fear her roar!"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Cloth"
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "Traveller": 1,
+    "SoundClipName": "Cloth"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "CP2",
+    "loreKey": "MOTHSTONE_DREAM",
+    "textType": 0,
+    "name": "Dream_Dialogue-Dream_Shield_Statue",
+    "UIDef": {
+      "$type": "LoreCore.UIDefs.DreamLoreUIDef, LoreCore",
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Dream Shield Statue"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "The last words, they spoke. Radiance whispered me that... ehm, I mean I took a dream nail myself."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Dream_Shield_Statue"
+        
+      },
+      "Key": "MOTHSTONE_DREAM",
+      "Sheet": "CP2"
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Dream_Enter"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "KING_FINAL_WORDS",
+    "textType": 0,
+    "name": "Dream_Dialogue-Pale_King",
+    "UIDef": {
+      "$type": "LoreCore.UIDefs.DreamLoreUIDef, LoreCore",
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Pale King"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "The last words, they spoke. Radiance whispered me that... ehm, I mean I took a dream nail myself."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Pale_King"
+        
+      },
+      "Key": "KING_FINAL_WORDS",
+      "Sheet": "Lore Tablets"
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Dream_Enter"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Minor NPC",
+    "loreKey": "XUN_GRAVE_INSPECT",
+    "textType": 1,
+    "name": "Traitor_Grave",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Minor NPC",
+        "key": "XUN_GRAVE_INSPECT"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Ring of Flowers"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": null
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/QueensGarden",
+        "RandoSprite": false
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Lore"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": null,
+    "textType": 1,
+    "name": "Inspect-Garden_Golem",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "A corpse of a giant bug that has died a long time ago."
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Garden Golem"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "There was no sign, that said, that I couldn't take this with me. At least, no sign I could read."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Garden_Golem"
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Secret"
+  },
+  {
+    "$type": "ItemChanger.Items.BoolItem, ItemChanger",
+    "fieldName": "Read",
+    "setValue": true,
+    "name": "Read_Ability",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.BigUIDef, ItemChanger",
+      "bigSprite": {
+        "$type": "ItemChanger.ItemChangerSprite, ItemChanger",
+        "key": "Prompts.WorldSense"
+      },
+      "take": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "You learnt:"
+      },
+      "press": null,
+      "buttonSkin": null,
+      "descOne": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "You finally learnt how to read!"
+      },
+      "descTwo": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "You can now comprehend the knowledge written down in the kingdom."
+      },
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Reading"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "This will be very helpful. Trust me on this one."
+      },
+      "sprite": {
+        "$type": "ItemChanger.ItemChangerSprite, ItemChanger",
+        "key": "ShopIcons.WorldSense"
+      }
+    },
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "MajorItemName": "Reading",
+          "ModSource": "LoreCore",
+          "IsMajorItem": true,
+          "PoolGroup": "Skills"
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      },
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "CanMimic": {
+            "$type": "ItemChanger.BoxedBool, ItemChanger",
+            "Value": true
+          },
+          "MimicNames": {
+            "$type": "System.String[], mscorlib",
+            "$values": [
+              "Reed",
+              "Read",
+              "Reat"
+            ]
+          }
+        },
+        "Message": "CurseData",
+        "Loaded": true
+      }
+    ],
+    "obtainState": 0
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "CP2",
+    "loreKey": "GRIMMSYCOPHANT_INSPECT",
+    "textType": 1,
+    "name": "Inspect-Grimm_Summoner_Corpse",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "CP2",
+        "key": "GRIMMSYCOPHANT_INSPECT"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Grimm Summoner"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Seems dead to me..."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Grimm_Summoner",
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Secret"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Ghosts",
+    "loreKey": "MARISSA_TALK",
+    "textType": 0,
+    "name": "Dialogue-Marissa",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Ghosts",
+        "key": "MARISSA_TALK"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Blessing of the Butterfly"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "From the most beautiful voice of the world besides me."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Marissa"
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Marissa"
+  },
+  {
+    "$type": "LoreCore.Items.TravellerItem, LoreCore",
+    "loreSheet": "Quirrel",
+    "loreKey": "QUIRREL_SPA",
+    "textType": 0,
+    "name": "Dialogue-Quirrel_Deepnest",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Quirrel",
+        "key": "QUIRREL_SPA"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Quirrel Level"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "The wisdom of a real adventurer, which can swim fairly good. :)"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Quirrel",
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "Traveller": 0,
+    "SoundClipName": "Quirrel"
+  },
+  {
+    "$type": "LoreCore.Items.TravellerItem, LoreCore",
+    "loreSheet": "Zote",
+    "loreKey": "ZOTE_COLOSSEUM_MEET",
+    "textType": 0,
+    "name": "Dialogue-Zote_Colosseum",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Zote",
+        "key": "ZOTE_COLOSSEUM_MEET"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Zote Level"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Ugh..."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Zote"
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "Traveller": 3,
+    "SoundClipName": "Zote"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Ghosts",
+    "loreKey": "JONI_TALK",
+    "textType": 0,
+    "name": "Dialogue-Joni",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Ghosts",
+        "key": "JONI_TALK"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Joni's Protection"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "The last words spoken by the heretic. Should probably cost more than 1000. Buy it now, before I change my mind."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Joni",
+        
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Dream_Ghost"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": null,
+    "textType": 1,
+    "name": "Inspect-Grimm_Machine",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "A strange device. Could this depict some kind of map?"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Grimm Machine"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "There was no sign, that said, that I couldn't take this with me. At least, no sign I could read."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Lore",
+        "RandoSprite": false
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Secret"
+  },
+  {
+    "$type": "ItemChanger.Items.BoolItem, ItemChanger",
+    "fieldName": "PopLore",
+    "setValue": true,
+    "name": "Lore_Tablet-Path_of_Pain_Reward",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Sacred Shell"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "This is a secret, that the Pale King tried to hide as best as he can."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/WhitePalace",
+        "RandoSprite": false
+      }
+    },
+    "tags": null,
+    "obtainState": 0
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "ABYSS_TUT_TAB_01",
+    "textType": 2,
+    "name": "Lore_Tablet-Ancient_Basin_Empowered",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Lore Tablets",
+        "key": "ABYSS_TUT_TAB_01"
+      },
+      "textType": 2,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "We don't talk about Shade"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "What secrets could lie on this tablet?"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/AncientBasin",
+        "RandoSprite": false
+      }
+    },
+    "tags": null,
+    "obtainState": 0,
+    "SoundClipName": "Lore"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "ARCHIVE_03",
+    "textType": 1,
+    "name": "Lore_Tablet-Archives_Left_Empowered",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Lore Tablets",
+        "key": "ARCHIVE_03"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Jellyfish Flow"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "What secrets could lie on this tablet?"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/FogCanyon",
+        "RandoSprite": false
+      }
+    },
+    "tags": null,
+    "obtainState": 0,
+    "SoundClipName": "Lore"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "ARCHIVE_02",
+    "textType": 1,
+    "name": "Lore_Tablet-Archives_Right_Empowered",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Lore Tablets",
+        "key": "ARCHIVE_02"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Belly of the Jelly(fish)"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "What secrets could lie on this tablet?"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/FogCanyon",
+        "RandoSprite": false
+      }
+    },
+    "tags": null,
+    "obtainState": 0,
+    "SoundClipName": "Lore"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "ARCHIVE_01",
+    "textType": 1,
+    "name": "Lore_Tablet-Archives_Upper_Empowered",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Lore Tablets",
+        "key": "ARCHIVE_01"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Friend of the Jellyfishes"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "What secrets could lie on this tablet?"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/FogCanyon",
+        "RandoSprite": false
+      }
+    },
+    "tags": null,
+    "obtainState": 0,
+    "SoundClipName": "Lore"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "RUIN_TAB_01",
+    "textType": 1,
+    "name": "Lore_Tablet-City_Entrance_Empowered",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Lore Tablets",
+        "key": "RUIN_TAB_01"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Hot Streak"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "What secrets could lie on this tablet?"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/CityOfTears",
+        "RandoSprite": false
+      }
+    },
+    "tags": null,
+    "obtainState": 0,
+    "SoundClipName": "Lore"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "RUINS_MARISSA_POSTER",
+    "textType": 1,
+    "name": "Lore_Tablet-Pleasure_House_Empowered",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Lore Tablets",
+        "key": "RUINS_MARISSA_POSTER"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Marissas Audience"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "What secrets could lie on this tablet?"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/CityOfTears",
+        "RandoSprite": false
+      }
+    },
+    "tags": null,
+    "obtainState": 0,
+    "SoundClipName": "Lore"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "MAGE_COMP_03",
+    "textType": 1,
+    "name": "Lore_Tablet-Sanctum_Entrance_Empowered",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Lore Tablets",
+        "key": "MAGE_COMP_03"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Pure Spirit"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "What secrets could lie on this tablet?"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/CityOfTears",
+        "RandoSprite": false
+      }
+    },
+    "tags": null,
+    "obtainState": 0,
+    "SoundClipName": "Lore"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "MAGE_COMP_01",
+    "textType": 1,
+    "name": "Lore_Tablet-Sanctum_Past_Soul_Master_Empowered",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Lore Tablets",
+        "key": "MAGE_COMP_01"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Soul Extract Efficiency"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "What secrets could lie on this tablet?"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/CityOfTears",
+        "RandoSprite": false
+      }
+    },
+    "tags": null,
+    "obtainState": 0,
+    "SoundClipName": "Lore"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "LURIAN_JOURNAL",
+    "textType": 0,
+    "name": "Lore_Tablet-Watcher's_Spire_Empowered",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Lore Tablets",
+        "key": "LURIAN_JOURNAL"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Eye Of The Watcher"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "What secrets could lie on this tablet?"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/CityOfTears",
+        "RandoSprite": false
+      }
+    },
+    "tags": null,
+    "obtainState": 0,
+    "SoundClipName": "Lore"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "DUNG_DEF_SIGN",
+    "textType": 1,
+    "name": "Lore_Tablet-Dung_Defender_Empowered",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Lore Tablets",
+        "key": "DUNG_DEF_SIGN"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Eternal Sentinel"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "What secrets could lie on this tablet?"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/WaterWays",
+        "RandoSprite": false
+      }
+    },
+    "tags": null,
+    "obtainState": 0,
+    "SoundClipName": "Lore"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "FUNG_TAB_02",
+    "textType": 1,
+    "name": "Lore_Tablet-Fungal_Core_Empowered",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Lore Tablets",
+        "key": "FUNG_TAB_02"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Imposter"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "What secrets could lie on this tablet?"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/FungalWastes",
+        "RandoSprite": false
+      }
+    },
+    "tags": null,
+    "obtainState": 0,
+    "SoundClipName": "Lore"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "FUNG_TAB_01",
+    "textType": 1,
+    "name": "Lore_Tablet-Fungal_Wastes_Below_Shrumal_Ogres_Empowered",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Lore Tablets",
+        "key": "FUNG_TAB_01"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Pale Luck"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "What secrets could lie on this tablet?"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/FungalWastes",
+        "RandoSprite": false
+      }
+    },
+    "tags": null,
+    "obtainState": 0,
+    "SoundClipName": "Lore"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "FUNG_TAB_03",
+    "textType": 1,
+    "name": "Lore_Tablet-Fungal_Wastes_Hidden_Empowered",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Lore Tablets",
+        "key": "FUNG_TAB_03"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "United we Stand"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "What secrets could lie on this tablet?"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/FungalWastes",
+        "RandoSprite": false
+      }
+    },
+    "tags": null,
+    "obtainState": 0,
+    "SoundClipName": "Lore"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "PILGRIM_TAB_02",
+    "textType": 1,
+    "name": "Lore_Tablet-Pilgrim's_Way_2_Empowered",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Lore Tablets",
+        "key": "PILGRIM_TAB_02"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Glory of the Wealth"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "What secrets could lie on this tablet?"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/FungalWastes",
+        "RandoSprite": false
+      }
+    },
+    "tags": null,
+    "obtainState": 0,
+    "SoundClipName": "Lore"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "FUNG_TAB_04",
+    "textType": 1,
+    "name": "Lore_Tablet-Spore_Shroom_Empowered",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Lore Tablets",
+        "key": "FUNG_TAB_04"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "One of Us"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "What secrets could lie on this tablet?"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/FungalWastes",
+        "RandoSprite": false
+      }
+    },
+    "tags": null,
+    "obtainState": 0,
+    "SoundClipName": "Lore"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "MANTIS_PLAQUE_01",
+    "textType": 1,
+    "name": "Lore_Tablet-Mantis_Outskirts_Empowered",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Lore Tablets",
+        "key": "MANTIS_PLAQUE_01"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Mantis Style"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "What secrets could lie on this tablet?"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/FungalWastes",
+        "RandoSprite": false
+      }
+    },
+    "tags": null,
+    "obtainState": 0,
+    "SoundClipName": "Lore"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "MANTIS_PLAQUE_02",
+    "textType": 1,
+    "name": "Lore_Tablet-Mantis_Village_Empowered",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Lore Tablets",
+        "key": "MANTIS_PLAQUE_02"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Eternal Valor"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "What secrets could lie on this tablet?"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/FungalWastes",
+        "RandoSprite": false
+      }
+    },
+    "tags": null,
+    "obtainState": 0,
+    "SoundClipName": "Lore"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "GREEN_TABLET_01",
+    "textType": 1,
+    "name": "Lore_Tablet-Greenpath_Below_Toll_Empowered",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Lore Tablets",
+        "key": "GREEN_TABLET_01"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Touch Grass"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "What secrets could lie on this tablet?"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/Greenpath",
+        "RandoSprite": false
+      }
+    },
+    "tags": null,
+    "obtainState": 0,
+    "SoundClipName": "Lore"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "GREEN_TABLET_03",
+    "textType": 1,
+    "name": "Lore_Tablet-Greenpath_Lifeblood_Empowered",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Lore Tablets",
+        "key": "GREEN_TABLET_03"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Mindblast of Unn"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "What secrets could lie on this tablet?"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/Greenpath",
+        "RandoSprite": false
+      }
+    },
+    "tags": null,
+    "obtainState": 0,
+    "SoundClipName": "Lore"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "GREEN_TABLET_07",
+    "textType": 1,
+    "name": "Lore_Tablet-Greenpath_Lower_Hidden_Empowered",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Lore Tablets",
+        "key": "GREEN_TABLET_07"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Gift of Unn"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "What secrets could lie on this tablet?"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/Greenpath",
+        "RandoSprite": false
+      }
+    },
+    "tags": null,
+    "obtainState": 0,
+    "SoundClipName": "Lore"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "GREEN_TABLET_02",
+    "textType": 1,
+    "name": "Lore_Tablet-Greenpath_QG_Empowered",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Lore Tablets",
+        "key": "GREEN_TABLET_02"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Grasp of Life"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "What secrets could lie on this tablet?"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/Greenpath",
+        "RandoSprite": false
+      }
+    },
+    "tags": null,
+    "obtainState": 0,
+    "SoundClipName": "Lore"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "GREEN_TABLET_05",
+    "textType": 1,
+    "name": "Lore_Tablet-Greenpath_Stag_Empowered",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Lore Tablets",
+        "key": "GREEN_TABLET_05"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Camouflage"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "What secrets could lie on this tablet?"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/Greenpath",
+        "RandoSprite": false
+      }
+    },
+    "tags": null,
+    "obtainState": 0,
+    "SoundClipName": "Lore"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "GREEN_TABLET_06",
+    "textType": 1,
+    "name": "Lore_Tablet-Greenpath_Upper_Hidden_Empowered",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Lore Tablets",
+        "key": "GREEN_TABLET_06"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Return to Unn"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "What secrets could lie on this tablet?"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/Greenpath",
+        "RandoSprite": false
+      }
+    },
+    "tags": null,
+    "obtainState": 0,
+    "SoundClipName": "Lore"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "CLIFF_TAB_02",
+    "textType": 2,
+    "name": "Lore_Tablet-Howling_Cliffs_Empowered",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Lore Tablets",
+        "key": "CLIFF_TAB_02"
+      },
+      "textType": 2,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Lifeblood Omen"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "What secrets could lie on this tablet?"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/Cliffs",
+        "RandoSprite": false
+      }
+    },
+    "tags": null,
+    "obtainState": 0,
+    "SoundClipName": "Lore"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "MR_MUSH_RIDDLE_TAB_NORMAL",
+    "textType": 2,
+    "name": "Lore_Tablet-Kingdom's_Edge_Empowered",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Lore Tablets",
+        "key": "MR_MUSH_RIDDLE_TAB_NORMAL"
+      },
+      "textType": 2,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Wisdom of the Sage"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "What secrets could lie on this tablet?"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/KingdomsEdge",
+        "RandoSprite": false
+      }
+    },
+    "tags": null,
+    "obtainState": 0,
+    "SoundClipName": "Lore"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "TUT_TAB_02",
+    "textType": 2,
+    "name": "Lore_Tablet-King's_Pass_Exit_Empowered",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Lore Tablets",
+        "key": "TUT_TAB_02"
+      },
+      "textType": 2,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Screw the Rules"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "What secrets could lie on this tablet?"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/Dirtmouth",
+        "RandoSprite": false
+      }
+    },
+    "tags": null,
+    "obtainState": 0,
+    "SoundClipName": "Lore"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "TUT_TAB_01",
+    "textType": 2,
+    "name": "Lore_Tablet-King's_Pass_Focus_Empowered",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Lore Tablets",
+        "key": "TUT_TAB_01"
+      },
+      "textType": 2,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Well Focused"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "What secrets could lie on this tablet?"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/Dirtmouth",
+        "RandoSprite": false
+      }
+    },
+    "tags": null,
+    "obtainState": 0,
+    "SoundClipName": "Lore"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "TUT_TAB_03",
+    "textType": 2,
+    "name": "Lore_Tablet-King's_Pass_Fury_Empowered",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Lore Tablets",
+        "key": "TUT_TAB_03"
+      },
+      "textType": 2,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "True Form"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "What secrets could lie on this tablet?"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/Dirtmouth",
+        "RandoSprite": false
+      }
+    },
+    "tags": null,
+    "obtainState": 0,
+    "SoundClipName": "Lore"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "WP_THRONE_01",
+    "textType": 1,
+    "name": "Lore_Tablet-Palace_Throne_Empowered",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Lore Tablets",
+        "key": "WP_THRONE_01"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Shining Bound"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "What secrets could lie on this tablet?"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/WhitePalace",
+        "RandoSprite": false
+      }
+    },
+    "tags": null,
+    "obtainState": 0,
+    "SoundClipName": "Lore"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "WP_WORKSHOP_01",
+    "textType": 1,
+    "name": "Lore_Tablet-Palace_Workshop_Empowered",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Lore Tablets",
+        "key": "WP_WORKSHOP_01"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Shadow Forged"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "What secrets could lie on this tablet?"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/WhitePalace",
+        "RandoSprite": false
+      }
+    },
+    "tags": null,
+    "obtainState": 0,
+    "SoundClipName": "Lore"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "CP2",
+    "loreKey": "PLAQUE_WARN",
+    "textType": 1,
+    "name": "Lore_Tablet-Path_of_Pain_Entrance_Empowered",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "CP2",
+        "key": "PLAQUE_WARN"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Diminishing Curse"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "What secrets could lie on this tablet?"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/WhitePalace",
+        "RandoSprite": false
+      }
+    },
+    "tags": null,
+    "obtainState": 0,
+    "SoundClipName": "Lore"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "SENSE_TAB_01",
+    "textType": 2,
+    "name": "Lore_Tablet-World_Sense_Empowered",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Lore Tablets",
+        "key": "SENSE_TAB_01"
+      },
+      "textType": 2,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Greater Mind"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "What secrets could lie on this tablet?"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/Crossroads",
+        "RandoSprite": false
+      }
+    },
+    "tags": null,
+    "obtainState": 0,
+    "SoundClipName": "Lore"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "PILGRIM_TAB_01",
+    "textType": 1,
+    "name": "Lore_Tablet-Pilgrim's_Way_1_Empowered",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Lore Tablets",
+        "key": "PILGRIM_TAB_01"
+      },
+      "textType": 1,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Reluctant Pilgrim"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "What secrets could lie on this tablet?"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Tablets/Crossroads",
+        "RandoSprite": false
+      }
+    },
+    "tags": null,
+    "obtainState": 0,
+    "SoundClipName": "Lore"
+  }
+]
