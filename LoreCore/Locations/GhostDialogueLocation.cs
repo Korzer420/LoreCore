@@ -1,4 +1,6 @@
 ﻿using ItemChanger;
+using ItemChanger.Extensions;
+using ItemChanger.FsmStateActions;
 
 namespace LoreCore.Locations;
 
@@ -9,13 +11,14 @@ internal class GhostDialogueLocation : DialogueLocation
     protected override void OnLoad()
     {
         base.OnLoad();
-        On.PlayMakerFSM.OnEnable += PreventGhostDeath;
-        Events.AddFsmEdit(new FsmID(null, "ghost_npc_death"), (a) => { });
+        Events.AddFsmEdit(new FsmID(ObjectName, "ghost_npc_death"), (a) => { });
     }
 
-    private void PreventGhostDeath(On.PlayMakerFSM.orig_OnEnable orig, PlayMakerFSM self)
+    private void SpawnShiny(PlayMakerFSM fsm)
     {
-        
-        orig(self);
+        fsm.GetState("Destroy").AddLastAction(new Lambda(() =>
+        {
+
+        }));
     }
 }

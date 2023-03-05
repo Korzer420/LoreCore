@@ -1,4 +1,4 @@
-﻿namespace LoreCore.Other;
+﻿namespace LoreCore.Data;
 
 public static class LocationList
 {

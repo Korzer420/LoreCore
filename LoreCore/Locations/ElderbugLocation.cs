@@ -5,9 +5,10 @@ using ItemChanger.Extensions;
 using ItemChanger.FsmStateActions;
 using ItemChanger.Locations;
 using ItemChanger.Util;
-using LoreCore.Other;
+using LoreCore.Data;
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace LoreCore.Locations;
 
@@ -28,19 +29,7 @@ internal class ElderbugLocation : AutoLocation
     {
         Events.AddFsmEdit("Town", new("Elderbug", "Conversation Control"), ModifyElderbug);
         if (name == LocationList.Elderbug_Reward_Prefix + "1")
-            Events.AddSceneChangeEdit("Town", a =>
-            {
-                GameObject tablet = GameObject.Instantiate(LoreCore.Instance.PreloadedObjects["Glow Response Mage Computer"]);
-                tablet.name = "Elderbug_Tablet";
-                tablet.transform.localPosition = new(105.74f, 14.21f, 0.5f);
-                tablet.SetActive(true);
-
-                GameObject inspectRegion = GameObject.Instantiate(LoreCore.Instance.PreloadedObjects["Inspect Region"]);
-                inspectRegion.name = name;
-                inspectRegion.transform.localPosition = new(105.74f, 12.11f);
-                inspectRegion.SetActive(true);
-                inspectRegion.LocateMyFSM("inspect_region").FsmVariables.FindFsmString("Game Text Convo").Value = "Elderbug_Preview";
-            });
+            Events.AddSceneChangeEdit("Town", ElderbugPreview);
     }
 
     protected override void OnUnload()
@@ -65,9 +54,9 @@ internal class ElderbugLocation : AutoLocation
             });
     }
 
-    private void ModifyElderbug(PlayMakerFSM fsm)
+    private void ModifyElderbug(PlayMakerFSM self)
     {
-        fsm.AddState(new FsmState(fsm.Fsm)
+        self.AddState(new FsmState(self.Fsm)
         {
             Name = Placement.Name,
             Actions = new FsmStateAction[]
@@ -75,20 +64,16 @@ internal class ElderbugLocation : AutoLocation
                 new Lambda(() =>
                 {
                     string conversationName = Placement.Name;
-                    if (conversationName.EndsWith("1"))
-                        conversationName = "Elderbug_Done_Task_1";
-                    else if (conversationName.EndsWith("2"))
-                        conversationName = "Elderbug_Gain_Listening";
-                    else
-                        conversationName = $"Elderbug_Task_{Convert.ToInt32(conversationName.Substring(16)) + 1}";
-                    fsm.GetState("Sly Rescued").GetFirstActionOfType<CallMethodProper>().gameObject.GameObject.Value
+                    conversationName = $"Elderbug_Task_{Convert.ToInt32(conversationName.Substring(16)) + 1}";
+                    self.GetState("Sly Rescued")
+                    .GetFirstActionOfType<CallMethodProper>().gameObject.GameObject.Value
                     .GetComponent<DialogueBox>()
                     .StartConversation(conversationName, "Elderbug");
                 })
             }
         });
 
-        fsm.AddState(new FsmState(fsm.Fsm)
+        self.AddState(new FsmState(self.Fsm)
         {
             Name = $"{Placement.Name} Throw",
             Actions = new FsmStateAction[]
@@ -98,16 +83,30 @@ internal class ElderbugLocation : AutoLocation
                     Container container = Container.GetContainer(Container.Shiny);
                     GameObject treasure = container.GetNewContainer(new ContainerInfo(container.Name, Placement, FlingType.StraightUp));
                     ShinyUtility.FlingShinyRight(treasure.LocateMyFSM("Shiny Control"));
-                    container.ApplyTargetContext(treasure, fsm.gameObject, 0f);
+                    container.ApplyTargetContext(treasure, self.gameObject, 0f);
                     ItemThrown = true;
-                    fsm.gameObject.GetComponent<BoxCollider2D>().size = new(1.8361f, 0.2408f);
+                    self.gameObject.GetComponent<BoxCollider2D>().size = new(1.8361f, 0.2408f);
                 })
             }
         });
 
-        fsm.GetState("Convo Choice").AddTransition(Placement.Name, Placement.Name);
-        fsm.GetState(Placement.Name).AddTransition("CONVO_FINISH", $"{Placement.Name} Throw");
-        fsm.GetState($"{Placement.Name} Throw").AddTransition("FINISHED", "Talk Finish");
+        self.GetState("Convo Choice").AddTransition(Placement.Name, Placement.Name);
+        self.GetState(Placement.Name).AddTransition("CONVO_FINISH", $"{Placement.Name} Throw");
+        self.GetState($"{Placement.Name} Throw").AddTransition("FINISHED", "Talk Finish");
+    }
+
+    private static void ElderbugPreview(Scene scene)
+    {
+        GameObject tablet = GameObject.Instantiate(LoreCore.Instance.PreloadedObjects["Glow Response Mage Computer"]);
+        tablet.name = "Elderbug_Tablet";
+        tablet.transform.localPosition = new(105.74f, 14.21f, 0.5f);
+        tablet.SetActive(true);
+
+        GameObject inspectRegion = GameObject.Instantiate(LoreCore.Instance.PreloadedObjects["Inspect Region"]);
+        inspectRegion.name = "Inspect_Elderbug_Tablet";
+        inspectRegion.transform.localPosition = new(105.74f, 12.11f);
+        inspectRegion.SetActive(true);
+        inspectRegion.LocateMyFSM("inspect_region").FsmVariables.FindFsmString("Game Text Convo").Value = "Elderbug_Preview";
     }
 
     #endregion
