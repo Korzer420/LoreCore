@@ -1,18 +1,60 @@
 ﻿using ItemChanger;
 using ItemChanger.Extensions;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LoreCore.Items;
 
 internal class ReadItem : AbstractItem
 {
+    #region Members
+
+    private readonly string[] _loreKeys = new string[]
+    {
+        "TUT_TAB_01",
+        "TUT_TAB_02",
+        "TUT_TAB_03",
+        "PILGRIM_TAB_01",
+        "PILGRIM_TAB_02",
+        "COMPLETION_RATE_UNLOCKED",
+        "MENDERBUG",
+        "GREEN_TABLET_01",
+        "GREEN_TABLET_02",
+        "GREEN_TABLET_03",
+        "GREEN_TABLET_05",
+        "GREEN_TABLET_06",
+        "GREEN_TABLET_07",
+        "FUNG_TAB_01",
+        "FUNG_TAB_02",
+        "FUNG_TAB_03",
+        "FUNG_TAB_04",
+        "MANTIS_PLAQUE_01",
+        "MANTIS_PLAQUE_02",
+        "RUIN_TAB_01",
+        "RUINS_MARISSA_POSTER",
+        "MAGE_COMP_01",
+        "MAGE_COMP_03",
+        "LURIAN_JOURNAL",
+        "DUNG_DEF_SIGN",
+        "CLIFF_TAB_02",
+        "ARCHIVE_01",
+        "ARCHIVE_02",
+        "ARCHIVE_03",
+        "ABYSS_TUT_TAB_01",
+        "MR_MUSH_RIDDLE_TAB_NORMAL",
+        "WP_WORKSHOP_01",
+        "WP_THRONE_01",
+        "PLAQUE_WARN"
+    };
+
+    #endregion
+
     #region Properties
 
-    public static bool CanRead { get; set; }
+    public static ReadItem Instance { get; set; }
+
+    public static bool CanRead => Instance == null || Instance.IsObtained();
+
+    public override void GiveImmediate(GiveInfo info) { }
 
     #endregion
 
@@ -21,7 +63,7 @@ internal class ReadItem : AbstractItem
     protected override void OnLoad()
     {
         base.OnLoad();
-        CanRead = false;
+        Instance = this;
         On.PlayMakerFSM.OnEnable += PlayMakerFSM_OnEnable;
     }
 
@@ -29,32 +71,19 @@ internal class ReadItem : AbstractItem
     {
         base.OnUnload();
         On.PlayMakerFSM.OnEnable -= PlayMakerFSM_OnEnable;
-        CanRead = true;
+        Instance = null;
     }
 
     private void PlayMakerFSM_OnEnable(On.PlayMakerFSM.orig_OnEnable orig, PlayMakerFSM self)
     {
         if (!IsObtained() && (
-                // Big Lore tablets
-                (string.Equals(self.FsmName, "Inspection") && PowerManager.GetPowerByKey(self.FsmVariables.FindFsmString("Convo Name")?.Value, out Power power, false))
-                ||
-                // Small known lore tablets (like Record Abba) and dream warrior inspects
-                (string.Equals(self.FsmName, "inspect_region") && (!RandomizerManager.PlayingRandomizer
-                || !RandomizerRequestModifier.PointOfInterestLocations.Contains(self.gameObject.name))
-                && (PowerManager.GetPowerByKey(self.FsmVariables.FindFsmString("Game Text Convo")?.Value, out power, false)
-                || string.Equals(self.gameObject.name, "Inspect Region Ghost")))
+                ((string.Equals(self.FsmName, "Inspection") || string.Equals(self.FsmName, "inspect_region")) 
+                && _loreKeys.Contains(self.FsmVariables.FindFsmString("Convo Name")?.Value))
                 // Special boards
-                || ((self.gameObject.name.EndsWith("Trial Board") || self.gameObject.name == "Dreamer Plaque Inspect"
-                || self.gameObject.name == "Fountain Inspect" || self.transform.parent?.name == "Mantis Grave"
-                || self.gameObject.name == "Antique Dealer Door" || self.gameObject.name == "Diary") && self.FsmName == "npc_control")))
-            self.GetState("Init").ClearTransitions();)
-        {
-
-        }
+                || (self.gameObject.name.EndsWith("Trial Board") && self.FsmName == "npc_control")))
+            self.GetState("Init").ClearTransitions();
         orig(self);
     }
 
     #endregion
-
-    public override void GiveImmediate(GiveInfo info) => CanRead = true;
 }
