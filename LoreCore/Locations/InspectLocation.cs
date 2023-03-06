@@ -4,7 +4,7 @@ using ItemChanger.Extensions;
 using ItemChanger.FsmStateActions;
 using ItemChanger.Locations;
 using ItemChanger.Util;
-using LoreCore.Other;
+using LoreCore.Data;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;

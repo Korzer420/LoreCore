@@ -3,6 +3,7 @@ using ItemChanger;
 using ItemChanger.Extensions;
 using ItemChanger.FsmStateActions;
 using ItemChanger.Placements;
+using LoreCore.Data;
 using LoreCore.Other;
 using System.Linq;
 

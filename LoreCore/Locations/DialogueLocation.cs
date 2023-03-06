@@ -5,6 +5,7 @@ using ItemChanger.FsmStateActions;
 using ItemChanger.Locations;
 using ItemChanger.Util;
 using KorzUtils.Helper;
+using LoreCore.Data;
 using LoreCore.Other;
 using System.Linq;
 
