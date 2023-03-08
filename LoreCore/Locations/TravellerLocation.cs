@@ -57,6 +57,16 @@ internal class TravellerLocation : DialogueLocation
         ("Deepnest_East_07","tiso_corpse")
     };
 
+    private static readonly (string, string)[] _hornetNames = new (string, string)[] 
+    {
+        ("Fungus1_04","Hornet Infected Knight Encounter"),
+        ("Ruins1_27","Hornet Fountain Encounter"),
+        ("Deepnest_East_Hornet", "Hornet Outskirts Battle Encounter"),
+        ("Abyss_06_Core","Hornet Abyss NPC"),
+        ("Deepnest_Spider_Town","Hornet Beast Den NPC"),
+        ("Room_temple","Hornet Black Egg NPC")
+    };
+
     #endregion
 
     #region Properties
@@ -141,7 +151,7 @@ internal class TravellerLocation : DialogueLocation
                         Traveller.Cloth => _clothNames.Select(x => x.Item2).IndexOf(ObjectName),
                         Traveller.Tiso => _tisoNames.Select(x => x.Item2).IndexOf(ObjectName),
                         Traveller.Zote => _zoteNames.Select(x => x.Item2).IndexOf(ObjectName),
-                        _ => 0
+                        _ => _hornetNames.Select(x => x.Item2).IndexOf(ObjectName),
                     };
                 npc.SetActive(npcIndex <= Stages[TravellerName]);
             }

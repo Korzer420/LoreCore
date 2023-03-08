@@ -10,6 +10,7 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using UnityEngine;
 using static LoreCore.Data.ItemList;
@@ -212,8 +213,7 @@ public class LoreCore : Mod, ILocalSettings<LocalSettings>
             ItemNames.Charm_Notch,
             ItemNames.Arcane_Egg
         };
-        for (int i = 1; i < 10; i++)
-            placements.Add(GeneratePlacement(items[i - 1], Elderbug_Reward_Prefix + i));
+        placements.Add(Finder.GetLocation(Elderbug_Shop).Wrap().Add(items.Select(Finder.GetItem)));
         ItemChangerMod.AddPlacements(placements);
     }
 

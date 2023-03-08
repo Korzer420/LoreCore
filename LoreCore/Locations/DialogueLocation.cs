@@ -42,13 +42,9 @@ internal class DialogueLocation : AutoLocation
     {
         try
         {
-            if (Placement.Items.All(x => x.IsObtained()) && name != LocationList.Queen && name != LocationList.Traitor_Grave)
-            {
-                fsm.gameObject.LocateMyFSM("npc_control").GetState("Idle").ClearTransitions();
+            if (Placement.Items.All(x => x.IsObtained()))
                 return;
-            }
-
-
+            
             if (fsm.GetState("Give Items") is null)
             {
                 FsmState startState;
@@ -66,6 +62,8 @@ internal class DialogueLocation : AutoLocation
                     // Zote Greenpath/City
                     if (startState == null)
                         startState = fsm.GetState("Talk Back");
+                    if (startState == null)
+                        startState = fsm.GetState("Hero Look");
 
                     // Dung defender and the grave function differently
                     if (fsm.gameObject.name == "Dung Defender NPC")
@@ -78,9 +76,6 @@ internal class DialogueLocation : AutoLocation
                         transitionEnd = "Talk Finish";
                 }
 
-                // If not all items are obtained ghost npc are unkillable.
-                if (fsm.gameObject.LocateMyFSM("ghost_npc_death") is PlayMakerFSM ghostDeath)
-                    ghostDeath.GetState("Idle").ClearTransitions();
                 fsm.AddState(new FsmState(fsm.Fsm)
                 {
                     Name = "Give Items",

@@ -1,5 +1,6 @@
 ﻿using ItemChanger.Locations;
 using KorzUtils.Helper;
+using LoreCore.Data;
 using Modding;
 using Newtonsoft.Json;
 using System.Collections;
@@ -13,19 +14,6 @@ namespace LoreCore.Locations;
 // Dream Room Believer Shrine
 public abstract class ShrineLocation : AutoLocation
 {
-    // Bottom left: 34.405 to 47.02 (y = 14.41)
-    // Bottom right: 63.18 to 76.46
-    // Small platform (right): 101.56, 25.08
-    // Middle right: 72.67 to 91.6  (y = 30.41)
-    // Middle left: 16.8 to 32.07
-    // Middle left small platform: 26.13, 47.41
-    // Second from top (left): 34,8 (y = 45.08) to 50.23
-    // Small platform (middle): 57.34, 40.34
-    // Second from top (right): 65.72 to 81.82 (y =45.08)
-    // Small  top right: 87.88 56.09
-    // Top right: 62.8 to 78.24 (y = 61.41)
-    // Top left: 32.12 to 47.6 (y = 61.41)
-
     #region Members
 
     private static Vector3[] _tabletPositions = new Vector3[]
@@ -83,6 +71,31 @@ public abstract class ShrineLocation : AutoLocation
 
     [JsonIgnore]
     public static List<GameObject> Tablets { get; set; } = new();
+
+    [JsonIgnore]
+    public static List<string> ShrineLocations = new()
+    {
+        LocationList.AllGrubShrine,
+        LocationList.DrownShrine,
+        LocationList.FlowerShrine,
+        LocationList.FullStagShrine,
+        LocationList.GenocideShrine,
+        LocationList.GeoShrine,
+        LocationList.HalfGrubShrine,
+        LocationList.HerrahShrine,
+        LocationList.LongestNailShrine,
+        LocationList.LurienShrine,
+        LocationList.MenderbugShrine,
+        LocationList.MonomonShrine,
+        LocationList.MylaShrine,
+        LocationList.NailsmithShrine,
+        LocationList.RespectElderShrine,
+        LocationList.ScammedShrine,
+        LocationList.ShadeKillShrine,
+        LocationList.ShamanShrine,
+        LocationList.SlugInTubShrine,
+        LocationList.ZoteShrine
+    };
 
     #endregion
 

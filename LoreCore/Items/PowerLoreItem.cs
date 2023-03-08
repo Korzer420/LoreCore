@@ -2,6 +2,7 @@ using ItemChanger;
 using ItemChanger.Internal;
 using ItemChanger.Items;
 using ItemChanger.UIDefs;
+using LoreCore.Locations;
 using LoreCore.Manager;
 using LoreCore.Resources.Text;
 using LoreCore.UIDefs;
@@ -39,5 +40,7 @@ internal class PowerLoreItem : LoreItem
             SoundManager.Instance.PlayClipAtPoint("LoreSound", HeroController.instance.transform.localPosition);
         else
             SoundEffectManager.Manager.PlayClipAtPoint(SoundClipName, HeroController.instance.transform.position);
+        if (ElderbugLocation.Instance != null)
+            ElderbugLocation.Instance.AcquiredLore++;
     }
 }

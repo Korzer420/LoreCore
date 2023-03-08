@@ -1,6 +1,38 @@
 [
   {
     "$type": "LoreCore.Locations.GhostDialogueLocation, LoreCore",
+    "name": "Elderbug_Shop",
+    "sceneName": "Town",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Elderbug"
+
+          },
+          "SceneNames": "Town",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Town",
+                "Item2": -1.2,
+                "Item3": 0.4
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ]
+  },
+  {
+    "$type": "LoreCore.Locations.GhostDialogueLocation, LoreCore",
     "name": "Gravedigger",
     "sceneName": "Town",
     "flingType": 0,
@@ -11,8 +43,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Gravedigger",
-            
+            "Key": "Gravedigger"
+
           },
           "SceneNames": "Town",
           "MapLocations": {
@@ -46,8 +78,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Mask_Maker",
-            
+            "Key": "Mask_Maker"
+
           },
           "SceneNames": "Room_Mask_Maker",
           "MapLocations": {
@@ -80,8 +112,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Grasshopper",
-            
+            "Key": "Grasshopper"
+
           },
           "SceneNames": "Fungus1_24",
           "MapLocations": {
@@ -115,8 +147,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Vespa",
-            
+            "Key": "Vespa"
+
           },
           "SceneNames": "Hive_05",
           "MapLocations": {
@@ -150,8 +182,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Myla",
-            
+            "Key": "Myla"
+
           },
           "SceneNames": "Crossroads_45",
           "MapLocations": {
@@ -184,8 +216,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Marissa",
-            
+            "Key": "Marissa"
+
           },
           "SceneNames": "Ruins_Bathhouse",
           "MapLocations": {
@@ -219,8 +251,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Fluke_Hermit",
-            
+            "Key": "Fluke_Hermit"
+
           },
           "SceneNames": "GG_Waterways",
           "MapLocations": {
@@ -253,8 +285,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Midwife",
-            
+            "Key": "Midwife"
+
           },
           "SceneNames": "Deepnest_41",
           "MapLocations": {
@@ -287,8 +319,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Emilitia",
-            
+            "Key": "Emilitia"
+
           },
           "SceneNames": "Ruins2_04",
           "MapLocations": {
@@ -321,8 +353,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Poggy",
-            
+            "Key": "Poggy"
+
           },
           "SceneNames": "Ruins_Elevator",
           "MapLocations": {
@@ -356,8 +388,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Joni",
-            
+            "Key": "Joni"
+
           },
           "SceneNames": "Cliffs_05",
           "MapLocations": {
@@ -391,8 +423,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Dung_Defender",
-            
+            "Key": "Dung_Defender"
+
           },
           "SceneNames": "Waterways_05",
           "MapLocations": {
@@ -425,8 +457,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Bardoon",
-            
+            "Key": "Bardoon"
+
           },
           "SceneNames": "Deepnest_East_04",
           "MapLocations": {
@@ -459,8 +491,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Bretta_Diary",
-            
+            "Key": "Bretta_Diary"
+
           },
           "SceneNames": "Town",
           "MapLocations": {
@@ -493,8 +525,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Menderbug_Diary",
-            
+            "Key": "Menderbug_Diary"
+
           },
           "SceneNames": "Crossroads_04",
           "MapLocations": {
@@ -527,8 +559,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Willoh",
-            
+            "Key": "Willoh"
+
           },
           "SceneNames": "Fungus2_34",
           "MapLocations": {
@@ -561,8 +593,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Moss_Prophet",
-            
+            "Key": "Moss_Prophet"
+
           },
           "SceneNames": "Fungus3_39",
           "MapLocations": {
@@ -584,6 +616,108 @@
     "FsmName": "Conversation Control"
   },
   {
+    "$type": "LoreCore.Locations.SpecialLocations.MillibelleLocation, LoreCore",
+    "name": "Millibelle",
+    "sceneName": "Fungus3_35",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Millibelle"
+
+          },
+          "SceneNames": "Fungus3_35",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Fungus3_35",
+                "Item2": 0.4,
+                "Item3": -1.0
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "ObjectName": "Banker",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.SpecialLocations.HiddenMothLocation, LoreCore",
+    "name": "Hidden_Moth",
+    "sceneName": "Fungus3_35",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Hidden_Moth"
+
+          },
+          "SceneNames": "Fungus3_35",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Fungus3_35",
+                "Item2": 0.4,
+                "Item3": -1.0
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "ObjectName": "Banker",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.SpecialLocations.GodseekerLocation, LoreCore",
+    "name": "Godseeker",
+    "sceneName": "GG_Waterways",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Godseeker"
+
+          },
+          "SceneNames": "GG_Waterways",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "GG_Waterways",
+                "Item2": 0.4,
+                "Item3": -1.0
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "ObjectName": "Godseeker Awake",
+    "FsmName": "Conversation Control"
+  },
+  {
     "$type": "LoreCore.Locations.DialogueLocation, LoreCore",
     "name": "Queen",
     "sceneName": "Room_Queen",
@@ -595,8 +729,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Queen",
-            
+            "Key": "Queen"
+
           },
           "SceneNames": "Fungus3_48",
           "MapLocations": {
@@ -629,8 +763,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Tiso",
-            
+            "Key": "Tiso"
+
           },
           "SceneNames": "Town",
           "MapLocations": {
@@ -653,6 +787,198 @@
     "FsmName": "Conversation Control"
   },
   {
+    "$type": "LoreCore.Locations.SpecialLocations.HornetGreenpathLocation, LoreCore",
+    "name": "Hornet_Greenpath",
+    "sceneName": "Fungus1_04",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Hornet"
+
+          },
+          "SceneNames": "Fungus1_04",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Fungus1_04",
+                "Item2": 0.8,
+                "Item3": 0.5
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ]
+  },
+  {
+    "$type": "LoreCore.Locations.SpecialLocations.HornetFountainLocation, LoreCore",
+    "name": "Hornet_Fountain",
+    "sceneName": "Ruins1_27",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Hornet"
+
+          },
+          "SceneNames": "Ruins1_27",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Ruins1_27",
+                "Item2": 0.8,
+                "Item3": 0.5
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ]
+  },
+  {
+    "$type": "LoreCore.Locations.SpecialLocations.HornetEdgeLocation, LoreCore",
+    "name": "Hornet_Edge",
+    "sceneName": "Deepnest_East_Hornet",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Hornet"
+
+          },
+          "SceneNames": "Deepnest_East_Hornet",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Deepnest_East_Hornet",
+                "Item2": 0.8,
+                "Item3": 0.5
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ]
+  },
+  {
+    "$type": "LoreCore.Locations.TravellerLocation, LoreCore",
+    "name": "Hornet_Abyss",
+    "sceneName": "Abyss_06_Core",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Hornet"
+
+          },
+          "SceneNames": "Abyss_06_Core",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Abyss_06_Core",
+                "Item2": 0.8,
+                "Item3": 0.5
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ]
+  },
+  {
+    "$type": "LoreCore.Locations.TravellerLocation, LoreCore",
+    "name": "Hornet_Deepnest",
+    "sceneName": "Deepnest_Spider_Town",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Hornet"
+
+          },
+          "SceneNames": "Deepnest_Spider_Town",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Deepnest_Spider_Town",
+                "Item2": 0.8,
+                "Item3": 0.5
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ]
+  },
+  {
+    "$type": "LoreCore.Locations.TravellerLocation, LoreCore",
+    "name": "Hornet_Temple",
+    "sceneName": "Room_temple",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Hornet"
+
+          },
+          "SceneNames": "Room_temple",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Room_temple",
+                "Item2": 0.8,
+                "Item3": 0.5
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ]
+  },
+  {
     "$type": "LoreCore.Locations.TravellerLocation, LoreCore",
     "name": "Tiso_Crossroads",
     "sceneName": "Crossroads_47",
@@ -664,8 +990,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Tiso",
-            
+            "Key": "Tiso"
+
           },
           "SceneNames": "Crossroads_47",
           "MapLocations": {
@@ -699,8 +1025,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Tiso",
-            
+            "Key": "Tiso"
+
           },
           "SceneNames": "Crossroads_50",
           "MapLocations": {
@@ -734,8 +1060,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Tiso",
-            
+            "Key": "Tiso"
+
           },
           "SceneNames": "Deepnest_East_07",
           "MapLocations": {
@@ -769,8 +1095,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "tiso_corpse",
-            
+            "Key": "tiso_corpse"
+
           },
           "SceneNames": "Deepnest_East_07",
           "MapLocations": {
@@ -802,8 +1128,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Zote",
-            
+            "Key": "Zote"
+
           },
           "SceneNames": "Fungus1_20_v02",
           "MapLocations": {
@@ -836,8 +1162,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Zote",
-            
+            "Key": "Zote"
+
           },
           "SceneNames": "Town",
           "MapLocations": {
@@ -871,8 +1197,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Zote",
-            
+            "Key": "Zote"
+
           },
           "SceneNames": "Ruins1_06",
           "MapLocations": {
@@ -906,8 +1232,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Zote",
-            
+            "Key": "Zote"
+
           },
           "SceneNames": "Deepnest_33",
           "MapLocations": {
@@ -940,8 +1266,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Zote",
-            
+            "Key": "Zote"
+
           },
           "SceneNames": "Deepnest_East_07",
           "MapLocations": {
@@ -975,8 +1301,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Zote",
-            
+            "Key": "Zote"
+
           },
           "SceneNames": "Town",
           "MapLocations": {
@@ -1010,8 +1336,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Cloth",
-            
+            "Key": "Cloth"
+
           },
           "SceneNames": "Fungus2_09",
           "MapLocations": {
@@ -1045,8 +1371,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Cloth",
-            
+            "Key": "Cloth"
+
           },
           "SceneNames": "Abyss_17",
           "MapLocations": {
@@ -1080,8 +1406,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Cloth",
-            
+            "Key": "Cloth"
+
           },
           "SceneNames": "Deepnest_14",
           "MapLocations": {
@@ -1115,8 +1441,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Cloth",
-            
+            "Key": "Cloth"
+
           },
           "SceneNames": "Fungus3_34",
           "MapLocations": {
@@ -1150,8 +1476,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Cloth",
-            
+            "Key": "Cloth"
+
           },
           "SceneNames": "Fungus3_23",
           "MapLocations": {
@@ -1185,8 +1511,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Cloth",
-            
+            "Key": "Cloth"
+
           },
           "SceneNames": "Town",
           "MapLocations": {
@@ -1220,8 +1546,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Quirrel",
-            
+            "Key": "Quirrel"
+
           },
           "SceneNames": "Crossroads_02",
           "MapLocations": {
@@ -1255,8 +1581,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Quirrel",
-            
+            "Key": "Quirrel"
+
           },
           "SceneNames": "Fungus1_26",
           "MapLocations": {
@@ -1290,8 +1616,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Quirrel",
-            
+            "Key": "Quirrel"
+
           },
           "SceneNames": "Fungus2_01",
           "MapLocations": {
@@ -1325,8 +1651,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Quirrel",
-            
+            "Key": "Quirrel"
+
           },
           "SceneNames": "Fungus2_14",
           "MapLocations": {
@@ -1360,8 +1686,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Quirrel",
-            
+            "Key": "Quirrel"
+
           },
           "SceneNames": "Ruins1_02",
           "MapLocations": {
@@ -1395,8 +1721,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Quirrel",
-            
+            "Key": "Quirrel"
+
           },
           "SceneNames": "Mines_13",
           "MapLocations": {
@@ -1430,8 +1756,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Quirrel",
-            
+            "Key": "Quirrel"
+
           },
           "SceneNames": "Deepnest_30",
           "MapLocations": {
@@ -1465,8 +1791,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Quirrel",
-            
+            "Key": "Quirrel"
+
           },
           "SceneNames": "Fungus3_47",
           "MapLocations": {
@@ -1500,8 +1826,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Quirrel",
-            
+            "Key": "Quirrel"
+
           },
           "SceneNames": "Fungus3_47",
           "MapLocations": {
@@ -1535,8 +1861,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Quirrel",
-            
+            "Key": "Quirrel"
+
           },
           "SceneNames": "Crossroads_50",
           "MapLocations": {
@@ -1570,8 +1896,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Dream_Nail",
-            
+            "Key": "Dream_Nail"
+
           },
           "SceneNames": "Fungus2_23",
           "MapLocations": {
@@ -1603,8 +1929,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Pale_King",
-            
+            "Key": "Pale_King"
+
           },
           "SceneNames": "Abyss_05",
           "MapLocations": {
@@ -1636,8 +1962,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Dream_Nail",
-            
+            "Key": "Dream_Nail"
+
           },
           "SceneNames": "Abyss_12",
           "MapLocations": {
@@ -1669,8 +1995,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Dream_Nail",
-            
+            "Key": "Dream_Nail"
+
           },
           "SceneNames": "Crossroads_22",
           "MapLocations": {
@@ -1702,8 +2028,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Dream_Nail",
-            
+            "Key": "Dream_Nail"
+
           },
           "SceneNames": "Deepnest_East_16",
           "MapLocations": {
@@ -1735,8 +2061,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Dream_Nail",
-            
+            "Key": "Dream_Nail"
+
           },
           "SceneNames": "Mines_28",
           "MapLocations": {
@@ -1768,8 +2094,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Dream_Nail",
-            
+            "Key": "Dream_Nail"
+
           },
           "SceneNames": "Abyss_10",
           "MapLocations": {
@@ -1801,8 +2127,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Dream_Nail",
-            
+            "Key": "Dream_Nail"
+
           },
           "SceneNames": "Abyss_10",
           "MapLocations": {
@@ -1834,8 +2160,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Dream_Nail",
-            
+            "Key": "Dream_Nail"
+
           },
           "SceneNames": "Abyss_05",
           "MapLocations": {
@@ -1867,8 +2193,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Dream_Nail",
-            
+            "Key": "Dream_Nail"
+
           },
           "SceneNames": "Cliffs_06",
           "MapLocations": {
@@ -1900,8 +2226,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Dream_Nail",
-            
+            "Key": "Dream_Nail"
+
           },
           "SceneNames": "Deepnest_East_14b",
           "MapLocations": {
@@ -1933,8 +2259,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Dream_Nail",
-            
+            "Key": "Dream_Nail"
+
           },
           "SceneNames": "Mines_31",
           "MapLocations": {
@@ -1966,8 +2292,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Dream_Nail",
-            
+            "Key": "Dream_Nail"
+
           },
           "SceneNames": "Fungus2_30",
           "MapLocations": {
@@ -1999,8 +2325,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Dream_Nail",
-            
+            "Key": "Dream_Nail"
+
           },
           "SceneNames": "Mines_34",
           "MapLocations": {
@@ -2032,8 +2358,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Dream_Nail",
-            
+            "Key": "Dream_Nail"
+
           },
           "SceneNames": "RestingGrounds_17",
           "MapLocations": {
@@ -2065,8 +2391,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Dream_Nail",
-            
+            "Key": "Dream_Nail"
+
           },
           "SceneNames": "Waterways_13",
           "MapLocations": {
@@ -2098,8 +2424,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Dream_Nail",
-            
+            "Key": "Dream_Nail"
+
           },
           "SceneNames": "Fungus3_48",
           "MapLocations": {
@@ -2131,8 +2457,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Dream_Nail",
-            
+            "Key": "Dream_Nail"
+
           },
           "SceneNames": "RestingGrounds_10",
           "MapLocations": {
@@ -2164,8 +2490,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Dream_Nail",
-            
+            "Key": "Dream_Nail"
+
           },
           "SceneNames": "Fungus3_44",
           "MapLocations": {
@@ -2644,8 +2970,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Markoth",
-            
+            "Key": "Markoth"
+
           },
           "SceneNames": "Deepnest_East_10",
           "MapLocations": {
@@ -2683,8 +3009,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Galien",
-            
+            "Key": "Galien"
+
           },
           "SceneNames": "Deepnest_40",
           "MapLocations": {
@@ -2721,8 +3047,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Marmu",
-            
+            "Key": "Marmu"
+
           },
           "SceneNames": "Fungus3_40",
           "MapLocations": {
@@ -2760,8 +3086,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Elder_Hu",
-            
+            "Key": "Elder_Hu"
+
           },
           "SceneNames": "Fungus2_32",
           "MapLocations": {
@@ -2799,8 +3125,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "No_Eyes",
-            
+            "Key": "No_Eyes"
+
           },
           "SceneNames": "Fungus1_34",
           "MapLocations": {
@@ -2838,8 +3164,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Xero",
-            
+            "Key": "Xero"
+
           },
           "SceneNames": "RestingGrounds_02",
           "MapLocations": {
@@ -2877,8 +3203,8 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Gorb",
-            
+            "Key": "Gorb"
+
           },
           "SceneNames": "Cliffs_02",
           "MapLocations": {

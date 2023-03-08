@@ -15,7 +15,7 @@ public static class LocationList
 
     public const string Traitor_Grave = "Traitor_Grave";
 
-    public const string Elderbug_Reward_Prefix = "Elderbug_Reward_";
+    public const string Elderbug_Shop = "Elderbug_Shop";
 
     #region Rando locations
 
@@ -56,6 +56,12 @@ public static class LocationList
     public const string Dung_Defender = "Dung_Defender";
 
     public const string Menderbug_Diary = "Menderbug_Diary";
+
+    public const string Godseeker = "Godseeker";
+
+    public const string Millibelle = "Millibelle";
+
+    public const string Hidden_Moth = "Hidden_Moth";
 
     #endregion
 
@@ -198,6 +204,62 @@ public static class LocationList
     public const string Quirrel_After_Monomon = "Quirrel_After_Monomon";
 
     public const string Quirrel_Blue_Lake = "Quirrel_Blue_Lake";
+
+    public const string Hornet_Greenpath = "Hornet_Greenpath";
+
+    public const string Hornet_Fountain = "Hornet_Fountain";
+
+    public const string Hornet_Edge = "Hornet_Edge";
+
+    public const string Hornet_Abyss = "Hornet_Abyss";
+
+    public const string Hornet_Deepnest = "Hornet_Deepnest";
+
+    public const string Hornet_Temple = "Hornet_Temple";
+
+    #endregion
+
+    #region Shrine of Believers Locations
+
+    public const string AllGrubShrine = "All_Grub-Shrine";
+
+    public const string DrownShrine = "Drown-Shrine";
+
+    public const string FlowerShrine = "Flower-Shrine";
+
+    public const string FullStagShrine = "Full_Stag-Shrine";
+
+    public const string GenocideShrine = "Genocide-Shrine";
+
+    public const string GeoShrine = "Geo-Shrine";
+
+    public const string HalfGrubShrine = "Half_Grub-Shrine";
+
+    public const string HerrahShrine = "Herrah-Shrine";
+
+    public const string LongestNailShrine = "Longest_Nail-Shrine";
+
+    public const string LurienShrine = "Lurien-Shrine";
+
+    public const string MenderbugShrine = "Menderbug-Shrine";
+
+    public const string MonomonShrine = "Monomon-Shrine";
+
+    public const string MylaShrine = "Myla-Shrine";
+
+    public const string NailsmithShrine = "Nailsmith-Shrine";
+
+    public const string RespectElderShrine = "Respect_Elder-Shrine";
+
+    public const string ScammedShrine = "Scammed-Shrine";
+
+    public const string ShadeKillShrine = "Shade_Kill-Shrine";
+
+    public const string ShamanShrine = "Shaman-Shrine";
+
+    public const string SlugInTubShrine = "Slug_In_Tub-Shrine";
+
+    public const string ZoteShrine = "Zote_Shrine";
 
     #endregion
 
