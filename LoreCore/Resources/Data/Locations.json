@@ -1,6 +1,18 @@
 [
   {
-    "$type": "LoreCore.Locations.GhostDialogueLocation, LoreCore",
+    "$type": "LoreCore.Locations.ElderbugLocation, LoreCore",
+    "location": {
+      "$type": "ItemChanger.Locations.CoordinateLocation, ItemChanger",
+      "x": 128.36,
+      "y": 12.35,
+      "elevation": 0.0,
+      "managed": true,
+      "forceShiny": false,
+      "name": "Elderbug_Shop",
+      "sceneName": "Town",
+      "flingType": "Everywhere",
+      "tags": null
+    },
     "name": "Elderbug_Shop",
     "sceneName": "Town",
     "flingType": 0,
@@ -480,9 +492,9 @@
     "FsmName": "Conversation Control"
   },
   {
-    "$type": "LoreCore.Locations.DialogueLocation, LoreCore",
-    "name": "Bretta_Diary",
-    "sceneName": "Room_Bretta",
+    "$type": "LoreCore.Locations.SpecialLocations.BrettaLocation, LoreCore",
+    "name": "Bretta",
+    "sceneName": "Fungus2_23",
     "flingType": 0,
     "tags": [
       {
@@ -491,15 +503,15 @@
           "ModSource": "LoreCore",
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
-            "Key": "Bretta_Diary"
+            "Key": "Bretta"
 
           },
-          "SceneNames": "Town",
+          "SceneNames": "Fungus2_23",
           "MapLocations": {
             "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
             "$values": [
               {
-                "Item1": "Town",
+                "Item1": "Fungus2_23",
                 "Item2": 0.0,
                 "Item3": 0.5
               }
@@ -509,9 +521,7 @@
         "Message": "RandoSupplementalMetadata",
         "Loaded": true
       }
-    ],
-    "ObjectName": "Diary",
-    "FsmName": "Conversation Control"
+    ]
   },
   {
     "$type": "LoreCore.Locations.DialogueLocation, LoreCore",
@@ -652,7 +662,7 @@
   {
     "$type": "LoreCore.Locations.SpecialLocations.HiddenMothLocation, LoreCore",
     "name": "Hidden_Moth",
-    "sceneName": "Fungus3_35",
+    "sceneName": "Dream_Backer_Shirne",
     "flingType": 0,
     "tags": [
       {
@@ -679,9 +689,7 @@
         "Message": "RandoSupplementalMetadata",
         "Loaded": true
       }
-    ],
-    "ObjectName": "Banker",
-    "FsmName": "Conversation Control"
+    ]
   },
   {
     "$type": "LoreCore.Locations.SpecialLocations.GodseekerLocation, LoreCore",
@@ -880,7 +888,9 @@
         "Message": "RandoSupplementalMetadata",
         "Loaded": true
       }
-    ]
+    ],
+    "ObjectName": "NPC",
+    "FsmName": "Conversation Control"
   },
   {
     "$type": "LoreCore.Locations.TravellerLocation, LoreCore",
@@ -912,7 +922,9 @@
         "Message": "RandoSupplementalMetadata",
         "Loaded": true
       }
-    ]
+    ],
+    "ObjectName": "Hornet Abyss NPC",
+    "FsmName": "Conversation Control"
   },
   {
     "$type": "LoreCore.Locations.TravellerLocation, LoreCore",
@@ -944,7 +956,9 @@
         "Message": "RandoSupplementalMetadata",
         "Loaded": true
       }
-    ]
+    ],
+    "ObjectName": "Hornet Beast Den NPC",
+    "FsmName": "Conversation Control"
   },
   {
     "$type": "LoreCore.Locations.TravellerLocation, LoreCore",
@@ -976,7 +990,9 @@
         "Message": "RandoSupplementalMetadata",
         "Loaded": true
       }
-    ]
+    ],
+    "ObjectName": "Hornet Black Egg NPC",
+    "FsmName": "Conversation Control"
   },
   {
     "$type": "LoreCore.Locations.TravellerLocation, LoreCore",
@@ -3032,7 +3048,8 @@
       "x": 0.0,
       "y": 0.0,
       "z": 0.0
-    }
+    },
+    "GameObjectName": "Inspect Region Ghost"
   },
   {
     "$type": "LoreCore.Locations.InspectLocation, LoreCore",

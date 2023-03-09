@@ -63,63 +63,63 @@ namespace LoreCore.Resources.Text {
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Some kind of altar picturing a giant creature is hanging from the ceiling. You feel that it emits a strong force on you. You should better step away a bit. ähnelt.
         /// </summary>
-        internal static string Beast_Den {
+        internal static string Inspect_Beast_Den_Altar {
             get {
-                return ResourceManager.GetString("Beast_Den", resourceCulture);
+                return ResourceManager.GetString("Inspect-Beast_Den_Altar", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die A corpse of a giant bug that has died a long time ago. ähnelt.
         /// </summary>
-        internal static string Garden_Golem {
+        internal static string Inspect_Garden_Golem {
             get {
-                return ResourceManager.GetString("Garden_Golem", resourceCulture);
+                return ResourceManager.GetString("Inspect-Garden_Golem", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die A strange device. Could this depict some kind of map? ähnelt.
         /// </summary>
-        internal static string Grimm_Machine {
+        internal static string Inspect_Grimm_Machine {
             get {
-                return ResourceManager.GetString("Grimm_Machine", resourceCulture);
+                return ResourceManager.GetString("Inspect-Grimm_Machine", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die On the wall is a seal like painting depicting a grub. ähnelt.
         /// </summary>
-        internal static string Grub_Seal {
+        internal static string Inspect_Grub_Seal {
             get {
-                return ResourceManager.GetString("Grub_Seal", resourceCulture);
+                return ResourceManager.GetString("Inspect-Grub_Seal", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die This seal conceals this place from the eyes of the normal bugs. ähnelt.
         /// </summary>
-        internal static string Pain_Seal {
+        internal static string Inspect_Pain_Seal {
             get {
-                return ResourceManager.GetString("Pain_Seal", resourceCulture);
+                return ResourceManager.GetString("Inspect-Pain_Seal", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die A huge seal created from silk is attached to the wall. ähnelt.
         /// </summary>
-        internal static string Weaver_Binding {
+        internal static string Inspect_Weaver_Seal {
             get {
-                return ResourceManager.GetString("Weaver_Binding", resourceCulture);
+                return ResourceManager.GetString("Inspect-Weaver_Seal", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die ...It feels familiar? ähnelt.
         /// </summary>
-        internal static string White_Palace_Nursery {
+        internal static string Inspect_White_Palace_Nursery {
             get {
-                return ResourceManager.GetString("White_Palace_Nursery", resourceCulture);
+                return ResourceManager.GetString("Inspect-White_Palace_Nursery", resourceCulture);
             }
         }
     }

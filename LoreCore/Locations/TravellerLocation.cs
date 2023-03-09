@@ -10,7 +10,7 @@ using UnityEngine.SceneManagement;
 
 namespace LoreCore.Locations;
 
-internal class TravellerLocation : DialogueLocation
+public class TravellerLocation : DialogueLocation
 {
     #region Members
 

@@ -9,7 +9,7 @@ public static class ItemList
 
     #region NPC
 
-    public const string Dialogue_Bretta_Diary = "Dialogue-Bretta_Diary";
+    public const string Dialogue_Bretta = "Dialogue-Bretta";
 
     public const string Dialogue_Bardoon = "Dialogue-Bardoon";
 
@@ -44,6 +44,10 @@ public static class ItemList
     public const string Dialogue_Dung_Defender = "Dialogue-Dung_Defender";
 
     public const string Dialogue_Godseeker = "Dialogue-Godseeker";
+
+    public const string Dialogue_Hidden_Moth = "Dialogue-Hidden_Moth";
+
+    public const string Dialogue_Millibelle = "Dialogue-Millibelle";
 
     public const string Dialogue_Menderbug_Diary = "Dialogue-Menderbug_Diary";
 
@@ -188,6 +192,18 @@ public static class ItemList
     public const string Dialogue_Quirrel_Archive = "Dialogue-Quirrel_Archive";
 
     public const string Dialogue_Quirrel_Blue_Lake = "Dialogue-Quirrel_Blue_Lake";
+
+    public const string Dialogue_Hornet_Greenpath = "Dialogue-Hornet_Greenpath";
+
+    public const string Dialogue_Hornet_Fountain = "Dialogue-Hornet_Fountain";
+
+    public const string Dialogue_Hornet_Edge = "Dialogue-Hornet_Edge";
+
+    public const string Dialogue_Hornet_Abyss = "Dialogue-Hornet_Abyss";
+
+    public const string Dialogue_Hornet_Deepnest = "Dialogue-Hornet_Deepnest";
+
+    public const string Dialogue_Hornet_Temple = "Dialogue-Hornet_Temple";
 
     #endregion
 }

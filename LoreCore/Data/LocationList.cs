@@ -2,26 +2,11 @@
 
 public static class LocationList
 {
-
-    public const string City_Teleporter = "City_Teleporter";
-
-    public const string Temple_Teleporter = "Temple_Teleporter";
-
-    public const string Stag_Nest = "Stag_Nest";
-
-    public const string Path_of_Pain_End_Scene = "Path_of_Pain-End_Scene";
-
-    public const string Lore_Tablet_Record_Bela = "Lore_Tablet-Record_Bela";
-
-    public const string Traitor_Grave = "Traitor_Grave";
-
     public const string Elderbug_Shop = "Elderbug_Shop";
-
-    #region Rando locations
 
     #region NPC
 
-    public const string Bretta_Diary = "Bretta_Diary";
+    public const string Bretta = "Bretta";
 
     public const string Bardoon = "Bardoon";
 
@@ -145,6 +130,14 @@ public static class LocationList
 
     public const string Grimm_Summoner_Corpse = "Grimm_Summoner_Corpse";
 
+    public const string Stag_Nest = "Stag_Nest";
+
+    public const string Path_of_Pain_End_Scene = "Path_of_Pain-End_Scene";
+
+    public const string Lore_Tablet_Record_Bela = "Lore_Tablet-Record_Bela";
+
+    public const string Traitor_Grave = "Traitor_Grave";
+
     #endregion
 
     #region Traveller Locations
@@ -221,7 +214,7 @@ public static class LocationList
 
     #region Shrine of Believers Locations
 
-    public const string AllGrubShrine = "All_Grub-Shrine";
+    public const string AllGrubsShrine = "All_Grubs-Shrine";
 
     public const string DrownShrine = "Drown-Shrine";
 
@@ -233,7 +226,7 @@ public static class LocationList
 
     public const string GeoShrine = "Geo-Shrine";
 
-    public const string HalfGrubShrine = "Half_Grub-Shrine";
+    public const string HalfGrubsShrine = "Half_Grubs-Shrine";
 
     public const string HerrahShrine = "Herrah-Shrine";
 
@@ -259,9 +252,7 @@ public static class LocationList
 
     public const string SlugInTubShrine = "Slug_In_Tub-Shrine";
 
-    public const string ZoteShrine = "Zote_Shrine";
-
-    #endregion
+    public const string ZoteShrine = "Zote-Shrine";
 
     #endregion
 }

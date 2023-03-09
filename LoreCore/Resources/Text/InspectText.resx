@@ -117,25 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Beast_Den" xml:space="preserve">
+  <data name="Inspect-Beast_Den_Altar" xml:space="preserve">
     <value>Some kind of altar picturing a giant creature is hanging from the ceiling. You feel that it emits a strong force on you. You should better step away a bit.</value>
   </data>
-  <data name="Garden_Golem" xml:space="preserve">
+  <data name="Inspect-Garden_Golem" xml:space="preserve">
     <value>A corpse of a giant bug that has died a long time ago.</value>
   </data>
-  <data name="Grimm_Machine" xml:space="preserve">
+  <data name="Inspect-Grimm_Machine" xml:space="preserve">
     <value>A strange device. Could this depict some kind of map?</value>
   </data>
-  <data name="Grub_Seal" xml:space="preserve">
+  <data name="Inspect-Grub_Seal" xml:space="preserve">
     <value>On the wall is a seal like painting depicting a grub.</value>
   </data>
-  <data name="Pain_Seal" xml:space="preserve">
+  <data name="Inspect-Pain_Seal" xml:space="preserve">
     <value>This seal conceals this place from the eyes of the normal bugs.</value>
   </data>
-  <data name="Weaver_Binding" xml:space="preserve">
+  <data name="Inspect-Weaver_Seal" xml:space="preserve">
     <value>A huge seal created from silk is attached to the wall.</value>
   </data>
-  <data name="White_Palace_Nursery" xml:space="preserve">
+  <data name="Inspect-White_Palace_Nursery" xml:space="preserve">
     <value>...It feels familiar?</value>
   </data>
 </root>

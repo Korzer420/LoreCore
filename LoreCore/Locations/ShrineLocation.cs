@@ -75,13 +75,13 @@ public abstract class ShrineLocation : AutoLocation
     [JsonIgnore]
     public static List<string> ShrineLocations = new()
     {
-        LocationList.AllGrubShrine,
+        LocationList.AllGrubsShrine,
         LocationList.DrownShrine,
         LocationList.FlowerShrine,
         LocationList.FullStagShrine,
         LocationList.GenocideShrine,
         LocationList.GeoShrine,
-        LocationList.HalfGrubShrine,
+        LocationList.HalfGrubsShrine,
         LocationList.HerrahShrine,
         LocationList.LongestNailShrine,
         LocationList.LurienShrine,

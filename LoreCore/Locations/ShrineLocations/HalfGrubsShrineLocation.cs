@@ -2,7 +2,7 @@
 
 namespace LoreCore.Locations.ShrineLocations;
 
-public class HalfGrubShrineLocation : ShrineLocation
+public class HalfGrubsShrineLocation : ShrineLocation
 {
     #region Properties
 

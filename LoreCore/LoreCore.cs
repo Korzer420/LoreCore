@@ -1,5 +1,6 @@
 ﻿using ItemChanger;
 using ItemChanger.Locations;
+using ItemChanger.Tags;
 using KorzUtils.Helper;
 using LoreCore.Data;
 using LoreCore.Locations;
@@ -23,7 +24,7 @@ public class LoreCore : Mod, ILocalSettings<LocalSettings>
     #region Constructors
 
     public LoreCore() => Instance = this;
-    
+
     #endregion
 
     #region Properties
@@ -107,7 +108,7 @@ public class LoreCore : Mod, ILocalSettings<LocalSettings>
         {
             // Npc
             GeneratePlacement(Dialogue_Bardoon, Bardoon),
-            GeneratePlacement(Dialogue_Bretta_Diary, Bretta_Diary),
+            GeneratePlacement(Dialogue_Bretta, Bretta),
             GeneratePlacement(Dialogue_Dung_Defender, Dung_Defender),
             GeneratePlacement(Dialogue_Emilitia, Emilitia),
             GeneratePlacement(Dialogue_Fluke_Hermit, Fluke_Hermit),
@@ -232,16 +233,49 @@ public class LoreCore : Mod, ILocalSettings<LocalSettings>
             };
             foreach (AbstractLocation location in jsonSerializer.Deserialize<List<AbstractLocation>>(new JsonTextReader(reader)))
                 Finder.DefineCustomLocation(location);
+            Finder.DefineCustomLocation(new DualLocation()
+            {
+                name = Cloth_End,
+                trueLocation = Finder.GetLocation(Cloth_Ghost),
+                falseLocation = Finder.GetLocation(Cloth_Town),
+                Test = new ClothTest()
+            });
 
             using Stream itemStream = ResourceHelper.LoadResource<LoreCore>("Data.Items.json");
             using StreamReader reader2 = new(itemStream);
 
             foreach (AbstractItem item in jsonSerializer.Deserialize<List<AbstractItem>>(new JsonTextReader(reader2)))
                 Finder.DefineCustomItem(item);
+
+            Finder.GetLocationOverride += Finder_GetLocationOverride;
         }
         catch (Exception exception)
         {
             throw new Exception("Failed to load items/locations: " + exception.ToString());
+        }
+    }
+
+    private void Finder_GetLocationOverride(GetLocationEventArgs locationData)
+    {
+        if (ShrineLocation.ShrineLocations.Contains(locationData.LocationName))
+        {
+            string shrineName = locationData.LocationName.Replace("_", "").Replace("-", "") + "Location";
+            ShrineLocation shrineLocation = Activator.CreateInstance(typeof(LoreCore).Assembly.FullName, "LoreCore.Locations.ShrineLocations." + shrineName).Unwrap() as ShrineLocation;
+            shrineLocation.name = locationData.LocationName;
+            shrineLocation.sceneName = "Dream_Room_Believer_Shrine";
+            shrineLocation.tags = new()
+            {
+                new InteropTag()
+                {
+                    Message = "RandoSupplementalMetadata",
+                    Properties = new()
+                    {
+                        {"ModSource", "LoreCore" },
+                        {"DoNotCreatePin", true }
+                    }
+                }
+            };
+            locationData.Current = shrineLocation;
         }
     }
 

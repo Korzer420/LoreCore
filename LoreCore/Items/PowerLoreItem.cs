@@ -2,8 +2,10 @@ using ItemChanger;
 using ItemChanger.Internal;
 using ItemChanger.Items;
 using ItemChanger.UIDefs;
+using LoreCore.Data;
 using LoreCore.Locations;
 using LoreCore.Manager;
+using LoreCore.Other;
 using LoreCore.Resources.Text;
 using LoreCore.UIDefs;
 
@@ -40,7 +42,18 @@ internal class PowerLoreItem : LoreItem
             SoundManager.Instance.PlayClipAtPoint("LoreSound", HeroController.instance.transform.localPosition);
         else
             SoundEffectManager.Manager.PlayClipAtPoint(SoundClipName, HeroController.instance.transform.position);
-        if (ElderbugLocation.Instance != null)
-            ElderbugLocation.Instance.AcquiredLore++;
+        if (ElderbugPlacement.Instance != null)
+            ElderbugPlacement.Instance.AcquiredLore++;
+        if (name == ItemList.Dialogue_Bretta)
+            PlayerData.instance.SetBool(nameof(PlayerData.instance.brettaRescued), true);
+        else if (name == ItemList.Dream_Dialogue_Grimm_Summoner)
+        {
+            PlayerData.instance.SetBool(nameof(PlayerData.nightmareLanternAppeared), true);
+            PlayerData.instance.SetBool(nameof(PlayerData.nightmareLanternLit), true);
+            PlayerData.instance.SetBool(nameof(PlayerData.troupeInTown), true);
+            PlayerData.instance.SetBool(nameof(PlayerData.divineInTown), true);
+            PlayerData.instance.SetBool(nameof(PlayerData.metGrimm), true);
+            PlayerData.instance.SetInt(nameof(PlayerData.flamesRequired), 3);
+        }
     }
 }

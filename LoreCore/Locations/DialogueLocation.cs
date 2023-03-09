@@ -6,7 +6,7 @@ using ItemChanger.Locations;
 using ItemChanger.Util;
 using KorzUtils.Helper;
 using LoreCore.Data;
-using LoreCore.Other;
+using LoreCore.Items;
 using System.Linq;
 
 namespace LoreCore.Locations;
@@ -14,7 +14,7 @@ namespace LoreCore.Locations;
 /// <summary>
 /// A location which gives items in a normal conversation.
 /// </summary>
-internal class DialogueLocation : AutoLocation
+public class DialogueLocation : AutoLocation
 {
     #region Properties
 
@@ -25,7 +25,7 @@ internal class DialogueLocation : AutoLocation
     #endregion
 
     protected override void OnLoad()
-    { 
+    {
         Events.AddFsmEdit(sceneName, new(ObjectName, FsmName), SkipDialog);
         if (name == LocationList.Dung_Defender)
             Events.AddFsmEdit(sceneName, new(ObjectName, "FSM"), x => x.GetState("Check").ClearTransitions());
@@ -44,7 +44,11 @@ internal class DialogueLocation : AutoLocation
         {
             if (Placement.Items.All(x => x.IsObtained()))
                 return;
-            
+            if (!ListenItem.CanListen)
+            {
+                fsm.gameObject.LocateMyFSM("npc_control").GetState("Idle").ClearTransitions();
+                    return;
+            }
             if (fsm.GetState("Give Items") is null)
             {
                 FsmState startState;

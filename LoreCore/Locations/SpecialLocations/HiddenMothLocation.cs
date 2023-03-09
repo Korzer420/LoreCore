@@ -34,6 +34,7 @@ internal class HiddenMothLocation : AutoLocation
             Name = "Give items",
             Actions = new HutongGames.PlayMaker.FsmStateAction[]
             {
+                new Lambda(() => fsm.GetState("Idle").ClearTransitions()),
                 new AsyncLambda(callback =>
                     ItemUtility.GiveSequentially(Placement.Items, Placement, new GiveInfo
                     {

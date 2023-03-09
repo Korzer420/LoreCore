@@ -5,6 +5,7 @@ using ItemChanger.FsmStateActions;
 using ItemChanger.Locations;
 using ItemChanger.Util;
 using LoreCore.Data;
+using LoreCore.Items;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -50,7 +51,7 @@ internal class InspectLocation : ContainerLocation
 
     private void ModifyInspectRegion(PlayMakerFSM fsm)
     {
-        if (Placement.Items.All(x => x.IsObtained()))
+        if (Placement.Items.All(x => x.IsObtained()) || !ReadItem.CanRead)
         {
             fsm.GetState("Idle").ClearTransitions();
             return;

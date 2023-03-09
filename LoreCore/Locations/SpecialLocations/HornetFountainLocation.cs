@@ -6,7 +6,9 @@ using ItemChanger.Locations;
 using ItemChanger.Util;
 using KorzUtils.Helper;
 using LoreCore.Data;
+using LoreCore.Items;
 using System.Linq;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace LoreCore.Locations.SpecialLocations;
@@ -27,8 +29,12 @@ internal class HornetFountainLocation : AutoLocation
 
     private void ModifyCutscene(PlayMakerFSM fsm)
     {
-        if (Placement.AllObtained() || Placement.Items.All(x => x.WasEverObtained()))
+        if (Placement.AllObtained() || Placement.Items.All(x => x.WasEverObtained()) 
+            || !ListenItem.CanListen || TravellerLocation.Stages[Enums.Traveller.Hornet] < 1)
+        {
+            GameObject.Destroy(fsm.gameObject);
             return;
+        }
         // Remove destroy check.
         fsm.GetState("Init").RemoveFirstActionOfType<PlayerDataBoolTest>();
 

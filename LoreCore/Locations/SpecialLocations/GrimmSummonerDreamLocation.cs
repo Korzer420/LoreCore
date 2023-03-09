@@ -2,6 +2,7 @@ using HutongGames.PlayMaker;
 using ItemChanger;
 using ItemChanger.Extensions;
 using ItemChanger.FsmStateActions;
+using ItemChanger.Util;
 using KorzUtils.Helper;
 using System;
 using System.Collections.Generic;
@@ -20,13 +21,43 @@ internal class GrimmSummonerDreamLocation : DreamNailLocation
     protected override void OnLoad()
     {
         base.OnLoad();
+        Events.AddFsmEdit(sceneName, new("Sycophant Dream", "Activate Lantern"), BlockLantern);
         Events.AddFsmEdit(sceneName, new(GameObjectName, "FSM"), SummonerSpawn);
     }
 
     protected override void OnUnload()
     {
         base.OnUnload();
+        Events.RemoveFsmEdit(sceneName, new("Sycophant Dream", "Activate Lantern"), BlockLantern);
         Events.RemoveFsmEdit(sceneName, new(GameObjectName, "FSM"), SummonerSpawn);
+    }
+
+    private void BlockLantern(PlayMakerFSM fsm)
+    {
+        fsm.AddState(new FsmState(fsm.Fsm)
+        {
+            Name = "Block interaction",
+            Actions = new FsmStateAction[]
+            {
+                new AsyncLambda(callback =>
+                {
+                    if (!Placement.AllObtained())
+                    {
+                        ItemUtility.GiveSequentially(Placement.Items, Placement, new()
+                        {
+                            FlingType = FlingType.DirectDeposit,
+                            MessageType = MessageType.Lore,
+                            Container = Container.Tablet
+                        }, callback);
+                    }
+                    else
+                        callback?.Invoke();
+                }, "NAIL HIT")
+            }
+        });
+
+        fsm.GetState("Idle").AdjustTransition("NAIL HIT", "Block interaction");
+        fsm.GetState("Block interaction").AddTransition("NAIL HIT", "Idle");
     }
 
     /// <summary>

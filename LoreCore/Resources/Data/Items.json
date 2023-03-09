@@ -148,7 +148,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Weaver_Seal"
-        
+
       }
     },
     "tags": [],
@@ -212,7 +212,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Marmu"
-        
+
       }
     },
     "tags": [],
@@ -237,8 +237,8 @@
       },
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
-        "Key": "Hopper_Dummy",
-        
+        "Key": "Hopper_Dummy"
+
       },
       "Key": "DREAM_DUMMY",
       "Sheet": "Lore Tablets"
@@ -266,7 +266,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Shade_Golem"
-        
+
       },
       "Key": "SHADE_BEAST_02",
       "Sheet": "Lore Tablets"
@@ -293,8 +293,8 @@
       },
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
-        "Key": "Crystalized_Shaman",
-        
+        "Key": "Crystalized_Shaman"
+
       },
       "Key": "SHAMAN_CRYSTAL_DREAM",
       "Sheet": "Shaman"
@@ -322,7 +322,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "tiso_corpse"
-        
+
       },
       "Key": "TISO_CORPSE",
       "Sheet": "Lore Tablets"
@@ -350,8 +350,8 @@
       },
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
-        "Key": "Shriek_Statue",
-        
+        "Key": "Shriek_Statue"
+
       },
       "Key": "SCREAM_ALTAR",
       "Sheet": "Lore Tablets"
@@ -409,8 +409,8 @@
       },
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
-        "Key": "Shade_Golem",
-        
+        "Key": "Shade_Golem"
+
       },
       "Key": "SHADE_BEAST_01",
       "Sheet": "Lore Tablets"
@@ -444,7 +444,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Zote"
-        
+
       }
     },
     "tags": [],
@@ -470,8 +470,8 @@
       },
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
-        "Key": "Snail_Shaman_Tomb",
-        
+        "Key": "Snail_Shaman_Tomb"
+
       },
       "Key": "SARCOPHAGUS_01",
       "Sheet": "Lore Tablets"
@@ -499,7 +499,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Isma"
-        
+
       },
       "Key": "ISMA_DREAM",
       "Sheet": "Lore Tablets"
@@ -532,8 +532,8 @@
       },
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
-        "Key": "Zote",
-        
+        "Key": "Zote"
+
       }
     },
     "tags": [],
@@ -565,8 +565,8 @@
       },
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
-        "Key": "Menderbug_Diary",
-        
+        "Key": "Menderbug_Diary"
+
       }
     },
     "tags": [],
@@ -598,7 +598,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Grasshopper"
-        
+
       }
     },
     "tags": [],
@@ -630,7 +630,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Zote"
-        
+
       }
     },
     "tags": [],
@@ -662,8 +662,8 @@
       },
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
-        "Key": "Markoth",
-        
+        "Key": "Markoth"
+
       }
     },
     "tags": [],
@@ -694,8 +694,8 @@
       },
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
-        "Key": "Quirrel",
-        
+        "Key": "Quirrel"
+
       }
     },
     "tags": [],
@@ -722,7 +722,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Grimm_Summoner"
-        
+
       },
       "Key": "GRIMMSYCOPHANT_DREAM",
       "Sheet": "CP2"
@@ -734,34 +734,34 @@
   {
     "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
     "loreSheet": "Minor NPC",
-    "loreKey": "BRETTA_DIARY_1",
+    "loreKey": "BRETTA_RESCUE_3",
     "textType": 0,
-    "name": "Dialogue-Bretta_Diary",
+    "name": "Dialogue-Bretta",
     "UIDef": {
       "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
       "lore": {
         "$type": "ItemChanger.LanguageString, ItemChanger",
         "sheet": "Minor NPC",
-        "key": "BRETTA_DIARY_1"
+        "key": "BRETTA_RESCUE_3"
       },
       "textType": 0,
       "name": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
-        "Value": "Caring shell"
+        "Value": "Caring Shell"
       },
       "shopDesc": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
-        "Value": "This is a diary which I found on the street, seems to belong to some girl... No ehm, I didn't read it."
+        "Value": "Even overlooked by the community it seems :c"
       },
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
-        "Key": "Bretta_Diary"
-        
+        "Key": "Bretta"
+
       }
     },
     "tags": [],
     "obtainState": 0,
-    "SoundClipName": "Bretta_Diary"
+    "SoundClipName": "Bretta"
   },
   {
     "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
@@ -788,7 +788,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "No_Eyes"
-        
+
       }
     },
     "tags": [],
@@ -820,7 +820,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Fluke_Hermit"
-        
+
       }
     },
     "tags": [],
@@ -852,7 +852,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Zote"
-        
+
       }
     },
     "tags": [],
@@ -885,7 +885,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Dung_Defender"
-        
+
       }
     },
     "tags": [],
@@ -917,7 +917,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Quirrel"
-        
+
       }
     },
     "tags": [],
@@ -981,7 +981,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Beast_Den_Altar"
-        
+
       }
     },
     "tags": [],
@@ -1013,7 +1013,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Gorb"
-        
+
       }
     },
     "tags": [],
@@ -1058,7 +1058,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Dreamer_Plaque"
-        
+
       }
     },
     "tags": [],
@@ -1084,7 +1084,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Dryya"
-        
+
       },
       "Key": "WHITE_KNIGHT_CORPSE",
       "Sheet": "Lore Tablets"
@@ -1112,7 +1112,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Radiance_Statue"
-        
+
       },
       "Key": "MOTH_STATUE",
       "Sheet": "Lore Tablets"
@@ -1146,7 +1146,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Elder_Hu"
-        
+
       }
     },
     "tags": [],
@@ -1178,7 +1178,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Cloth"
-        
+
       }
     },
     "tags": [],
@@ -1205,7 +1205,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Dashmaster_Statue"
-        
+
       },
       "Key": "DASH_MASTER_STATUE",
       "Sheet": "Lore Tablets"
@@ -1239,7 +1239,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Quirrel"
-        
+
       }
     },
     "tags": [],
@@ -1266,7 +1266,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Ancient_Nailsmith_Golem"
-        
+
       },
       "Key": "NAILSMITH_ANCIENT",
       "Sheet": "Lore Tablets"
@@ -1300,7 +1300,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Xero"
-        
+
       }
     },
     "tags": [],
@@ -1332,7 +1332,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Cloth"
-        
+
       }
     },
     "tags": [],
@@ -1365,7 +1365,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Bardoon"
-        
+
       }
     },
     "tags": [],
@@ -1391,7 +1391,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Aspid_Queen"
-        
+
       },
       "Key": "HATCHLING_QUEEN_CORPSE",
       "Sheet": "Lore Tablets"
@@ -1425,7 +1425,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Moss_Prophet"
-        
+
       }
     },
     "tags": [],
@@ -1457,7 +1457,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Gravedigger"
-        
+
       }
     },
     "tags": [],
@@ -1489,7 +1489,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Galien"
-        
+
       }
     },
     "tags": [],
@@ -1520,7 +1520,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Grub_Seal"
-        
+
       }
     },
     "tags": [],
@@ -1552,7 +1552,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Tiso"
-        
+
       }
     },
     "tags": [],
@@ -1594,6 +1594,100 @@
   },
   {
     "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Banker",
+    "loreKey": "BANKER_GREET",
+    "textType": 0,
+    "name": "Dialogue-Millibelle",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Banker",
+        "key": "BANKER_GREET"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Life Insurance"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Does not cover anything caused by falling, old age, water, nails, spikes, the infection, illnesses, having a deal with the nightmare heart, primal aspids, potatoes... the list goes on."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Millibelle"
+
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Millibelle"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "CP3",
+    "loreKey": "GODSEEKER_WATERWAYS_AWAKE_REPEAT",
+    "textType": 0,
+    "name": "Dialogue-Godseeker",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "CP3",
+        "key": "GODSEEKER_WATERWAYS_AWAKE_REPEAT"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Godseeker"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Look, it is pretty hard to come up with over 80 different descriptions, ok? I have no clue about this one. Something divine I guess..."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Godseeker"
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Queen"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "BELIEVE_MOTH",
+    "textType": 0,
+    "name": "Dialogue-Hidden_Moth",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Lore Tablets",
+        "key": "BELIEVE_MOTH"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Hidden Moth"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Did you know, that you are not actually listening to them? Actually it is similiar to the lore tablet in soul sanctum where it fakes an interaction. And for this useless information you have lost a childhood memory. You're welcome :)"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Hidden_Moth"
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Dream_Ghost"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
     "loreSheet": "Minor NPC",
     "loreKey": "SPIDER_MEET",
     "textType": 0,
@@ -1617,7 +1711,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Midwife"
-        
+
       }
     },
     "tags": [],
@@ -1649,7 +1743,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Poggy"
-        
+
       }
     },
     "tags": [],
@@ -1713,7 +1807,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Tiso"
-        
+
       }
     },
     "tags": [],
@@ -1746,7 +1840,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Quirrel"
-        
+
       }
     },
     "tags": [],
@@ -1779,7 +1873,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Quirrel"
-        
+
       }
     },
     "tags": [],
@@ -1812,7 +1906,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Vespa"
-        
+
       }
     },
     "tags": [],
@@ -1844,7 +1938,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Cloth"
-        
+
       }
     },
     "tags": [],
@@ -1877,7 +1971,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Quirrel"
-        
+
       }
     },
     "tags": [],
@@ -1910,7 +2004,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Quirrel"
-        
+
       }
     },
     "tags": [],
@@ -1937,7 +2031,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Shroom_King"
-        
+
       },
       "Key": "FUNG_SHROOM_DREAM",
       "Sheet": "Lore Tablets"
@@ -2043,7 +2137,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Quirrel"
-        
+
       }
     },
     "tags": [],
@@ -2076,7 +2170,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Cloth"
-        
+
       }
     },
     "tags": [],
@@ -2109,7 +2203,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Tiso"
-        
+
       }
     },
     "tags": [],
@@ -2136,7 +2230,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Overgrown_Shaman"
-        
+
       },
       "Key": "SHAMAN_FUNG_DREAM",
       "Sheet": "Shaman"
@@ -2164,7 +2258,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Mine_Golem"
-        
+
       },
       "Key": "DREAM_MINES_ROBOT",
       "Sheet": "Lore Tablets"
@@ -2198,7 +2292,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Queen"
-        
+
       }
     },
     "tags": [],
@@ -2230,7 +2324,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Zote"
-        
+
       }
     },
     "tags": [],
@@ -2262,7 +2356,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "White_Palace_Nursery"
-        
+
       }
     },
     "tags": [],
@@ -2288,7 +2382,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Kings_Mould"
-        
+
       },
       "Key": "KING_WORKSHOP_MOULD",
       "Sheet": "Lore Tablets"
@@ -2322,7 +2416,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Cloth"
-        
+
       }
     },
     "tags": [],
@@ -2349,7 +2443,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Dream_Shield_Statue"
-        
+
       },
       "Key": "MOTHSTONE_DREAM",
       "Sheet": "CP2"
@@ -2377,7 +2471,7 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Pale_King"
-        
+
       },
       "Key": "KING_FINAL_WORDS",
       "Sheet": "Lore Tablets"
@@ -2544,8 +2638,8 @@
       },
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
-        "Key": "Grimm_Summoner",
-        
+        "Key": "Grimm_Summoner"
+
       }
     },
     "tags": [],
@@ -2607,8 +2701,8 @@
       },
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
-        "Key": "Quirrel",
-        
+        "Key": "Quirrel"
+
       }
     },
     "tags": [],
@@ -2672,8 +2766,8 @@
       },
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
-        "Key": "Joni",
-        
+        "Key": "Joni"
+
       }
     },
     "tags": [],
@@ -2703,7 +2797,7 @@
       },
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
-        "Key": "Lore",
+        "Key": "Tablets.Dirtmouth",
         "RandoSprite": false
       }
     },
@@ -2732,7 +2826,7 @@
         "RandoSprite": false
       }
     },
-    "tags": null,
+    "tags": [],
     "obtainState": 0
   },
   {
@@ -2763,7 +2857,7 @@
         "RandoSprite": false
       }
     },
-    "tags": null,
+    "tags": [],
     "obtainState": 0,
     "SoundClipName": "Lore"
   },
@@ -2795,7 +2889,7 @@
         "RandoSprite": false
       }
     },
-    "tags": null,
+    "tags": [],
     "obtainState": 0,
     "SoundClipName": "Lore"
   },
@@ -2827,7 +2921,7 @@
         "RandoSprite": false
       }
     },
-    "tags": null,
+    "tags": [],
     "obtainState": 0,
     "SoundClipName": "Lore"
   },
@@ -2859,7 +2953,7 @@
         "RandoSprite": false
       }
     },
-    "tags": null,
+    "tags": [],
     "obtainState": 0,
     "SoundClipName": "Lore"
   },
@@ -2891,7 +2985,7 @@
         "RandoSprite": false
       }
     },
-    "tags": null,
+    "tags": [],
     "obtainState": 0,
     "SoundClipName": "Lore"
   },
@@ -2923,7 +3017,7 @@
         "RandoSprite": false
       }
     },
-    "tags": null,
+    "tags": [],
     "obtainState": 0,
     "SoundClipName": "Lore"
   },
@@ -2955,7 +3049,7 @@
         "RandoSprite": false
       }
     },
-    "tags": null,
+    "tags": [],
     "obtainState": 0,
     "SoundClipName": "Lore"
   },
@@ -2987,7 +3081,7 @@
         "RandoSprite": false
       }
     },
-    "tags": null,
+    "tags": [],
     "obtainState": 0,
     "SoundClipName": "Lore"
   },
@@ -3019,7 +3113,7 @@
         "RandoSprite": false
       }
     },
-    "tags": null,
+    "tags": [],
     "obtainState": 0,
     "SoundClipName": "Lore"
   },
@@ -3051,7 +3145,7 @@
         "RandoSprite": false
       }
     },
-    "tags": null,
+    "tags": [],
     "obtainState": 0,
     "SoundClipName": "Lore"
   },
@@ -3083,7 +3177,7 @@
         "RandoSprite": false
       }
     },
-    "tags": null,
+    "tags": [],
     "obtainState": 0,
     "SoundClipName": "Lore"
   },
@@ -3115,7 +3209,7 @@
         "RandoSprite": false
       }
     },
-    "tags": null,
+    "tags": [],
     "obtainState": 0,
     "SoundClipName": "Lore"
   },
@@ -3147,7 +3241,7 @@
         "RandoSprite": false
       }
     },
-    "tags": null,
+    "tags": [],
     "obtainState": 0,
     "SoundClipName": "Lore"
   },
@@ -3179,7 +3273,7 @@
         "RandoSprite": false
       }
     },
-    "tags": null,
+    "tags": [],
     "obtainState": 0,
     "SoundClipName": "Lore"
   },
@@ -3211,7 +3305,7 @@
         "RandoSprite": false
       }
     },
-    "tags": null,
+    "tags": [],
     "obtainState": 0,
     "SoundClipName": "Lore"
   },
@@ -3243,7 +3337,7 @@
         "RandoSprite": false
       }
     },
-    "tags": null,
+    "tags": [],
     "obtainState": 0,
     "SoundClipName": "Lore"
   },
@@ -3275,7 +3369,7 @@
         "RandoSprite": false
       }
     },
-    "tags": null,
+    "tags": [],
     "obtainState": 0,
     "SoundClipName": "Lore"
   },
@@ -3307,7 +3401,7 @@
         "RandoSprite": false
       }
     },
-    "tags": null,
+    "tags": [],
     "obtainState": 0,
     "SoundClipName": "Lore"
   },
@@ -3339,7 +3433,7 @@
         "RandoSprite": false
       }
     },
-    "tags": null,
+    "tags": [],
     "obtainState": 0,
     "SoundClipName": "Lore"
   },
@@ -3371,7 +3465,7 @@
         "RandoSprite": false
       }
     },
-    "tags": null,
+    "tags": [],
     "obtainState": 0,
     "SoundClipName": "Lore"
   },
@@ -3403,7 +3497,7 @@
         "RandoSprite": false
       }
     },
-    "tags": null,
+    "tags": [],
     "obtainState": 0,
     "SoundClipName": "Lore"
   },
@@ -3435,7 +3529,7 @@
         "RandoSprite": false
       }
     },
-    "tags": null,
+    "tags": [],
     "obtainState": 0,
     "SoundClipName": "Lore"
   },
@@ -3467,7 +3561,7 @@
         "RandoSprite": false
       }
     },
-    "tags": null,
+    "tags": [],
     "obtainState": 0,
     "SoundClipName": "Lore"
   },
@@ -3499,7 +3593,7 @@
         "RandoSprite": false
       }
     },
-    "tags": null,
+    "tags": [],
     "obtainState": 0,
     "SoundClipName": "Lore"
   },
@@ -3531,7 +3625,7 @@
         "RandoSprite": false
       }
     },
-    "tags": null,
+    "tags": [],
     "obtainState": 0,
     "SoundClipName": "Lore"
   },
@@ -3563,7 +3657,7 @@
         "RandoSprite": false
       }
     },
-    "tags": null,
+    "tags": [],
     "obtainState": 0,
     "SoundClipName": "Lore"
   },
@@ -3595,7 +3689,7 @@
         "RandoSprite": false
       }
     },
-    "tags": null,
+    "tags": [],
     "obtainState": 0,
     "SoundClipName": "Lore"
   },
@@ -3627,7 +3721,7 @@
         "RandoSprite": false
       }
     },
-    "tags": null,
+    "tags": [],
     "obtainState": 0,
     "SoundClipName": "Lore"
   },
@@ -3659,7 +3753,7 @@
         "RandoSprite": false
       }
     },
-    "tags": null,
+    "tags": [],
     "obtainState": 0,
     "SoundClipName": "Lore"
   },
@@ -3691,7 +3785,7 @@
         "RandoSprite": false
       }
     },
-    "tags": null,
+    "tags": [],
     "obtainState": 0,
     "SoundClipName": "Lore"
   },
@@ -3723,7 +3817,7 @@
         "RandoSprite": false
       }
     },
-    "tags": null,
+    "tags": [],
     "obtainState": 0,
     "SoundClipName": "Lore"
   },
@@ -3755,7 +3849,7 @@
         "RandoSprite": false
       }
     },
-    "tags": null,
+    "tags": [],
     "obtainState": 0,
     "SoundClipName": "Lore"
   },
@@ -3787,8 +3881,200 @@
         "RandoSprite": false
       }
     },
-    "tags": null,
+    "tags": [],
     "obtainState": 0,
     "SoundClipName": "Lore"
+  },
+  {
+    "$type": "LoreCore.Items.TravellerItem, LoreCore",
+    "loreSheet": "Hornet",
+    "loreKey": "HORNET_GREENPATH",
+    "textType": 0,
+    "name": "Dialogue-Hornet_Greenpath",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Hornet",
+        "key": "HORNET_GREENPATH"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Hornet Level"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "*Insert the first random quote, which came to your mind thinking about this.*"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Hornet"
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "Traveller": 4,
+    "SoundClipName": "Hornet"
+  },
+  {
+    "$type": "LoreCore.Items.TravellerItem, LoreCore",
+    "loreSheet": "Hornet",
+    "loreKey": "HORNET_FOUNTAIN_1",
+    "textType": 0,
+    "name": "Dialogue-Hornet_Fountain",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Hornet",
+        "key": "HORNET_FOUNTAIN_1"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Hornet Level"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "*Insert the first random quote, which came to your mind thinking about this.*"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Hornet"
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "Traveller": 4,
+    "SoundClipName": "Hornet"
+  },
+  {
+    "$type": "LoreCore.Items.TravellerItem, LoreCore",
+    "loreSheet": "Hornet",
+    "loreKey": "HORNET_OUTSKIRTS_DEFEAT",
+    "textType": 0,
+    "name": "Dialogue-Hornet_Edge",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Hornet",
+        "key": "HORNET_OUTSKIRTS_DEFEAT"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Hornet Level"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "*Insert the first random quote, which came to your mind thinking about this.*"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Hornet"
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "Traveller": 4,
+    "SoundClipName": "Hornet"
+  },
+  {
+    "$type": "LoreCore.Items.TravellerItem, LoreCore",
+    "loreSheet": "Hornet",
+    "loreKey": "HORNET_ABYSS_ASCENT_01",
+    "textType": 0,
+    "name": "Dialogue-Hornet_Abyss",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Hornet",
+        "key": "HORNET_ABYSS_ASCENT_01"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Hornet Level"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "*Insert the first random quote, which came to your mind thinking about this.*"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Hornet"
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "Traveller": 4,
+    "SoundClipName": "Hornet"
+  },
+  {
+    "$type": "LoreCore.Items.TravellerItem, LoreCore",
+    "loreSheet": "Hornet",
+    "loreKey": "HORNET_SPIDER_TOWN_01",
+    "textType": 0,
+    "name": "Dialogue-Hornet_Deepnest",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Hornet",
+        "key": "HORNET_SPIDER_TOWN_01"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Hornet Level"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "*Insert the first random quote, which came to your mind thinking about this.*"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Hornet"
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "Traveller": 4,
+    "SoundClipName": "Hornet"
+  },
+  {
+    "$type": "LoreCore.Items.TravellerItem, LoreCore",
+    "loreSheet": "Hornet",
+    "loreKey": "HORNET_PRE_FINAL_BATTLE",
+    "textType": 0,
+    "name": "Dialogue-Hornet_Temple",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Hornet",
+        "key": "HORNET_PRE_FINAL_BATTLE"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Hornet Level"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "*Insert the first random quote, which came to your mind thinking about this.*"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Hornet"
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "Traveller": 4,
+    "SoundClipName": "Hornet"
   }
 ]

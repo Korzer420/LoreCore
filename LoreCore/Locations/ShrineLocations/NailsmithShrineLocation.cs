@@ -2,7 +2,7 @@
 
 namespace LoreCore.Locations.ShrineLocations;
 
-public class NailsmithEndShrineLocation : ShrineLocation
+public class NailsmithShrineLocation : ShrineLocation
 {
     #region Properties
 

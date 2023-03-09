@@ -1,6 +1,4 @@
-﻿using System.Linq;
-
-namespace LoreCore.Locations.SpecialLocations;
+﻿namespace LoreCore.Locations.SpecialLocations;
 
 /// <summary>
 /// Best girl <3
@@ -26,7 +24,7 @@ internal class MylaLocation : DialogueLocation
     /// </summary>
     private void PreventMylaZombie(On.DeactivateIfPlayerdataFalse.orig_OnEnable orig, DeactivateIfPlayerdataFalse self)
     {
-        if ((self.gameObject.name.Contains("Zombie Myla") || string.Equals(self.gameObject.name, "Myla Crazy NPC")) && !Placement.Items.All(x => x.IsObtained()))
+        if ((self.gameObject.name.Contains("Zombie Myla") || string.Equals(self.gameObject.name, "Myla Crazy NPC")) && !Placement.AllObtained())
         {
             self.gameObject.SetActive(false);
             return;
@@ -35,11 +33,11 @@ internal class MylaLocation : DialogueLocation
     }
 
     /// <summary>
-    /// Forces Myla (best character btw) to always appear, like she should.
+    /// Forces Myla (best character btw) to appear, like she should.
     /// </summary>
     private void ForceMyla(On.DeactivateIfPlayerdataTrue.orig_OnEnable orig, DeactivateIfPlayerdataTrue self)
     {
-        if (string.Equals(self.gameObject.name, "Miner") && !Placement.Items.All(x => x.IsObtained()))
+        if (string.Equals(self.gameObject.name, "Miner") && !Placement.AllObtained())
             return;
         orig(self);
     }

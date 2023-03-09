@@ -27,6 +27,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Sounds\Hornet.wav" />
+	  <None Remove="Resources\Sounds\Millibelle.wav" />
+	  <None Remove="Resources\Sprites\Hidden_Moth.png" />
+	  <None Remove="Resources\Sprites\Hornet.png" />
+	  <None Remove="Resources\Sprites\Millibelle.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<Reference Include="Assembly-CSharp">
 			<HintPath>$(HollowKnightRefs)\Assembly-CSharp.dll</HintPath>
 		</Reference>

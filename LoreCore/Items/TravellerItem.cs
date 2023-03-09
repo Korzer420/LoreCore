@@ -19,7 +19,7 @@ internal class TravellerItem : PowerLoreItem
     public override void GiveImmediate(GiveInfo info)
     {
         base.GiveImmediate(info);
-        PlayerData.instance.IntAdd(Traveller.ToString(), 1);
+        TravellerLocation.Stages[Traveller]++;
         int currentState = TravellerLocation.Stages[Traveller] > 10 
             ? TravellerLocation.Stages[Traveller] - 10 
             : TravellerLocation.Stages[Traveller];
