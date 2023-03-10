@@ -1,5 +1,6 @@
 ﻿using ItemChanger;
 using ItemChanger.Extensions;
+using KorzUtils.Helper;
 using System.Linq;
 
 namespace LoreCore.Items;
@@ -77,8 +78,8 @@ internal class ReadItem : AbstractItem
     private void PlayMakerFSM_OnEnable(On.PlayMakerFSM.orig_OnEnable orig, PlayMakerFSM self)
     {
         if (!IsObtained() && (
-                ((string.Equals(self.FsmName, "Inspection") || string.Equals(self.FsmName, "inspect_region")) 
-                && _loreKeys.Contains(self.FsmVariables.FindFsmString("Convo Name")?.Value))
+                ((string.Equals(self.FsmName, "Inspection") || string.Equals(self.FsmName, "inspect_region"))
+                && (_loreKeys.Contains(self.FsmVariables.FindFsmString("Convo Name")?.Value) || _loreKeys.Contains(self.FsmVariables.FindFsmString("Game Text Convo")?.Value)))
                 // Special boards
                 || (self.gameObject.name.EndsWith("Trial Board") && self.FsmName == "npc_control")))
             self.GetState("Init").ClearTransitions();

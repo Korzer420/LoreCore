@@ -6,6 +6,7 @@ using KorzUtils.Helper;
 
 namespace LoreCore.Items;
 
+// Little Fool NPC (Room_Colosseum_01)
 internal class ListenItem : AbstractItem
 {
     #region Properties
@@ -42,14 +43,15 @@ internal class ListenItem : AbstractItem
             && self.FsmVariables.FindFsmString("Prompt Name")?.Value == "Listen") || self.gameObject.name == "Stag" && self.FsmName == "Stag Control")
             {
                 // There are a few exceptions with npc which we want to ignore.
-                if (self.gameObject.name != "Moth NPC" && !self.gameObject.name.Contains("Shaman"))
+                if (self.gameObject.name != "Moth NPC" && self.gameObject.name == "Elderbug" 
+                    && self.gameObject.name != "Dream Moth" && !self.gameObject.name.Contains("Shaman"))
                 {
                     if (self.GetState("In Range") is FsmState state)
                     {
-                        if (state.GetFirstActionOfType<ShowPromptMarker>() is ShowPromptMarker marker)
-                            marker.labelName.Value = "???";
-                        if (self.GetState("In Range Turns") is FsmState secondState)
-                            secondState.GetFirstActionOfType<ShowPromptMarker>().labelName.Value = "???";
+                        //if (state.GetFirstActionOfType<ShowPromptMarker>() is ShowPromptMarker marker)
+                        //    marker.labelName.Value = "Nothing";
+                        //if (self.GetState("In Range Turns") is FsmState secondState)
+                        //    secondState.GetFirstActionOfType<ShowPromptMarker>().labelName.Value = "Nothing";
                         self.AddState(new FsmState(self.Fsm)
                         {
                             Name = "Block Interaction",
@@ -57,7 +59,8 @@ internal class ListenItem : AbstractItem
                             {
                                 new Lambda(() =>
                                 {
-                                    self.SendEvent(!IsObtained() ? "FINISHED" : "UP PRESSED");
+                                    GameHelper.DisplayMessage("You can't understand them.");
+                                    self.SendEvent("FINISHED");
                                 })
                             }
                         });

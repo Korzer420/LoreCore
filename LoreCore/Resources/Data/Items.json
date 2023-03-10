@@ -2041,7 +2041,7 @@
     "SoundClipName": "Dream_Enter"
   },
   {
-    "$type": "ItemChanger.Items.BoolItem, ItemChanger",
+    "$type": "LoreCore.Items.ListenItem, LoreCore",
     "fieldName": "Listen",
     "setValue": true,
     "name": "Listen_Ability",
@@ -2543,7 +2543,7 @@
     "SoundClipName": "Secret"
   },
   {
-    "$type": "ItemChanger.Items.BoolItem, ItemChanger",
+    "$type": "LoreCore.Items.ReadItem, LoreCore",
     "fieldName": "Read",
     "setValue": true,
     "name": "Read_Ability",

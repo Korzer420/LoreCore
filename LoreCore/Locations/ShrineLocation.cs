@@ -33,9 +33,9 @@ public abstract class ShrineLocation : AutoLocation
         new(24.435f, 30.41f),
         new(32.07f, 30.41f),
         // Second level right
-        new(72.67f, 30.41f),
+        new(76.135f, 30.41f),
         new(82.135f, 30.41f),
-        new(91.6f, 30.41f),
+        new(89.135f, 30.41f),
         // Small left
         new(26.13f, 47.41f),
         // Third level left
@@ -67,7 +67,7 @@ public abstract class ShrineLocation : AutoLocation
     public bool ConditionMet { get; set; }
 
     [JsonIgnore]
-    public virtual string Text => "It dreams... nothing";
+    public virtual string Text => "It dreams... nothing.";
 
     [JsonIgnore]
     public static List<GameObject> Tablets { get; set; } = new();
@@ -103,12 +103,12 @@ public abstract class ShrineLocation : AutoLocation
 
     private void Breakable_Break(On.Breakable.orig_Break orig, Breakable self, float flingAngleMin, float flingAngleMax, float impactMultiplier)
     {
-        if (self.name == "Explanation Tablet" || (self.name == name && ConditionMet))
+        if (self.name == "Explanation_Tablet" || (self.name == name && !ConditionMet))
             return;
         orig(self, flingAngleMin, flingAngleMax, impactMultiplier);
         if (self.name == name)
         { 
-            ItemHelper.FlingShiny(self.gameObject, Placement);
+            ItemHelper.SpawnShiny(self.transform.position, Placement);
             self.gameObject.name = "Empty";
         }
     }
@@ -124,7 +124,9 @@ public abstract class ShrineLocation : AutoLocation
     private string ModHooks_LanguageGetHook(string key, string sheetTitle, string orig)
     {
         if (key == name)
-            orig = Text;
+            orig = Text + "<br>Reward: "+Placement.Items[0].GetPreviewName(Placement);
+        else if (key == "Explanation_Shrine")
+            orig = "Fulfill their dreams to obtain the memory that they left in this world.";
         return orig;
     }
 
@@ -150,14 +152,26 @@ public abstract class ShrineLocation : AutoLocation
         GameObject original = GameObject.Find("Plaque_statue_02 (3)");
         if (original == null)
             original = GameObject.Find("Explanation_Tablet");
-        original.name = "Explanation_Tablet";
+        else
+        {
+            Component.Destroy(original.GetComponent<PersistentBoolItem>());
+            original.GetComponent<BoxCollider2D>().enabled = true;
+            original.GetComponent<Breakable>().enabled = true;
+            original.name = "Explanation_Tablet";
+            original.transform.Find("Active/Inspect Region").gameObject.LocateMyFSM("inspect_region").FsmVariables.FindFsmString("Game Text Convo").Value = "Explanation_Shrine";
+            foreach (Breakable breakable in GameObject.FindObjectsOfType<Breakable>())
+                if (breakable.gameObject.name != "Explanation_Tablet")
+                    GameObject.Destroy(breakable.gameObject);
+        }
+        
         if (Placement.Items.All(x => x.IsObtained()))
             yield break;
         GameObject newTablet = GameObject.Instantiate(original);
         newTablet.name = name;
-        newTablet.transform.position = _tabletPositions[Tablets.Count];
+        // Set the position with a few adjustments.
+        newTablet.transform.position = _tabletPositions[Tablets.Count] + new Vector3(0f, 1.6f, 0.3f);
         Tablets.Add(newTablet);
         newTablet.SetActive(true);
-        newTablet.transform.Find("Active/Inspect Region (1)").gameObject.LocateMyFSM("inspect_region").FsmVariables.FindFsmString("Game Text Convo").Value = name;
+        newTablet.transform.Find("Active/Inspect Region").gameObject.LocateMyFSM("inspect_region").FsmVariables.FindFsmString("Game Text Convo").Value = name;
     }
 }

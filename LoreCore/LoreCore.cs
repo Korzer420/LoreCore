@@ -96,6 +96,15 @@ public class LoreCore : Mod, ILocalSettings<LocalSettings>
 
     #region Methods
 
+    public void CreateVanillaCustomLore(bool generateSettings = false)
+    {
+        if (generateSettings)
+            ItemChangerMod.CreateSettingsProfile(false);
+        List<AbstractPlacement> placements = new();
+        foreach (string item in LoreItems)
+            placements.Add(GeneratePlacement(item + "_Empowered", item));
+    }
+
     /// <summary>
     /// Creates and adds all placement with their vanilla items to the save file.
     /// </summary>
@@ -104,6 +113,7 @@ public class LoreCore : Mod, ILocalSettings<LocalSettings>
     {
         if (generateSettings)
             ItemChangerMod.CreateSettingsProfile(false);
+        CreateVanillaCustomLore();
         List<AbstractPlacement> placements = new()
         {
             // Npc

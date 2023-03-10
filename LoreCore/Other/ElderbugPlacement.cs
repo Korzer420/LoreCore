@@ -42,6 +42,7 @@ public class ElderbugPlacement : AbstractPlacement, IMultiCostPlacement, IPrimar
 
     private void AbstractItem_AfterGiveGlobal(ReadOnlyGiveEventArgs itemEventArgs)
     {
+        LogHelper.Write<LoreCore>("Acquired: " + itemEventArgs.Item?.name);
         if (itemEventArgs?.Item?.name?.StartsWith("Lore") == true && itemEventArgs.Item is not PowerLoreItem)
             AcquiredLore++;
     }
@@ -73,8 +74,10 @@ public class ElderbugPlacement : AbstractPlacement, IMultiCostPlacement, IPrimar
 
     private void ModifyElderbug(PlayMakerFSM self)
     {
+        // Force Elderbug to always appear.
+        self.GetState("Grimm?").AdjustTransition("DISABLE", "Idle");
         self.transform.localScale = new(2f, 2f);
-        self.transform.localPosition = new(126.36f, 12.35f, 0f);
+        self.transform.localPosition = new(126.36f, 12.35f, self.transform.localPosition.z);
         self.gameObject.GetComponent<BoxCollider2D>().size = new(1.8361f, 0.2408f);
         self.AddState(new FsmState(self.Fsm)
         {
@@ -174,7 +177,6 @@ public class ElderbugPlacement : AbstractPlacement, IMultiCostPlacement, IPrimar
     /// Build the preview text of the Elderbug "shop". 
     /// Basically just taken from https://github.com/homothetyhk/HollowKnight.ItemChanger/blob/master/ItemChanger/Placements/CostChestPlacement.cs#L135-L178
     /// </summary>
-    /// <returns></returns>
     private string GetPreviewText()
     {
         StringBuilder stringBuilder = new("If you show me that you've got that much knowledge, I'll reward you with:");

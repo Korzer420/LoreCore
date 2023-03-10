@@ -1,4 +1,5 @@
-﻿
+﻿using static ItemChanger.ItemNames;
+
 namespace LoreCore.Data;
 
 public static class ItemList
@@ -204,6 +205,51 @@ public static class ItemList
     public const string Dialogue_Hornet_Deepnest = "Dialogue-Hornet_Deepnest";
 
     public const string Dialogue_Hornet_Temple = "Dialogue-Hornet_Temple";
+
+    #endregion
+
+    #region Lore Tablet Items
+
+    /// <summary>
+    /// Gets the name of each lore tablet.
+    /// <para>The modified names just have "_Empowered" on the end.</para>
+    /// </summary>
+    public static string[] LoreItems => new string[]
+    {
+        Lore_Tablet_Ancient_Basin,
+        Lore_Tablet_Archives_Left,
+        Lore_Tablet_Archives_Right,
+        Lore_Tablet_Archives_Upper,
+        Lore_Tablet_City_Entrance,
+        Lore_Tablet_Dung_Defender,
+        Lore_Tablet_Fungal_Core,
+        Lore_Tablet_Fungal_Wastes_Below_Shrumal_Ogres,
+        Lore_Tablet_Fungal_Wastes_Hidden,
+        Lore_Tablet_Greenpath_Below_Toll,
+        Lore_Tablet_Greenpath_Lifeblood,
+        Lore_Tablet_Greenpath_Lower_Hidden,
+        Lore_Tablet_Greenpath_QG,
+        Lore_Tablet_Greenpath_Stag,
+        Lore_Tablet_Greenpath_Upper_Hidden,
+        Lore_Tablet_Howling_Cliffs,
+        Lore_Tablet_Kingdoms_Edge,
+        Lore_Tablet_Kings_Pass_Exit,
+        Lore_Tablet_Kings_Pass_Focus,
+        Lore_Tablet_Kings_Pass_Fury,
+        Lore_Tablet_Mantis_Outskirts,
+        Lore_Tablet_Mantis_Village,
+        Lore_Tablet_Palace_Throne,
+        Lore_Tablet_Palace_Workshop,
+        Lore_Tablet_Path_of_Pain_Entrance,
+        Lore_Tablet_Pilgrims_Way_1,
+        Lore_Tablet_Pilgrims_Way_2,
+        Lore_Tablet_Pleasure_House,
+        Lore_Tablet_Sanctum_Entrance,
+        Lore_Tablet_Sanctum_Past_Soul_Master,
+        Lore_Tablet_Spore_Shroom,
+        Lore_Tablet_Watchers_Spire,
+        Lore_Tablet_World_Sense
+    };
 
     #endregion
 }
