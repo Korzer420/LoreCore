@@ -25,7 +25,7 @@ internal class HiddenMothLocation : AutoLocation
     {
         if (!ListenItem.CanListen)
         {
-            fsm.GetState("Idle").ClearTransitions()
+            fsm.GetState("Idle").ClearTransitions();
             return;
         }
         if (fsm.gameObject.scene.name != "Dream_Backer_Shrine" || Placement.Items.All(x => x.IsObtained()))
