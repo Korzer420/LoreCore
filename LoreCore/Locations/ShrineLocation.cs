@@ -1,6 +1,10 @@
-﻿using ItemChanger.Locations;
+﻿using HutongGames.PlayMaker;
+using ItemChanger.Extensions;
+using ItemChanger.FsmStateActions;
+using ItemChanger.Locations;
 using KorzUtils.Helper;
 using LoreCore.Data;
+using LoreCore.Items;
 using Modding;
 using Newtonsoft.Json;
 using System.Collections;
@@ -175,6 +179,30 @@ public abstract class ShrineLocation : AutoLocation
         newTablet.transform.position = _tabletPositions[TabletPosition] + new Vector3(0f, 1.6f, 0.3f);
         newTablet.SetActive(true);
         newTablet.transform.Find("Active/Inspect Region").gameObject.LocateMyFSM("inspect_region").FsmVariables.FindFsmString("Game Text Convo").Value = name;
+        if (!ReadItem.CanRead)
+        {
+            PlayMakerFSM fsm = newTablet.transform.Find("Active/Inspect Region").gameObject.LocateMyFSM("inspect_region");
+            // Try to display that the tablet is unreadable.
+            fsm.AddState(new HutongGames.PlayMaker.FsmState(fsm.Fsm)
+            {
+                Name = "Show unreadable prompt",
+                Actions = new HutongGames.PlayMaker.FsmStateAction[]
+                {
+                        new Lambda(() => GameHelper.DisplayMessage("You can't read this."))
+                }
+            });
+
+            // Best try to make the tablets unreadable
+            if (fsm.GetState("In Range") is FsmState)
+                fsm.GetState("In Range").AdjustTransition("UP PRESSED", "Show unreadable prompt");
+            else
+                fsm.GetState("In Range?").AdjustTransition("UP PRESSED", "Show unreadable prompt");
+
+            if (fsm.GetState("Idle") == null)
+                fsm.GetState("Show unreadable prompt").AddTransition("FINISHED", "Out Of Range");
+            else
+                fsm.GetState("Show unreadable prompt").AddTransition("FINISHED", "Idle");
+        }
         yield return null;
         if (newTablet.transform.position.y > 61.41f)
             newTablet.transform.position = new(78.24f, 61.41f, -0.2f);
