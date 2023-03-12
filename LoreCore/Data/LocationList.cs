@@ -161,24 +161,6 @@ public static class LocationList
 
     #endregion
 
-    #region Dream Warrior Inspect
-
-    public const string Elder_Hu_Grave = "Elder_Hu_Grave";
-
-    public const string Xero_Grave = "Xero_Grave";
-
-    public const string Gorb_Grave = "Gorb_Grave";
-
-    public const string No_Eyes_Statue = "No_Eyes_Statue";
-
-    public const string Marmu_Grave = "Marmu_Grave";
-
-    public const string Markoth_Corpse = "Markoth_Corpse";
-
-    public const string Galien_Corpse = "Galien_Corpse";
-
-    #endregion
-
     #region Dream Nail Locations
     // 18
     public const string Mine_Golem_Dream = "Mine_Golem_Dream";
@@ -248,6 +230,20 @@ public static class LocationList
     public const string Lore_Tablet_Record_Bela = "Lore_Tablet-Record_Bela";
 
     public const string Traitor_Grave = "Traitor_Grave";
+
+    public const string Elder_Hu_Grave = "Elder_Hu_Grave";
+
+    public const string Xero_Grave = "Xero_Grave";
+
+    public const string Gorb_Grave = "Gorb_Grave";
+
+    public const string No_Eyes_Statue = "No_Eyes_Statue";
+
+    public const string Marmu_Grave = "Marmu_Grave";
+
+    public const string Markoth_Corpse = "Markoth_Corpse";
+
+    public const string Galien_Corpse = "Galien_Corpse";
 
     #endregion
 

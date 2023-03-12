@@ -15,27 +15,22 @@ internal class CrystalShamanLocation : DreamNailLocation
     protected override void OnLoad()
     {
         base.OnLoad();
-        Events.AddFsmEdit(sceneName, new("Crystal Shaman", "Control"), BlockHits);
+        Events.AddFsmEdit(sceneName, new("Crystal Shaman", "Control"), SpawnShiny);
     }
 
     protected override void OnUnload()
     {
         base.OnUnload();
-        Events.RemoveFsmEdit(sceneName, new("Crystal Shaman", "Control"), BlockHits);
+        Events.RemoveFsmEdit(sceneName, new("Crystal Shaman", "Control"), SpawnShiny);
     }
 
-    private void BlockHits(PlayMakerFSM fsm)
+    private void SpawnShiny(PlayMakerFSM fsm)
     {
-        fsm.AddState(new FsmState(fsm.Fsm)
+        if (Placement.AllObtained())
+            return;
+        fsm.GetState("Broken").AddLastAction(new Lambda(() => 
         {
-            Name = "Check Dream",
-            Actions = new FsmStateAction[]
-            {
-                new Lambda(() => fsm.SendEvent(Placement.Items.All(x => x.IsObtained()) ? "NAIL HIT" : "FINISHED"))
-            }
-        });
-        fsm.GetState("Idle").AdjustTransition("NAIL HIT", "Check Dream");
-        fsm.GetState("Check Dream").AddTransition("FINISHED", "Idle");
-        fsm.GetState("Check Dream").AddTransition("NAIL HIT", "Hit");
+            ItemHelper.SpawnShiny(fsm.transform.position, Placement);
+        }));
     }
 }
