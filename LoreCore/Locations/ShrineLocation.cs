@@ -124,7 +124,10 @@ public abstract class ShrineLocation : AutoLocation
     private string ModHooks_LanguageGetHook(string key, string sheetTitle, string orig)
     {
         if (key == name)
-            orig = Text + "<br>Reward: "+Placement.Items[0].GetPreviewName(Placement);
+        { 
+            orig = Text + "<br>Reward: " + Placement.Items[0].GetPreviewName(Placement);
+            Placement.AddVisitFlag(ItemChanger.VisitState.Previewed);
+        }
         else if (key == "Explanation_Shrine")
             orig = "Fulfill their dreams to obtain the memory that they left in this world.";
         return orig;

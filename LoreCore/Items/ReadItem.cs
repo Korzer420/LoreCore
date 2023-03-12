@@ -1,5 +1,8 @@
-﻿using ItemChanger;
+﻿using HutongGames.PlayMaker;
+using InControl;
+using ItemChanger;
 using ItemChanger.Extensions;
+using ItemChanger.FsmStateActions;
 using KorzUtils.Helper;
 using System.Linq;
 
@@ -77,12 +80,46 @@ internal class ReadItem : AbstractItem
 
     private void PlayMakerFSM_OnEnable(On.PlayMakerFSM.orig_OnEnable orig, PlayMakerFSM self)
     {
+        if (string.Equals(self.FsmName, "inspect_region"))
+        {
+            string key = self.FsmVariables.FindFsmString("Convo Name")?.Value ?? self.FsmVariables.FindFsmString("Game Text Convo")?.Value;
+            LogHelper.Write<LoreCore>("Triggered on: " + self.Fsm.Name + "; Lore key is " + key);
+        }
         if (!IsObtained() && (
                 ((string.Equals(self.FsmName, "Inspection") || string.Equals(self.FsmName, "inspect_region"))
                 && (_loreKeys.Contains(self.FsmVariables.FindFsmString("Convo Name")?.Value) || _loreKeys.Contains(self.FsmVariables.FindFsmString("Game Text Convo")?.Value)))
                 // Special boards
                 || (self.gameObject.name.EndsWith("Trial Board") && self.FsmName == "npc_control")))
-            self.GetState("Init").ClearTransitions();
+        {
+            try
+            {
+                // Try to display that the tablet is unreadable.
+                self.AddState(new HutongGames.PlayMaker.FsmState(self.Fsm)
+                {
+                    Name = "Show unreadable prompt",
+                    Actions = new HutongGames.PlayMaker.FsmStateAction[]
+                    {
+                        new Lambda(() => GameHelper.DisplayMessage("You can't read this."))
+                    }
+                });
+
+                // Best try to make the tablets unreadable
+                if (self.GetState("In Range") is FsmState)
+                    self.GetState("In Range").AdjustTransition("UP PRESSED", "Show unreadable prompt");
+                else
+                    self.GetState("In Range?").AdjustTransition("UP PRESSED", "Show unreadable prompt");
+                
+                if (self.GetState("Idle") == null)
+                    self.GetState("Show unreadable prompt").AddTransition("FINISHED", "Out Of Range");
+                else
+                    self.GetState("Show unreadable prompt").AddTransition("FINISHED", "Idle");
+            }
+            catch (System.Exception exception)
+            {
+                // Fail save
+                self.GetState("Init").ClearTransitions();
+            }
+        }
         orig(self);
     }
 

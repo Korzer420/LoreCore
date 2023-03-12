@@ -40,7 +40,7 @@ internal class ListenItem : AbstractItem
         if (!IsObtained())
         {
             if ((string.Equals(self.FsmName, "npc_control")
-            && self.FsmVariables.FindFsmString("Prompt Name")?.Value == "Listen") || self.gameObject.name == "Stag" && self.FsmName == "Stag Control")
+            && self.FsmVariables.FindFsmString("Prompt Name")?.Value == "Listen") || (self.gameObject.name == "Stag" && self.FsmName == "Stag Control"))
             {
                 // There are a few exceptions with npc which we want to ignore.
                 if (self.gameObject.name != "Moth NPC" && self.gameObject.name != "Elderbug" 
