@@ -31,6 +31,7 @@
 	  <None Remove="Resources\Sounds\Millibelle.wav" />
 	  <None Remove="Resources\Sprites\Hidden_Moth.png" />
 	  <None Remove="Resources\Sprites\Hornet.png" />
+	  <None Remove="Resources\Sprites\Lore.png" />
 	  <None Remove="Resources\Sprites\Millibelle.png" />
 	</ItemGroup>
 

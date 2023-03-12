@@ -101,7 +101,7 @@ public class LoreCore : Mod, ILocalSettings<LocalSettings>
         if (generateSettings)
             ItemChangerMod.CreateSettingsProfile(false);
         List<AbstractPlacement> placements = new();
-        foreach (string item in LoreItems)
+        foreach (string item in LoreTablets)
             placements.Add(GeneratePlacement(item + "_Empowered", item));
     }
 
@@ -281,10 +281,11 @@ public class LoreCore : Mod, ILocalSettings<LocalSettings>
                     Properties = new()
                     {
                         {"ModSource", "LoreCore" },
-                        {"DoNotCreatePin", true }
+                        {"DoNotMakePin", true }
                     }
                 }
             };
+            shrineLocation.TabletPosition = ShrineLocation.SelectedTablets.IndexOf(locationData.LocationName);
             locationData.Current = shrineLocation;
         }
     }

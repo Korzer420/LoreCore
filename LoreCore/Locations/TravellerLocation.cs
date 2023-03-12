@@ -2,6 +2,7 @@ using ItemChanger;
 using ItemChanger.Extensions;
 using KorzUtils.Helper;
 using LoreCore.Enums;
+using LoreCore.Modules;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -88,6 +89,7 @@ public class TravellerLocation : DialogueLocation
     {
         Events.AddSceneChangeEdit(sceneName, ControlSpawn);
         base.OnLoad();
+        ItemChangerMod.Modules.GetOrAdd<TravellerControlModule>();
     }
 
     protected override void OnUnload()
@@ -153,6 +155,7 @@ public class TravellerLocation : DialogueLocation
                         Traveller.Zote => _zoteNames.Select(x => x.Item2).IndexOf(ObjectName),
                         _ => _hornetNames.Select(x => x.Item2).IndexOf(ObjectName),
                     };
+                LogHelper.Write<LoreCore>("Npc index is: " + npcIndex + ". For object name: " + ObjectName);
                 npc.SetActive(npcIndex <= Stages[TravellerName]);
             }
         }

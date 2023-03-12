@@ -2,6 +2,7 @@ using ItemChanger;
 using ItemChanger.UIDefs;
 using LoreCore.Enums;
 using LoreCore.Locations;
+using LoreCore.Modules;
 using LoreCore.UIDefs;
 
 namespace LoreCore.Items;
@@ -15,6 +16,12 @@ internal class TravellerItem : PowerLoreItem
     /// Gets or sets the traveller, which this item should add a stage to.
     /// </summary>
     public Traveller Traveller { get; set; }
+
+    protected override void OnLoad()
+    {
+        base.OnLoad();
+        ItemChangerMod.Modules.GetOrAdd<TravellerProgressModule>();
+    }
 
     public override void GiveImmediate(GiveInfo info)
     {
@@ -39,5 +46,7 @@ internal class TravellerItem : PowerLoreItem
         // Allow cloth to enter the traitor lord fight (not sure if this is necessary, but just in case)
         if (Traveller == Traveller.Cloth && TravellerLocation.Stages[Traveller.Cloth] >= 3)
             PlayerData.instance.SetBool(nameof(PlayerData.instance.savedCloth), true);
+        else if (Traveller == Traveller.Zote && TravellerLocation.Stages[Traveller.Zote] >= 4)
+            PlayerData.instance.SetBool(nameof(PlayerData.instance.zoteRescuedDeepnest), true);
     }
 }

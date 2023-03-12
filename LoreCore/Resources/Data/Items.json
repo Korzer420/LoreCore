@@ -2797,8 +2797,7 @@
       },
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
-        "Key": "Tablets.Dirtmouth",
-        "RandoSprite": false
+        "Key": "Tablets.Dirtmouth"
       }
     },
     "tags": [],

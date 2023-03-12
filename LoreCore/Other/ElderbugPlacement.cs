@@ -9,6 +9,7 @@ using ItemChanger.Tags;
 using ItemChanger.Util;
 using KorzUtils.Helper;
 using LoreCore.Items;
+using LoreCore.Modules;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -42,7 +43,6 @@ public class ElderbugPlacement : AbstractPlacement, IMultiCostPlacement, IPrimar
 
     private void AbstractItem_AfterGiveGlobal(ReadOnlyGiveEventArgs itemEventArgs)
     {
-        LogHelper.Write<LoreCore>("Acquired: " + itemEventArgs.Item?.name);
         if (itemEventArgs?.Item?.name?.StartsWith("Lore") == true && itemEventArgs.Item is not PowerLoreItem)
             AcquiredLore++;
     }
@@ -225,6 +225,7 @@ public class ElderbugPlacement : AbstractPlacement, IMultiCostPlacement, IPrimar
         Events.AddLanguageEdit(new("Elderbug", "Elderbug_Task_Failed"), CannotGiveItems);
         Events.AddLanguageEdit(new("Lore Tablets", "Elderbug_Preview"), Preview);
         AbstractItem.AfterGiveGlobal += AbstractItem_AfterGiveGlobal;
+        ItemChangerMod.Modules.GetOrAdd<LoreProgressModule>();
         Instance = this;
     }
 

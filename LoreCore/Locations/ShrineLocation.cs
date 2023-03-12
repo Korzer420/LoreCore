@@ -66,11 +66,13 @@ public abstract class ShrineLocation : AutoLocation
 
     public bool ConditionMet { get; set; }
 
+    public int TabletPosition { get; set; }
+
     [JsonIgnore]
     public virtual string Text => "It dreams... nothing.";
 
     [JsonIgnore]
-    public static List<GameObject> Tablets { get; set; } = new();
+    public static List<string> SelectedTablets { get; set; } = new();
 
     [JsonIgnore]
     public static List<string> ShrineLocations = new()
@@ -85,7 +87,7 @@ public abstract class ShrineLocation : AutoLocation
         LocationList.HerrahShrine,
         LocationList.LongestNailShrine,
         LocationList.LurienShrine,
-        LocationList.MenderbugShrine,
+        //LocationList.MenderbugShrine,
         LocationList.MonomonShrine,
         LocationList.MylaShrine,
         LocationList.NailsmithShrine,
@@ -117,8 +119,6 @@ public abstract class ShrineLocation : AutoLocation
     {
         if (arg1.name == "Dream_Room_Believer_Shrine")
             GameManager.instance.StartCoroutine(CreateTablet());
-        else
-            Tablets.Clear();
     }
 
     private string ModHooks_LanguageGetHook(string key, string sheetTitle, string orig)
@@ -169,9 +169,11 @@ public abstract class ShrineLocation : AutoLocation
         GameObject newTablet = GameObject.Instantiate(original);
         newTablet.name = name;
         // Set the position with a few adjustments.
-        newTablet.transform.position = _tabletPositions[Tablets.Count] + new Vector3(0f, 1.6f, 0.3f);
-        Tablets.Add(newTablet);
+        newTablet.transform.position = _tabletPositions[TabletPosition] + new Vector3(0f, 1.6f, 0.3f);
         newTablet.SetActive(true);
         newTablet.transform.Find("Active/Inspect Region").gameObject.LocateMyFSM("inspect_region").FsmVariables.FindFsmString("Game Text Convo").Value = name;
+        yield return null;
+        if (newTablet.transform.position.y > 61.41f)
+            newTablet.transform.position = new(78.24f, 61.41f, -0.2f);
     }
 }

@@ -272,8 +272,8 @@
             "$values": [
               {
                 "Item1": "GG_Waterways",
-                "Item2": 1.0,
-                "Item3": 1.0
+                "Item2": 0.1,
+                "Item3": 0.3
               }
             ]
           }
@@ -646,8 +646,8 @@
             "$values": [
               {
                 "Item1": "Fungus3_35",
-                "Item2": 0.4,
-                "Item3": -1.0
+                "Item2": 0.1,
+                "Item3": 0
               }
             ]
           }
@@ -662,7 +662,7 @@
   {
     "$type": "LoreCore.Locations.SpecialLocations.HiddenMothLocation, LoreCore",
     "name": "Hidden_Moth",
-    "sceneName": "Dream_Backer_Shirne",
+    "sceneName": "Dream_Backer_Shrine",
     "flingType": 0,
     "tags": [
       {
@@ -674,12 +674,12 @@
             "Key": "Hidden_Moth"
 
           },
-          "SceneNames": "Fungus3_35",
+          "SceneNames": "RestingGrounds_08",
           "MapLocations": {
             "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
             "$values": [
               {
-                "Item1": "Fungus3_35",
+                "Item1": "RestingGrounds_08",
                 "Item2": 0.4,
                 "Item3": -1.0
               }
@@ -712,8 +712,8 @@
             "$values": [
               {
                 "Item1": "GG_Waterways",
-                "Item2": 0.4,
-                "Item3": -1.0
+                "Item2": -0.2,
+                "Item3": 0.1
               }
             ]
           }
@@ -815,8 +815,8 @@
             "$values": [
               {
                 "Item1": "Fungus1_04",
-                "Item2": 0.8,
-                "Item3": 0.5
+                "Item2": -0.2,
+                "Item3": 0.4
               }
             ]
           }
@@ -879,8 +879,8 @@
             "$values": [
               {
                 "Item1": "Deepnest_East_Hornet",
-                "Item2": 0.8,
-                "Item3": 0.5
+                "Item2": 0,
+                "Item3": -0.2
               }
             ]
           }
@@ -923,6 +923,7 @@
         "Loaded": true
       }
     ],
+    "TravellerName": 4,
     "ObjectName": "Hornet Abyss NPC",
     "FsmName": "Conversation Control"
   },
@@ -946,9 +947,9 @@
             "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
             "$values": [
               {
-                "Item1": "Deepnest_Spider_Town",
-                "Item2": 0.8,
-                "Item3": 0.5
+                "Item1": "Deepnest_10",
+                "Item2": 0.4,
+                "Item3": 0.6
               }
             ]
           }
@@ -957,6 +958,7 @@
         "Loaded": true
       }
     ],
+    "TravellerName": 4,
     "ObjectName": "Hornet Beast Den NPC",
     "FsmName": "Conversation Control"
   },
@@ -975,12 +977,12 @@
             "Key": "Hornet"
 
           },
-          "SceneNames": "Room_temple",
+          "SceneNames": "Crossroads_02",
           "MapLocations": {
             "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
             "$values": [
               {
-                "Item1": "Room_temple",
+                "Item1": "Crossroads_02",
                 "Item2": 0.8,
                 "Item3": 0.5
               }
@@ -991,6 +993,7 @@
         "Loaded": true
       }
     ],
+    "TravellerName": 4,
     "ObjectName": "Hornet Black Egg NPC",
     "FsmName": "Conversation Control"
   },

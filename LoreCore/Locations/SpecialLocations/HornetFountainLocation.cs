@@ -5,7 +5,6 @@ using ItemChanger.FsmStateActions;
 using ItemChanger.Locations;
 using ItemChanger.Util;
 using KorzUtils.Helper;
-using LoreCore.Data;
 using LoreCore.Items;
 using System.Linq;
 using UnityEngine;
@@ -47,8 +46,8 @@ internal class HornetFountainLocation : AutoLocation
                         {
                             FlingType = flingType,
                             Container = Container.Tablet,
-                            MessageType = name == LocationList.Dreamer_Tablet ? MessageType.Big : MessageType.Any,
-                        }), "CONVO_FINISH")
+                            MessageType = MessageType.Any,
+                        }, callback), "CONVO_FINISH")
             }
         });
         fsm.GetState("Fade In").AdjustTransition("FINISHED", "Give items");

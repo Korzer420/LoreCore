@@ -43,7 +43,7 @@ internal class ListenItem : AbstractItem
             && self.FsmVariables.FindFsmString("Prompt Name")?.Value == "Listen") || self.gameObject.name == "Stag" && self.FsmName == "Stag Control")
             {
                 // There are a few exceptions with npc which we want to ignore.
-                if (self.gameObject.name != "Moth NPC" && self.gameObject.name == "Elderbug" 
+                if (self.gameObject.name != "Moth NPC" && self.gameObject.name != "Elderbug" 
                     && self.gameObject.name != "Dream Moth" && !self.gameObject.name.Contains("Shaman"))
                 {
                     if (self.GetState("In Range") is FsmState state)

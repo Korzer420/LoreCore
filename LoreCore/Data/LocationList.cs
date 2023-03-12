@@ -4,6 +4,117 @@ public static class LocationList
 {
     public const string Elderbug_Shop = "Elderbug_Shop";
 
+    #region Lists
+
+    public static string[] NpcLocations => new string[]
+    {
+        Bretta,
+        Bardoon,
+        Vespa,
+        Midwife,
+        Myla,
+        Willoh,
+        Marissa,
+        Joni,
+        Grasshopper,
+        Mask_Maker,
+        Emilitia,
+        Fluke_Hermit,
+        Moss_Prophet,
+        Queen,
+        Dung_Defender,
+        Menderbug_Diary,
+        Gravedigger,
+        Poggy,
+        Godseeker,
+        Millibelle,
+        Hidden_Moth
+    };
+
+    public static string[] DreamLocations => new string[]
+    {
+        Ancient_Nailsmith_Golem_Dream,
+        Aspid_Queen_Dream,
+        Crystalized_Shaman_Dream,
+        Dashmaster_Statue_Dream,
+        Dream_Shield_Statue_Dream,
+        Dryya_Dream,
+        Grimm_Summoner_Dream,
+        Hopper_Dummy_Dream,
+        Isma_Dream,
+        Kings_Mould_Machine_Dream,
+        Mine_Golem_Dream,
+        Overgrown_Shaman_Dream,
+        Pale_King_Dream,
+        Radiance_Statue_Dream,
+        Shade_Golem_Dream_Normal,
+        Shade_Golem_Dream_Void,
+        Shriek_Statue_Dream,
+        Shroom_King_Dream,
+        Snail_Shaman_Tomb_Dream
+    };
+
+    public static string[] PointOfInterestLocations => new string[]
+    {
+        City_Fountain,
+        Dreamer_Tablet,
+        Weaver_Seal,
+        Grimm_Machine,
+        Beast_Den_Altar,
+        Garden_Golem,
+        Grub_Seal,
+        White_Palace_Nursery,
+        Grimm_Summoner_Corpse,
+        Stag_Nest,
+        Lore_Tablet_Record_Bela,
+        Traitor_Grave,
+        Elder_Hu_Grave,
+        Gorb_Grave,
+        Marmu_Grave,
+        Xero_Grave,
+        No_Eyes_Statue,
+        Markoth_Corpse,
+        Galien_Corpse
+    };
+
+    public static string[] TravellerLocations => new string[]
+    {
+        Quirrel_Crossroads,
+        Quirrel_Greenpath,
+        Quirrel_Queen_Station,
+        Quirrel_Mantis_Village,
+        Quirrel_City,
+        Quirrel_Deepnest,
+        Quirrel_Peaks,
+        Quirrel_Outside_Archive,
+        Quirrel_After_Monomon,
+        Quirrel_Blue_Lake,
+        Cloth_Fungal_Wastes,
+        Cloth_Basin,
+        Cloth_Deepnest,
+        Cloth_Garden,
+        Cloth_End,
+        Tiso_Dirtmouth,
+        Tiso_Crossroads,
+        Tiso_Blue_Lake,
+        Tiso_Colosseum,
+        Tiso_Corpse,
+        Zote_Greenpath,
+        Zote_Dirtmouth_Intro,
+        Zote_City,
+        Zote_Deepnest,
+        Zote_Colosseum,
+        Zote_Dirtmouth_After_Colosseum,
+        Hornet_Greenpath,
+        Hornet_Fountain,
+        Hornet_Edge,
+        Hornet_Abyss,
+        Hornet_Deepnest,
+        Hornet_Temple
+    };
+
+    #endregion
+
     #region NPC
 
     public const string Bretta = "Bretta";
