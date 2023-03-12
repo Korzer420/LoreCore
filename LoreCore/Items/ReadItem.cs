@@ -80,11 +80,6 @@ internal class ReadItem : AbstractItem
 
     private void PlayMakerFSM_OnEnable(On.PlayMakerFSM.orig_OnEnable orig, PlayMakerFSM self)
     {
-        if (string.Equals(self.FsmName, "inspect_region"))
-        {
-            string key = self.FsmVariables.FindFsmString("Convo Name")?.Value ?? self.FsmVariables.FindFsmString("Game Text Convo")?.Value;
-            LogHelper.Write<LoreCore>("Triggered on: " + self.Fsm.Name + "; Lore key is " + key);
-        }
         if (!IsObtained() && (
                 ((string.Equals(self.FsmName, "Inspection") || string.Equals(self.FsmName, "inspect_region"))
                 && (_loreKeys.Contains(self.FsmVariables.FindFsmString("Convo Name")?.Value) || _loreKeys.Contains(self.FsmVariables.FindFsmString("Game Text Convo")?.Value)))

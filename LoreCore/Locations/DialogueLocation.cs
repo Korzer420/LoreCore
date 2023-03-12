@@ -125,7 +125,7 @@ public class DialogueLocation : AutoLocation
         }
         catch (System.Exception exception)
         {
-            LogHelper.Write<LoreCore>("Failed to modify dialogue location: " + exception.ToString(), KorzUtils.Enums.LogType.Error);
+            LogHelper.Write<LoreCore>("Failed to modify dialogue location.", exception);
         }
     }
 }

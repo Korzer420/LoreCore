@@ -155,7 +155,6 @@ public class TravellerLocation : DialogueLocation
                         Traveller.Zote => _zoteNames.Select(x => x.Item2).IndexOf(ObjectName),
                         _ => _hornetNames.Select(x => x.Item2).IndexOf(ObjectName),
                     };
-                LogHelper.Write<LoreCore>("Npc index is: " + npcIndex + ". For object name: " + ObjectName);
                 npc.SetActive(npcIndex <= Stages[TravellerName]);
             }
         }
