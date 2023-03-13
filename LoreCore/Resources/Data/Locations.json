@@ -1484,7 +1484,7 @@
     "FsmName": "Conversation Control"
   },
   {
-    "$type": "LoreCore.Locations.TravellerLocation, LoreCore",
+    "$type": "LoreCore.Locations.SpecialLocations.ClothGardenLocation, LoreCore",
     "name": "Cloth_Ghost",
     "sceneName": "Fungus3_23",
     "flingType": 0,
