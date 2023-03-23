@@ -71,6 +71,7 @@ public static class ItemList
         Inspect_Grimm_Summoner_Corpse,
         ItemList.Lore_Tablet_Record_Bela,
         ItemList.Traitor_Grave,
+        Inspect_Stag_Egg,
         Inspect_Elder_Hu,
         Inspect_Gorb,
         Inspect_Marmu,
