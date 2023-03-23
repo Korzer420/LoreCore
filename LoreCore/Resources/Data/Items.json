@@ -1755,7 +1755,7 @@
     "loreSheet": "Stag",
     "loreKey": "STAG_EGG_INSPECT",
     "textType": 1,
-    "name": "Lore_Tablet-Stag_Egg_Inspect",
+    "name": "Inspect-Stag_Egg",
     "UIDef": {
       "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
       "lore": {
