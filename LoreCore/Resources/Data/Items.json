@@ -157,8 +157,8 @@
   },
   {
     "$type": "LoreCore.Items.TravellerItem, LoreCore",
-    "loreSheet": "Lore Tablets",
-    "loreKey": null,
+    "loreSheet": "Minor NPC",
+    "loreKey": "TISO_BENCH_GREET",
     "textType": 0,
     "name": "Dialogue-Tiso_Crossroads",
     "UIDef": {
@@ -421,8 +421,8 @@
   },
   {
     "$type": "LoreCore.Items.TravellerItem, LoreCore",
-    "loreSheet": "Lore Tablets",
-    "loreKey": null,
+    "loreSheet": "Zote",
+    "loreKey": "ZOTE_CITY_GREET",
     "textType": 0,
     "name": "Dialogue-Zote_City",
     "UIDef": {
@@ -510,8 +510,8 @@
   },
   {
     "$type": "LoreCore.Items.TravellerItem, LoreCore",
-    "loreSheet": "Lore Tablets",
-    "loreKey": null,
+    "loreSheet": "Zote",
+    "loreKey": "PRECEPT_1_R",
     "textType": 0,
     "name": "Dialogue-Zote_Dirtmouth_After_Colosseum",
     "UIDef": {

@@ -1,4 +1,6 @@
-﻿namespace LoreCore.Locations.ShrineLocations;
+﻿using KorzUtils.Helper;
+
+namespace LoreCore.Locations.ShrineLocations;
 
 public class ShadeKillShrineLocation : ShrineLocation
 {
@@ -13,7 +15,8 @@ public class ShadeKillShrineLocation : ShrineLocation
     private void HeroController_TakeDamage(On.HeroController.orig_TakeDamage orig, HeroController self, UnityEngine.GameObject go, GlobalEnums.CollisionSide damageSide, int damageAmount, int hazardType)
     {
         orig(self, go, damageSide, damageAmount, hazardType);
-        if (PlayerData.instance.GetInt(nameof(PlayerData.instance.health)) <= 0 && go?.name.StartsWith("Hollow Shade") == true)
+        if (PlayerData.instance.GetInt(nameof(PlayerData.instance.health)) <= 0 && (go?.name.StartsWith("Hollow Shade") == true
+            || go?.name.StartsWith("Shadow Ball") == true || go?.transform.parent?.name.StartsWith("Hollow Shade") == true))
             ConditionMet = true;
     }
 

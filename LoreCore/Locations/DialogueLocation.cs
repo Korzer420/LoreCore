@@ -122,6 +122,18 @@ public class DialogueLocation : AutoLocation
                     };
                 fsm.GetState("Give Items").AddTransition("CONVO_FINISH", transitionEnd);
             }
+
+            // To do: Move this in an extra class.
+            if (fsm.gameObject.name == "Hornet Black Egg NPC")
+            {
+                if (TravellerLocation.Stages[Enums.Traveller.Hornet] >= 5)
+                    fsm.GetState("Active?").AdjustTransition("ABSENT", "Idle");
+                else
+                { 
+                    fsm.GetState("Active?").AdjustTransition("FINISHED", "Absent");
+                    fsm.GetState("Active?").AdjustTransition("INACTIVE", "Absent");
+                }
+            }
         }
         catch (System.Exception exception)
         {

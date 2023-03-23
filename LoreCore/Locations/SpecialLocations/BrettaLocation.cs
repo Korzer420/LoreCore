@@ -28,6 +28,10 @@ internal class BrettaLocation : AutoLocation
             fsm.GetState("Active?").AdjustTransition("FINISHED", "Destroy");
             return;
         }
+        else
+            // Force Bretta to appear, even if she has been rescued (due to her item).
+            fsm.GetState("Active?").AdjustTransition("DESTROY", "Scared Loop");
+
         if (!ListenItem.CanListen)
         {
             fsm.gameObject.LocateMyFSM("npc_control").GetState("Idle").ClearTransitions();
