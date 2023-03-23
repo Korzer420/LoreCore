@@ -66,7 +66,7 @@ internal class InspectLocation : ContainerLocation
                 {
                     FlingType = flingType,
                     Container = Container.Tablet,
-                    MessageType = MessageType.Lore
+                    MessageType = MessageType.Any
                 }, callback), "CONVO_FINISH")
             }
         });
