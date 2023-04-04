@@ -61,7 +61,7 @@ internal class HornetGreenpathLocation : AutoLocation
 
     private void SpawnReoccurringItem(Scene scene)
     {
-        if (Placement.AllObtained() || Placement.Items.All(x => !x.WasEverObtained()))
+        if (Placement.AllObtained() || (Placement.Items.All(x => !x.WasEverObtained()) && !PlayerData.instance.GetBool(nameof(PlayerData.hornetOutskirtsDefeated))))
             return;
         ItemHelper.SpawnShiny(new(25.83f, 28.42f), Placement);
     }

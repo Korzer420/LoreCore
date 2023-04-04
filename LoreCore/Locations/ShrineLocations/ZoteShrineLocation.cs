@@ -4,7 +4,7 @@ public class ZoteShrineLocation : ShrineLocation
 {
     #region Properties
 
-    public override string Text => "It dreams of reading and following all 57 precepts of the mighty one.";
+    public override string Text => "It dreams of quoting and following all 57 precepts of the mighty one.";
 
     #endregion
 

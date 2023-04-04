@@ -100,7 +100,8 @@ public abstract class ShrineLocation : AutoLocation
         LocationList.ShadeKillShrine,
         LocationList.ShamanShrine,
         LocationList.SlugInTubShrine,
-        LocationList.ZoteShrine
+        LocationList.ZoteShrine,
+        LocationList.DeepDiveShrine
     };
 
     #endregion
@@ -205,6 +206,13 @@ public abstract class ShrineLocation : AutoLocation
         }
         yield return null;
         if (newTablet.transform.position.y > 61.41f)
-            newTablet.transform.position = new(78.24f, 61.41f, -0.2f);
+            newTablet.transform.position = new(77.74f, 63.01f, 0.1f);
+        // A fail save
+        if (newTablet.GetComponent<Breakable>() is null)
+        {
+            GameObject.Destroy(newTablet);
+            ItemHelper.SpawnShiny(new(77.74f, 63.01f, 0.1f), Placement);
+        }
+
     }
 }

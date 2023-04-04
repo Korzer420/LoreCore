@@ -37,7 +37,7 @@ public class GenocideShrineLocation : ShrineLocation
     protected override void OnUnload()
     {
         base.OnUnload();
-        On.HutongGames.PlayMaker.Actions.SetBoolValue.OnEnter += SetBoolValue_OnEnter;
+        On.HutongGames.PlayMaker.Actions.SetBoolValue.OnEnter -= SetBoolValue_OnEnter;
     }
 
     #endregion

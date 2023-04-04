@@ -42,6 +42,12 @@ public class FullStagShrineLocation : ShrineLocation
         ModHooks.SetPlayerBoolHook += ModHooks_SetPlayerBoolHook;
     }
 
+    protected override void OnUnload()
+    {
+        base.OnUnload();
+        ModHooks.SetPlayerBoolHook -= ModHooks_SetPlayerBoolHook;
+    }
+
     private bool ModHooks_SetPlayerBoolHook(string name, bool orig)
     {
         if (orig && _stagKeys.Contains(name))

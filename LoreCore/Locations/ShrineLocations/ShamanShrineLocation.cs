@@ -48,8 +48,6 @@ public class ShamanShrineLocation : ShrineLocation
         ModHooks.LanguageGetHook += ModHooks_LanguageGetHook;
     }
 
-    
-
     protected override void OnUnload()
     {
         base.OnUnload();

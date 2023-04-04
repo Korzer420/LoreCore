@@ -361,6 +361,8 @@ public static class LocationList
 
     public const string ZoteShrine = "Zote-Shrine";
 
+    public const string DeepDiveShrine = "Deep_Dive-Shrine";
+
     #endregion
 }
 
