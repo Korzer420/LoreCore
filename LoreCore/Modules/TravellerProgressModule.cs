@@ -26,6 +26,9 @@ public class TravellerProgressModule : Module
 
     private void AppendTravellerProgress(StringBuilder stringBuilder)
     {
+        // If one is above ten, the traveller order "none" is used, which renderes the tracker useless.
+        if (TravellerLocation.Stages[Traveller.Zote] >= 10)
+            return;
         foreach (Traveller item in Enum.GetValues(typeof(Traveller)))
             stringBuilder.AppendLine($"{item} Level: {TravellerLocation.Stages[item]}");
     }
