@@ -5,7 +5,7 @@
 		<TargetFramework>net472</TargetFramework>
 		<RootNamespace>LoreCore</RootNamespace>
 		<AssemblyTitle>LoreCore</AssemblyTitle>
-		<AssemblyVersion>0.4.2.0</AssemblyVersion>
+		<AssemblyVersion>0.5.0.0</AssemblyVersion>
 		<Deterministic>true</Deterministic>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 		<LangVersion>latest</LangVersion>
@@ -27,14 +27,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Sounds\Hornet.wav" />
-	  <None Remove="Resources\Sounds\Millibelle.wav" />
-	  <None Remove="Resources\Sprites\Hidden_Moth.png" />
-	  <None Remove="Resources\Sprites\Hornet.png" />
-	  <None Remove="Resources\Sprites\Lore.png" />
-	  <None Remove="Resources\Sprites\Millibelle.png" />
+	  <None Remove="Resources\Sounds\Brumm.wav" />
+	  <None Remove="Resources\Sounds\Cloth.wav" />
+	  <None Remove="Resources\Sounds\Fluke_Hermit.wav" />
+	  <None Remove="Resources\Sounds\Godseeker.wav" />
+	  <None Remove="Resources\Sounds\Iselda.wav" />
+	  <None Remove="Resources\Sounds\Little_Fool.wav" />
+	  <None Remove="Resources\Sounds\Salubra.wav" />
+	  <None Remove="Resources\Sounds\Sly.wav" />
 	</ItemGroup>
-
+	
 	<ItemGroup>
 		<Reference Include="Assembly-CSharp">
 			<HintPath>$(HollowKnightRefs)\Assembly-CSharp.dll</HintPath>

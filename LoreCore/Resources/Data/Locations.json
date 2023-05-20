@@ -536,7 +536,6 @@
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
             "Key": "Menderbug_Diary"
-
           },
           "SceneNames": "Crossroads_04",
           "MapLocations": {
@@ -757,6 +756,171 @@
       }
     ],
     "ObjectName": "Queen",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.DialogueLocation, LoreCore",
+    "name": "Iselda_Talk",
+    "sceneName": "Room_mapper",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Iselda"
+          },
+          "SceneNames": "Town",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Town",
+                "Item2": 0.3,
+                "Item3": -0.5
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "ObjectName": "Iselda",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.DialogueLocation, LoreCore",
+    "name": "Salubra_Talk",
+    "sceneName": "Room_Charm_Shop",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Salubra"
+          },
+          "SceneNames": "Crossroads_04",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Crossroads_04",
+                "Item2": 1.2,
+                "Item3": -0.2
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "ObjectName": "Charm Slug",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.SpecialLocations.SlyLocation, LoreCore",
+    "name": "Sly_Talk",
+    "sceneName": "Room_ruinhouse",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Sly"
+          },
+          "SceneNames": "Crossroads_04",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Crossroads_04",
+                "Item2": 0.1,
+                "Item3": -0.1
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "ObjectName": "Sly Dazed",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.DialogueLocation, LoreCore",
+    "name": "Little_Fool",
+    "sceneName": "Room_Colosseum_01",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Little_Fool"
+          },
+          "SceneNames": "Deepnest_East_09",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Deepnest_East_09",
+                "Item2": 1,
+                "Item3": 0
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "ObjectName": "Little Fool NPC",
+    "FsmName": "Conversation Control"
+  },
+  {
+    "$type": "LoreCore.Locations.SpecialLocations.BrummLocation, LoreCore",
+    "name": "Brumm",
+    "sceneName": "Grimm_Main_Tent",
+    "flingType": 0,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Brumm"
+          },
+          "SceneNames": "Town",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Town",
+                "Item2": -1.2,
+                "Item3": -0.5
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "ObjectName": "Brum NPC",
     "FsmName": "Conversation Control"
   },
   {
@@ -1949,7 +2113,6 @@
           "PinSprite": {
             "$type": "LoreCore.WrappedSprite, LoreCore",
             "Key": "Pale_King"
-
           },
           "SceneNames": "Abyss_05",
           "MapLocations": {
@@ -2190,6 +2353,72 @@
                 "Item1": "Abyss_05",
                 "Item2": 0.8,
                 "Item3": 0.7
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "GameObjectName": "/Dream Dialogue"
+  },
+  {
+    "$type": "LoreCore.Locations.DreamNailLocation, LoreCore",
+    "name": "Key_Thief_Dream",
+    "sceneName": "Abyss_20",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Dream_Nail"
+
+          },
+          "SceneNames": "Abyss_20",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Abyss_20",
+                "Item2": -0.3,
+                "Item3": -0.6
+              }
+            ]
+          }
+        },
+        "Message": "RandoSupplementalMetadata",
+        "Loaded": true
+      }
+    ],
+    "GameObjectName": "/Dream Dialogue"
+  },
+  {
+    "$type": "LoreCore.Locations.DreamNailLocation, LoreCore",
+    "name": "Lighthouse_Keeper_Dream",
+    "sceneName": "Abyss_Lighthouse_room",
+    "flingType": 2,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "LoreCore",
+          "PinSprite": {
+            "$type": "LoreCore.WrappedSprite, LoreCore",
+            "Key": "Dream_Nail"
+
+          },
+          "SceneNames": "Abyss_09",
+          "MapLocations": {
+            "$type": "System.ValueTuple`3[[System.String, mscorlib],[System.Single, mscorlib],[System.Single, mscorlib]][], mscorlib",
+            "$values": [
+              {
+                "Item1": "Abyss_09",
+                "Item2": -0.6,
+                "Item3": 0.4
               }
             ]
           }

@@ -1,10 +1,12 @@
 using ItemChanger;
 using ItemChanger.Internal;
 using ItemChanger.Items;
+using ItemChanger.Modules;
 using ItemChanger.UIDefs;
 using LoreCore.Data;
 using LoreCore.Locations;
 using LoreCore.Manager;
+using LoreCore.Modules;
 using LoreCore.Other;
 using LoreCore.Resources.Text;
 using LoreCore.UIDefs;
@@ -19,16 +21,16 @@ internal class PowerLoreItem : LoreItem
     public delegate string ProcessPowerItem(string key, string originalText);
 
     public event ProcessPowerItem AcquirePowerItem;
-     
+
     /// <summary>
     /// Gets or sets the name of the sound file which should be played.
     /// </summary>
     public string SoundClipName { get; set; } = "Lore";
-    
+
     public override void GiveImmediate(GiveInfo info)
     {
         // Check if item is an actual power.
-        string text = string.IsNullOrEmpty(loreKey) 
+        string text = string.IsNullOrEmpty(loreKey)
             ? InspectText.ResourceManager.GetString(name)
             : Language.Language.Get(loreKey, loreSheet);
         string finalText = AcquirePowerItem?.Invoke(loreKey, text);
@@ -55,5 +57,22 @@ internal class PowerLoreItem : LoreItem
             PlayerData.instance.SetBool(nameof(PlayerData.metGrimm), true);
             PlayerData.instance.SetInt(nameof(PlayerData.flamesRequired), 3);
         }
+        else if (name == ItemList.Dialogue_Sly)
+        { 
+            PlayerData.instance.SetBool(nameof(PlayerData.slyRescued), true);
+            // ItemChanger handles the shop with an extra flag which we need to set as well.
+            ItemChangerMod.Modules.GetOrAdd<SlyRescuedEvent>().SlyRescued = true;
+        }
+    }
+
+    protected override void OnLoad()
+    {
+        base.OnLoad();
+        if (name == ItemList.Dialogue_Iselda)
+            // Skip first dialogue from Iselda
+            PlayerData.instance.SetBool(nameof(PlayerData.metIselda), true);
+        else if (name == ItemList.Dialogue_Salubra)
+            // Skip first dialogue from Salubra
+            PlayerData.instance.SetBool(nameof(PlayerData.metCharmSlug), true);
     }
 }

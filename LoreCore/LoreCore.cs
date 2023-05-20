@@ -54,6 +54,7 @@ public class LoreCore : Mod, ILocalSettings<LocalSettings>
     {
         ("Ruins1_23", "Glow Response Mage Computer"), // Soul sanctum lore tablet.
         ("Ruins1_23", "Inspect Region"), // Inspect region for soul sanctum tablet.
+        ("Ruins_Bathhouse", "Ghost NPC/Idle Pt")
     };
 
     /// <summary>

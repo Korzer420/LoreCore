@@ -14,7 +14,6 @@ public class FlowerShrineLocation : ShrineLocation
         nameof(PlayerData.instance.givenGodseekerFlower),
         nameof(PlayerData.instance.givenOroFlower),
         nameof(PlayerData.instance.givenWhiteLadyFlower)
-
     };
 
     #endregion

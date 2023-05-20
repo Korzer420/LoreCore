@@ -250,6 +250,60 @@
   {
     "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
     "loreSheet": "Lore Tablets",
+    "loreKey": "LIGHTHOUSE_CORPSE",
+    "textType": 0,
+    "name": "Dream_Dialogue-Lighthouse_Keeper",
+    "UIDef": {
+      "$type": "LoreCore.UIDefs.DreamLoreUIDef, LoreCore",
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Lighthouse Keeper"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "The last words, they spoke. Radiance whispered me that... ehm, I mean I took a dream nail myself."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Lighthouse_Keeper"
+      },
+      "Key": "LIGHTHOUSE_CORPSE",
+      "Sheet": "Lore Tablets"
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Dream_Enter"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
+    "loreKey": "ABYSS_MAWLEK_ROYAL",
+    "textType": 0,
+    "name": "Dream_Dialogue-Key_Thief",
+    "UIDef": {
+      "$type": "LoreCore.UIDefs.DreamLoreUIDef, LoreCore",
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Key Thief"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "The last words, they spoke. Radiance whispered me that... ehm, I mean I took a dream nail myself."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Key_Thief"
+      },
+      "Key": "ABYSS_MAWLEK_ROYAL",
+      "Sheet": "Lore Tablets"
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Dream_Enter"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Lore Tablets",
     "loreKey": "SHADE_BEAST_02",
     "textType": 0,
     "name": "Dream_Dialogue-Shade_Golem_Void",
@@ -1653,8 +1707,9 @@
     },
     "tags": [],
     "obtainState": 0,
-    "SoundClipName": "Queen"
+    "SoundClipName": "Godseeker"
   },
+
   {
     "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
     "loreSheet": "Lore Tablets",
@@ -1734,7 +1789,7 @@
       "textType": 0,
       "name": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
-        "Value": "Delicious Meal"
+        "Value": "Poggy Dialogue"
       },
       "shopDesc": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
@@ -1749,6 +1804,161 @@
     "tags": [],
     "obtainState": 0,
     "SoundClipName": "Dream_Ghost"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "CP2",
+    "loreKey": "IGOR_MEET",
+    "textType": 0,
+    "name": "Dialogue-Brumm",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "CP2",
+        "key": "IGOR_MEET"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Brumm"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Also known as Sp0tify Premium."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Brumm"
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Brumm"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Sly",
+    "loreKey": "SLY_SHOP_INTRO",
+    "textType": 0,
+    "name": "Dialogue-Sly",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Sly",
+        "key": "SLY_SHOP_INTRO"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Sly"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "What? This isn't an abduction, its 'Equalizing the market place'."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Sly"
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Sly"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Charm Slug",
+    "loreKey": "CHARMSLUG_MEET_1",
+    "textType": 0,
+    "name": "Dialogue-Salubra",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Charm Slug",
+        "key": "CHARMSLUG_MEET_1"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Salubra"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Purchasing this will not trigger the kiss cutscene... I promise (:"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Salubra"
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Salubra"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Iselda",
+    "loreKey": "ISELDA_MEET",
+    "textType": 0,
+    "name": "Dialogue-Iselda",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Iselda",
+        "key": "ISELDA_MEET"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Iselda"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "You know exactly which sound plays when you purchase this, right?"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Iselda"
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Iselda"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Minor NPC",
+    "loreKey": "LITTLE_FOOL_MEET",
+    "textType": 0,
+    "name": "Dialogue-Little_Fool",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "Minor NPC",
+        "key": "LITTLE_FOOL_MEET"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Little Fool"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "FOOL!"
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Little_Fool"
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Little_Fool"
   },
   {
     "$type": "LoreCore.Items.PowerLoreItem, LoreCore",

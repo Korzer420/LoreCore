@@ -6,6 +6,7 @@ using ItemChanger.Locations;
 using ItemChanger.Util;
 using KorzUtils.Helper;
 using System.Linq;
+using UnityEngine;
 
 namespace LoreCore.Locations;
 
@@ -35,6 +36,12 @@ internal class DreamNailLocation : AutoLocation
                 Name = "Give Items",
                 Actions = new FsmStateAction[]
                 {
+                    new Lambda(() =>
+                    {
+                        GameObject hint = GameObject.Find("Dream Hint");
+                        if (hint is not null)
+                            GameObject.Destroy(hint);
+                    }),
                     new Lambda(() => fsm.GetState("Idle").ClearTransitions()),
                     new AsyncLambda(callback => ItemUtility.GiveSequentially(Placement.Items, Placement, new GiveInfo
                     {
@@ -48,6 +55,13 @@ internal class DreamNailLocation : AutoLocation
             fsm.GetState("Impact").AdjustTransition("FINISHED", "Give Items");
             // Remove the box down event (the textbox will be handled in the UIDef)
             fsm.GetState("Box Down").RemoveAction(0);
+
+            GameObject hint = GameObject.Instantiate(LoreCore.Instance.PreloadedObjects["Ghost NPC/Idle Pt"]);
+            hint.name = "Dream Hint";
+            hint.SetActive(true);
+            hint.GetComponent<ParticleSystem>().enableEmission = true;
+            hint.transform.position = fsm.transform.position;
+            hint.transform.position -= new Vector3(0f,0f, 3f);
         }
         else
             fsm.GetState("Idle").ClearTransitions();

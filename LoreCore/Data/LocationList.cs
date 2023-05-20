@@ -28,7 +28,12 @@ public static class LocationList
         Poggy,
         Godseeker,
         Millibelle,
-        Hidden_Moth
+        Hidden_Moth,
+        Iselda_Talk,
+        Salubra_Talk,
+        Sly_Talk,
+        Brumm,
+        Little_Fool
     };
 
     public static string[] DreamLocations => new string[]
@@ -51,7 +56,9 @@ public static class LocationList
         Shade_Golem_Dream_Void,
         Shriek_Statue_Dream,
         Shroom_King_Dream,
-        Snail_Shaman_Tomb_Dream
+        Snail_Shaman_Tomb_Dream,
+        Key_Thief_Dream,
+        Lighthouse_Keeper_Dream
     };
 
     public static string[] PointOfInterestLocations => new string[]
@@ -159,6 +166,16 @@ public static class LocationList
 
     public const string Hidden_Moth = "Hidden_Moth";
 
+    public const string Iselda_Talk = "Iselda_Talk";
+
+    public const string Salubra_Talk = "Salubra_Talk";
+
+    public const string Sly_Talk = "Sly_Talk";
+
+    public const string Little_Fool = "Little_Fool";
+
+    public const string Brumm = "Brumm";
+
     #endregion
 
     #region Dream Nail Locations
@@ -200,6 +217,10 @@ public static class LocationList
     public const string Kings_Mould_Machine_Dream = "Kings_Mould_Machine_Dream";
 
     public const string Dream_Shield_Statue_Dream = "Dream_Shield_Statue_Dream";
+
+    public const string Key_Thief_Dream = "Key_Thief_Dream";
+
+    public const string Lighthouse_Keeper_Dream = "Lighthouse_Keeper_Dream";
 
     #endregion
 

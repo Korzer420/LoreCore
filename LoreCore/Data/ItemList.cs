@@ -32,7 +32,12 @@ public static class ItemList
         Dialogue_Poggy,
         Dialogue_Godseeker,
         Dialogue_Millibelle,
-        Dialogue_Hidden_Moth
+        Dialogue_Hidden_Moth,
+        Dialogue_Sly,
+        Dialogue_Iselda,
+        Dialogue_Brumm,
+        Dialogue_Little_Fool,
+        Dialogue_Salubra
     };
 
     public static string[] DreamItems => new string[]
@@ -55,7 +60,9 @@ public static class ItemList
         Dream_Dialogue_Shade_Golem_Void,
         Dream_Dialogue_Shriek_Statue,
         Dream_Dialogue_Shroom_King,
-        Dream_Dialogue_Snail_Shaman_Tomb
+        Dream_Dialogue_Snail_Shaman_Tomb,
+        Dream_Dialogue_Lighthouse_Keeper,
+        Dream_Dialogue_Key_Thief
     };
 
     public static string[] PointOfInterestItems => new string[]
@@ -204,6 +211,16 @@ public static class ItemList
 
     public const string Dialogue_Menderbug_Diary = "Dialogue-Menderbug_Diary";
 
+    public const string Dialogue_Sly = "Dialogue-Sly";
+
+    public const string Dialogue_Iselda = "Dialogue-Iselda";
+
+    public const string Dialogue_Little_Fool = "Dialogue-Little_Fool";
+
+    public const string Dialogue_Salubra = "Dialogue-Salubra";
+
+    public const string Dialogue_Brumm = "Dialogue-Brumm";
+
     #endregion
 
     #region Dream Dialogues
@@ -245,6 +262,12 @@ public static class ItemList
     public const string Dream_Dialogue_Grimm_Summoner = "Dream_Dialogue-Grimm_Summoner";
 
     public const string Dream_Dialogue_Dream_Shield_Statue = "Dream_Dialogue-Dream_Shield_Statue";
+
+    public const string Dream_Dialogue_Lighthouse_Keeper = "Dream_Dialogue-Lighthouse_Keeper";
+
+    public const string Dream_Dialogue_Key_Thief = "Dream_Dialogue-Key_Thief";
+
+    public const string Dream_Dialogue_Spider_Victims = "Dream_Dialogue-Spider_Victims";
 
     #endregion
 
