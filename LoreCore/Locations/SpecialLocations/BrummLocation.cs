@@ -1,5 +1,6 @@
 ﻿using ItemChanger;
 using KorzUtils.Helper;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -21,8 +22,8 @@ public class BrummLocation : DialogueLocation
 
     private void ControlSpawn(Scene scene)
     {
-        GameObject brumm = GameObject.Find("Brum NPC");
-        if (brumm != null)
+        GameObject brumm = Object.FindObjectsOfType<DeactivateIfPlayerdataTrue>(true).FirstOrDefault(x => x.gameObject.name == "Brum NPC")?.gameObject;
+        if (brumm == null)
         {
             LogHelper.Write<LoreCore>("Failed to find brumm npc.", KorzUtils.Enums.LogType.Error);
             return;
@@ -30,6 +31,9 @@ public class BrummLocation : DialogueLocation
         if (Placement.AllObtained())
             brumm.SetActive(false);
         else
+        { 
             Component.Destroy(brumm.GetComponent<DeactivateIfPlayerdataTrue>());
+            brumm.SetActive(true);
+        }
     }
 }
