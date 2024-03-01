@@ -1,6 +1,5 @@
 ﻿using HutongGames.PlayMaker;
 using ItemChanger;
-using ItemChanger.Extensions;
 using ItemChanger.FsmStateActions;
 using KorzUtils.Helper;
 
@@ -48,21 +47,17 @@ internal class ListenItem : AbstractItem
                 {
                     if (self.GetState("In Range") is FsmState state)
                     {
-                        //if (state.GetFirstActionOfType<ShowPromptMarker>() is ShowPromptMarker marker)
-                        //    marker.labelName.Value = "Nothing";
-                        //if (self.GetState("In Range Turns") is FsmState secondState)
-                        //    secondState.GetFirstActionOfType<ShowPromptMarker>().labelName.Value = "Nothing";
                         self.AddState(new FsmState(self.Fsm)
                         {
                             Name = "Block Interaction",
-                            Actions = new FsmStateAction[]
-                            {
+                            Actions =
+                            [
                                 new Lambda(() =>
                                 {
                                     GameHelper.DisplayMessage("You can't understand them.");
                                     self.SendEvent("FINISHED");
                                 })
-                            }
+                            ]
                         });
                         state.AdjustTransition("UP PRESSED", "Block Interaction");
                         self.GetState("Block Interaction").AddTransition("UP PRESSED", "Can Talk?");

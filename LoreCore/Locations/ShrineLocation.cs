@@ -1,5 +1,5 @@
 ﻿using HutongGames.PlayMaker;
-using ItemChanger.Extensions;
+
 using ItemChanger.FsmStateActions;
 using ItemChanger.Locations;
 using KorzUtils.Helper;
@@ -162,19 +162,19 @@ public abstract class ShrineLocation : AutoLocation
             original = GameObject.Find("Explanation_Tablet");
         else
         {
-            Component.Destroy(original.GetComponent<PersistentBoolItem>());
+            Object.Destroy(original.GetComponent<PersistentBoolItem>());
             original.GetComponent<BoxCollider2D>().enabled = true;
             original.GetComponent<Breakable>().enabled = true;
             original.name = "Explanation_Tablet";
             original.transform.Find("Active/Inspect Region").gameObject.LocateMyFSM("inspect_region").FsmVariables.FindFsmString("Game Text Convo").Value = "Explanation_Shrine";
-            foreach (Breakable breakable in GameObject.FindObjectsOfType<Breakable>())
+            foreach (Breakable breakable in Object.FindObjectsOfType<Breakable>())
                 if (breakable.gameObject.name != "Explanation_Tablet")
-                    GameObject.Destroy(breakable.gameObject);
+                    Object.Destroy(breakable.gameObject);
         }
         
         if (Placement.Items.All(x => x.IsObtained()))
             yield break;
-        GameObject newTablet = GameObject.Instantiate(original);
+        GameObject newTablet = Object.Instantiate(original);
         newTablet.name = name;
         // Set the position with a few adjustments.
         newTablet.transform.position = _tabletPositions[TabletPosition] + new Vector3(0f, 1.6f, 0.3f);
@@ -210,7 +210,7 @@ public abstract class ShrineLocation : AutoLocation
         // A fail save
         if (newTablet.GetComponent<Breakable>() is null)
         {
-            GameObject.Destroy(newTablet);
+            Object.Destroy(newTablet);
             ItemHelper.SpawnShiny(new(77.74f, 63.01f, 0.1f), Placement);
         }
 

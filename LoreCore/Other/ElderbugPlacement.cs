@@ -1,7 +1,6 @@
 ﻿using HutongGames.PlayMaker;
 using HutongGames.PlayMaker.Actions;
 using ItemChanger;
-using ItemChanger.Extensions;
 using ItemChanger.FsmStateActions;
 using ItemChanger.Locations;
 using ItemChanger.Placements;
@@ -118,7 +117,7 @@ public class ElderbugPlacement : AbstractPlacement, IMultiCostPlacement, IPrimar
                     ? $"Elderbug_Task_Successful"
                     : $"Elderbug_Task_Failed";
                     self.GetState("Sly Rescued")
-                    .GetFirstActionOfType<CallMethodProper>().gameObject.GameObject.Value
+                    .GetFirstAction<CallMethodProper>().gameObject.GameObject.Value
                     .GetComponent<DialogueBox>()
                     .StartConversation(conversationName, "Elderbug");
                 })

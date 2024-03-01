@@ -1,7 +1,8 @@
 using ItemChanger;
-using ItemChanger.Extensions;
 using ItemChanger.FsmStateActions;
+using KorzUtils.Helper;
 using LoreCore.Enums;
+using LoreCore.Modules;
 using System.Linq;
 
 namespace LoreCore.Locations.SpecialLocations;
@@ -25,13 +26,11 @@ internal class TisoCorpseLocation : DreamNailLocation
 
     private void ControlCorpseSpawn(PlayMakerFSM fsm)
     {
-        fsm.GetState("Check").Actions = new HutongGames.PlayMaker.FsmStateAction[]
+        fsm.GetState("Check").RemoveAllActions();
+        fsm.GetState("Check").AddActions(() =>
         {
-            new Lambda(() => 
-            {
-                if (TravellerLocation.Stages[Traveller.Tiso] < 4 || Placement.Items.All(x => x.IsObtained()))
-                    fsm.SendEvent("DEACTIVATE");
-            })
-        };
+            if (TravellerControlModule.CurrentModule.Stages[Traveller.Tiso] < 4 || Placement.Items.All(x => x.IsObtained()))
+                fsm.SendEvent("DEACTIVATE");
+        });
     }
 }

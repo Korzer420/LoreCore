@@ -1,6 +1,5 @@
 using HutongGames.PlayMaker.Actions;
 using ItemChanger;
-using ItemChanger.Extensions;
 using ItemChanger.FsmStateActions;
 using KorzUtils.Helper;
 using System.Linq;
@@ -37,10 +36,10 @@ internal class ZoteGreenpathLocation : DialogueLocation
                 {
                     if (!Placement.Items.All(x => x.IsObtained()))
                     {
-                        GameObject zote = GameObject.Instantiate(fsm.gameObject.LocateMyFSM("Big Buzzer").GetState("Unfurl").GetFirstActionOfType<CreateObject>().gameObject.Value);
+                        GameObject zote = Object.Instantiate(fsm.gameObject.LocateMyFSM("Big Buzzer").GetState("Unfurl").GetFirstAction<CreateObject>().gameObject.Value);
                         zote.SetActive(true);
                         zote.transform.position = new Vector3(47.5214f, 13.4081f, 0.004f);
-                        zote.LocateMyFSM("Zote Buzzer Control").GetState("Land").AddLastAction(new Lambda(() => PlayMakerFSM.BroadcastEvent("SAVE ZOTE")));
+                        zote.LocateMyFSM("Zote Buzzer Control").GetState("Land").AddActions(() => PlayMakerFSM.BroadcastEvent("SAVE ZOTE"));
                     }
                 })
             }
@@ -59,6 +58,6 @@ internal class ZoteGreenpathLocation : DialogueLocation
 
     private void SetZoteFlag(PlayMakerFSM fsm)
     {
-        fsm.GetState("Blow").AddLastAction(new Lambda(() => PlayerData.instance.SetBool(nameof(PlayerData.instance.zoteRescuedBuzzer), true)));
+        fsm.GetState("Blow").AddActions(() => PlayerData.instance.SetBool(nameof(PlayerData.instance.zoteRescuedBuzzer), true));
     }
 }

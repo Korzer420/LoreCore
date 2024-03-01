@@ -1,5 +1,4 @@
 ﻿using ItemChanger;
-using ItemChanger.Extensions;
 using ItemChanger.FsmStateActions;
 using ItemChanger.Locations;
 using ItemChanger.Util;
@@ -30,30 +29,30 @@ internal class HornetGreenpathLocation : AutoLocation
         fsm.AddState(new HutongGames.PlayMaker.FsmState(fsm.Fsm)
         {
             Name = "Give items",
-            Actions = new HutongGames.PlayMaker.FsmStateAction[]
-            {
+            Actions =
+            [
                 new AsyncLambda(callback => ItemUtility.GiveSequentially(Placement.Items, Placement, new GiveInfo
                         {
                             FlingType = flingType,
                             Container = Container.Tablet,
                             MessageType = MessageType.Any,
                         }, callback), "CONVO_FINISH")
-            }
+            ]
         });
         fsm.GetState("Point").AdjustTransition("FINISHED", "Give items");
         fsm.GetState("Give items").AddTransition("CONVO_FINISH", "Set Hero Active");
         fsm.AddState(new HutongGames.PlayMaker.FsmState(fsm.Fsm)
         {
             Name = "Give items attack",
-            Actions = new HutongGames.PlayMaker.FsmStateAction[]
-            {
+            Actions =
+            [
                 new Lambda(() => Placement.GiveAll(new GiveInfo()
                 {
                     Container = Container.Unknown,
                     FlingType = FlingType.DirectDeposit,
                     MessageType = MessageType.Corner
                 }))
-            }
+            ]
         });
         fsm.GetState("Attacked").AdjustTransition("FINISHED", "Give items attack");
         fsm.GetState("Give items attack").AddTransition("FINISHED", "Leap Antic");

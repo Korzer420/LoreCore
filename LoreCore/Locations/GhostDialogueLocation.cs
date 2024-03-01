@@ -1,6 +1,4 @@
 ﻿using ItemChanger;
-using ItemChanger.Extensions;
-using ItemChanger.FsmStateActions;
 using KorzUtils.Helper;
 using LoreCore.Items;
 
@@ -26,9 +24,6 @@ internal class GhostDialogueLocation : DialogueLocation
     {
         if (Placement.AllObtained() || !ListenItem.CanListen || fsm.gameObject.scene.name != sceneName)
             return;
-        fsm.GetState("Destroy").AddLastAction(new Lambda(() =>
-        {
-            ItemHelper.SpawnShiny(fsm.transform.position, Placement);
-        }));
+        fsm.GetState("Destroy").AddActions(() => ItemHelper.SpawnShiny(fsm.transform.position, Placement));
     }
 }

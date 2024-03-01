@@ -143,7 +143,7 @@
       },
       "shopDesc": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
-        "Value": "There was no sign, that said, that I couldn't take this with me. At least, no sign I could read."
+        "Value": "There was no sign that said, that I couldn't take this with me. At least, no sign I could read."
       },
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
@@ -212,7 +212,6 @@
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
         "Key": "Marmu"
-
       }
     },
     "tags": [],
@@ -1030,7 +1029,7 @@
       },
       "shopDesc": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
-        "Value": "There was no sign, that said, that I couldn't take this with me. At least, no sign I could read."
+        "Value": "There was no sign that said, that I couldn't take this with me. At least, no sign I could read."
       },
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
@@ -1569,7 +1568,7 @@
       },
       "shopDesc": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
-        "Value": "There was no sign, that said, that I couldn't take this with me. At least, no sign I could read."
+        "Value": "There was no sign that said, that I couldn't take this with me. At least, no sign I could read."
       },
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
@@ -2561,7 +2560,7 @@
       },
       "shopDesc": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
-        "Value": "There was no sign, that said, that I couldn't take this with me. At least, no sign I could read."
+        "Value": "There was no sign that said, that I couldn't take this with me. At least, no sign I could read."
       },
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
@@ -2741,7 +2740,7 @@
       },
       "shopDesc": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
-        "Value": "There was no sign, that said, that I couldn't take this with me. At least, no sign I could read."
+        "Value": "There was no sign that said, that I couldn't take this with me. At least, no sign I could read."
       },
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",
@@ -3003,7 +3002,7 @@
       },
       "shopDesc": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
-        "Value": "There was no sign, that said, that I couldn't take this with me. At least, no sign I could read."
+        "Value": "There was no sign that said, that I couldn't take this with me. At least, no sign I could read."
       },
       "sprite": {
         "$type": "LoreCore.WrappedSprite, LoreCore",

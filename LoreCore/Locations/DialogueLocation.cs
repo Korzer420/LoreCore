@@ -1,12 +1,14 @@
 using HutongGames.PlayMaker;
 using ItemChanger;
-using ItemChanger.Extensions;
 using ItemChanger.FsmStateActions;
 using ItemChanger.Locations;
 using ItemChanger.Util;
 using KorzUtils.Helper;
 using LoreCore.Data;
+using LoreCore.Enums;
 using LoreCore.Items;
+using LoreCore.Modules;
+using System;
 using System.Linq;
 
 namespace LoreCore.Locations;
@@ -26,34 +28,77 @@ public class DialogueLocation : AutoLocation
 
     protected override void OnLoad()
     {
-        Events.AddFsmEdit(sceneName, new(ObjectName, FsmName), SkipDialog);
+        Events.AddFsmEdit(sceneName, new(ObjectName, FsmName), SkipDialogue);
         if (name == LocationList.Dung_Defender)
             Events.AddFsmEdit(sceneName, new(ObjectName, "FSM"), x => x.GetState("Check").ClearTransitions());
     }
 
     protected override void OnUnload()
     {
-        Events.RemoveFsmEdit(sceneName, new(ObjectName, FsmName), SkipDialog);
+        Events.RemoveFsmEdit(sceneName, new(ObjectName, FsmName), SkipDialogue);
         if (name == LocationList.Dung_Defender)
             Events.RemoveFsmEdit(sceneName, new(ObjectName, "FSM"), x => x.GetState("Check").ClearTransitions());
     }
 
-    private void SkipDialog(PlayMakerFSM fsm)
+    private void SkipDialogue(PlayMakerFSM fsm)
     {
         try
         {
             if (Placement.Items.All(x => x.IsObtained()))
                 return;
-            if (!ListenItem.CanListen)
+            if (name == LocationList.City_Fountain || name == LocationList.Traitor_Grave)
             {
-                fsm.gameObject.LocateMyFSM("npc_control").GetState("Idle").ClearTransitions();
+                if (!ReadItem.CanRead)
+                {
+                    fsm.gameObject.LocateMyFSM("npc_control").GetState("Idle").ClearTransitions();
                     return;
+                }
             }
+            else
+            {
+                // Extra Hornet checks to make sure the appears.
+                // To do: Move this in an extra class.
+                if (name == LocationList.Hornet_Temple)
+                {
+                    if (TravellerControlModule.CurrentModule.Stages[Enums.Traveller.Hornet] >= 5)
+                        fsm.GetState("Active?").AdjustTransition("ABSENT", "Idle");
+                    else
+                    {
+                        fsm.GetState("Active?").AdjustTransition("FINISHED", "Absent");
+                        fsm.GetState("Active?").AdjustTransition("INACTIVE", "Absent");
+                    }
+                }
+                else if (name == LocationList.Hornet_Deepnest)
+                { 
+                    if (TravellerControlModule.CurrentModule.Stages[Traveller.Hornet] >= 4)
+                        fsm.GetState("Defeated in Outskirts?").AdjustTransition("ABSENT", "Idle");
+                    else
+                        fsm.GetState("Defeated in Outskirts?").AdjustTransition("FINISHED", "Never Meet");
+                }
+
+                if (!ListenItem.CanListen)
+                {
+                    fsm.gameObject.LocateMyFSM("npc_control").GetState("Idle").ClearTransitions();
+                    return;
+                }
+            }
+            ModifyDialogue(fsm, Placement);
+        }
+        catch (System.Exception exception)
+        {
+            LogHelper.Write<LoreCore>("Failed to modify dialogue location.", exception);
+        }
+    }
+
+    internal static void ModifyDialogue(PlayMakerFSM fsm, AbstractPlacement placement)
+    {
+        try
+        {
             if (fsm.GetState("Give Items") is null)
             {
                 FsmState startState;
                 string transitionEnd;
-                if (string.Equals(ObjectName, "Queen", System.StringComparison.CurrentCultureIgnoreCase))
+                if (string.Equals(fsm.gameObject.name, "Queen", System.StringComparison.CurrentCultureIgnoreCase))
                 {
                     startState = fsm.GetState("NPC Anim");
                     transitionEnd = "Summon";
@@ -90,11 +135,11 @@ public class DialogueLocation : AutoLocation
                             PlayMakerFSM control = fsm.gameObject.LocateMyFSM("npc_control");
                             control.GetState("Idle").ClearTransitions();
                         }),
-                        new AsyncLambda(callback => ItemUtility.GiveSequentially(Placement.Items, Placement, new GiveInfo
+                        new AsyncLambda(callback => ItemUtility.GiveSequentially(placement.Items, placement, new GiveInfo
                         {
-                            FlingType = flingType,
+                            FlingType = FlingType.DirectDeposit,
                             Container = Container.Tablet,
-                            MessageType = name == LocationList.Dreamer_Tablet ? MessageType.Big : MessageType.Any,
+                            MessageType = placement.Name == LocationList.Dreamer_Tablet ? MessageType.Big : MessageType.Any,
                         }, callback), "CONVO_FINISH")
                     }
                 });
@@ -122,22 +167,11 @@ public class DialogueLocation : AutoLocation
                     };
                 fsm.GetState("Give Items").AddTransition("CONVO_FINISH", transitionEnd);
             }
-
-            // To do: Move this in an extra class.
-            if (fsm.gameObject.name == "Hornet Black Egg NPC")
-            {
-                if (TravellerLocation.Stages[Enums.Traveller.Hornet] >= 5)
-                    fsm.GetState("Active?").AdjustTransition("ABSENT", "Idle");
-                else
-                { 
-                    fsm.GetState("Active?").AdjustTransition("FINISHED", "Absent");
-                    fsm.GetState("Active?").AdjustTransition("INACTIVE", "Absent");
-                }
-            }
         }
-        catch (System.Exception exception)
+        catch (Exception)
         {
-            LogHelper.Write<LoreCore>("Failed to modify dialogue location.", exception);
+            LogHelper.Write<LoreCore>($"Failed to modify dialogue for placement {placement.Name}");
+            throw;
         }
     }
 }

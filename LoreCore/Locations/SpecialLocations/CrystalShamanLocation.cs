@@ -1,9 +1,5 @@
-using HutongGames.PlayMaker;
 using ItemChanger;
-using ItemChanger.Extensions;
-using ItemChanger.FsmStateActions;
 using KorzUtils.Helper;
-using System.Linq;
 
 namespace LoreCore.Locations.SpecialLocations;
 
@@ -28,9 +24,6 @@ internal class CrystalShamanLocation : DreamNailLocation
     {
         if (Placement.AllObtained())
             return;
-        fsm.GetState("Broken").AddLastAction(new Lambda(() => 
-        {
-            ItemHelper.SpawnShiny(fsm.transform.position, Placement);
-        }));
+        fsm.GetState("Broken").AddActions(() => ItemHelper.SpawnShiny(fsm.transform.position, Placement));
     }
 }

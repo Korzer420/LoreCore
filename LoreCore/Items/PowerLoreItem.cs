@@ -4,9 +4,7 @@ using ItemChanger.Items;
 using ItemChanger.Modules;
 using ItemChanger.UIDefs;
 using LoreCore.Data;
-using LoreCore.Locations;
 using LoreCore.Manager;
-using LoreCore.Modules;
 using LoreCore.Other;
 using LoreCore.Resources.Text;
 using LoreCore.UIDefs;
@@ -16,16 +14,18 @@ namespace LoreCore.Items;
 /// <summary>
 /// An lore item which adds itself to the obtained powers and activates it. Also plays a custom sound file.
 /// </summary>
-internal class PowerLoreItem : LoreItem
+public class PowerLoreItem : LoreItem
 {
     public delegate string ProcessPowerItem(string key, string originalText);
 
-    public event ProcessPowerItem AcquirePowerItem;
+    public static event ProcessPowerItem AcquirePowerItem;
 
     /// <summary>
     /// Gets or sets the name of the sound file which should be played.
     /// </summary>
     public string SoundClipName { get; set; } = "Lore";
+
+    //public override string GetPreferredContainer() => "Npc";
 
     public override void GiveImmediate(GiveInfo info)
     {

@@ -1,11 +1,11 @@
 ﻿using HutongGames.PlayMaker;
 using ItemChanger;
-using ItemChanger.Extensions;
 using ItemChanger.FsmStateActions;
 using ItemChanger.Locations;
 using ItemChanger.Util;
 using KorzUtils.Helper;
 using LoreCore.Items;
+using LoreCore.Modules;
 
 namespace LoreCore.Locations.SpecialLocations;
 
@@ -25,14 +25,11 @@ internal class ClothGardenLocation : AutoLocation
 
     private void ModifyClothGhost(PlayMakerFSM fsm)
     {
-        if (Placement.AllObtained() || !ListenItem.CanListen || TravellerLocation.Stages[Enums.Traveller.Cloth] < 5)
+        if (Placement.AllObtained() || !ListenItem.CanListen || TravellerControlModule.CurrentModule.Stages[Enums.Traveller.Cloth] < 5)
             return;
         FsmState state = fsm.GetState("Hero Anim");
-        state.AddLastAction(new Lambda(() =>
-        {
-            fsm.GetState("Idle").ClearTransitions();
-        }));
-        state.AddLastAction(new AsyncLambda(callback => ItemUtility.GiveSequentially(Placement.Items, Placement, new GiveInfo
+        state.AddActions(() => fsm.GetState("Idle").ClearTransitions());
+        state.AddActions(new AsyncLambda(callback => ItemUtility.GiveSequentially(Placement.Items, Placement, new GiveInfo
         {
             FlingType = flingType,
             Container = Container.Tablet,
@@ -44,8 +41,8 @@ internal class ClothGardenLocation : AutoLocation
 
     private void SpawnShiny(PlayMakerFSM fsm)
     {
-        if (Placement.AllObtained() || !ListenItem.CanListen || TravellerLocation.Stages[Enums.Traveller.Cloth] < 5)
+        if (Placement.AllObtained() || !ListenItem.CanListen || TravellerControlModule.CurrentModule.Stages[Enums.Traveller.Cloth] < 5)
             return;
-        fsm.GetState("Destroy").AddLastAction(new Lambda(() => ItemHelper.SpawnShiny(fsm.transform.position, Placement)));
+        fsm.GetState("Destroy").AddActions(() => ItemHelper.SpawnShiny(fsm.transform.position, Placement));
     }
 }

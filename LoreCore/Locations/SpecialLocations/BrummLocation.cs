@@ -31,8 +31,8 @@ public class BrummLocation : DialogueLocation
         if (Placement.AllObtained())
             brumm.SetActive(false);
         else
-        { 
-            Component.Destroy(brumm.GetComponent<DeactivateIfPlayerdataTrue>());
+        {
+            Object.Destroy(brumm.GetComponent<DeactivateIfPlayerdataTrue>());
             brumm.SetActive(true);
         }
     }

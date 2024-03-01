@@ -1,5 +1,5 @@
 using ItemChanger;
-using ItemChanger.Extensions;
+using KorzUtils.Helper;
 
 namespace LoreCore.Locations.SpecialLocations;
 

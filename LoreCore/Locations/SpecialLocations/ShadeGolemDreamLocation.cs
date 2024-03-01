@@ -1,8 +1,9 @@
 using HutongGames.PlayMaker;
 using ItemChanger;
-using ItemChanger.Extensions;
+
 using ItemChanger.FsmStateActions;
 using ItemChanger.Placements;
+using KorzUtils.Helper;
 using LoreCore.Data;
 using LoreCore.Other;
 using System.Linq;
@@ -34,7 +35,7 @@ internal class ShadeGolemDreamLocation : DreamNailLocation
         // Despawn the second location if the first one still has items left. Normally void heart would enable this.
         else if (GameObjectName.Contains("02") && fsm.FsmVariables.FindFsmString("playerData bool")?.Value == "gotShadeCharm"
             && !ItemChanger.Internal.Ref.Settings.Placements[LocationList.Shade_Golem_Dream_Normal].Items.All(x => x.IsObtained()))
-            fsm.GetState("Check").AddLastAction(new Lambda(() => fsm.SendEvent("DEACTIVATE")));
+            fsm.GetState("Check").AddActions(() => fsm.SendEvent("DEACTIVATE"));
         
     }
 }

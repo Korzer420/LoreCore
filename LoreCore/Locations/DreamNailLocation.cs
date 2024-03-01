@@ -1,6 +1,7 @@
 using HutongGames.PlayMaker;
+using HutongGames.PlayMaker.Actions;
 using ItemChanger;
-using ItemChanger.Extensions;
+
 using ItemChanger.FsmStateActions;
 using ItemChanger.Locations;
 using ItemChanger.Util;
@@ -40,7 +41,7 @@ internal class DreamNailLocation : AutoLocation
                     {
                         GameObject hint = GameObject.Find("Dream Hint");
                         if (hint is not null)
-                            GameObject.Destroy(hint);
+                            Object.Destroy(hint);
                     }),
                     new Lambda(() => fsm.GetState("Idle").ClearTransitions()),
                     new AsyncLambda(callback => ItemUtility.GiveSequentially(Placement.Items, Placement, new GiveInfo
@@ -54,9 +55,9 @@ internal class DreamNailLocation : AutoLocation
             fsm.GetState("Give Items").AddTransition("CONVO_FINISH", "Box Down");
             fsm.GetState("Impact").AdjustTransition("FINISHED", "Give Items");
             // Remove the box down event (the textbox will be handled in the UIDef)
-            fsm.GetState("Box Down").RemoveAction(0);
+            fsm.GetState("Box Down").RemoveFirstAction<SendEventByName>();
 
-            GameObject hint = GameObject.Instantiate(LoreCore.Instance.PreloadedObjects["Ghost NPC/Idle Pt"]);
+            GameObject hint = Object.Instantiate(LoreCore.Instance.PreloadedObjects["Ghost NPC/Idle Pt"]);
             hint.name = "Dream Hint";
             hint.SetActive(true);
             hint.GetComponent<ParticleSystem>().enableEmission = true;

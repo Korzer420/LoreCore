@@ -28,5 +28,5 @@ internal class MossProphetLocation : DialogueLocation
         fsm.gameObject.GetComponent<BoxCollider2D>().enabled = true;
     }
 
-    private void DisableCorpse(PlayMakerFSM fsm) => fsm.gameObject.FindChild("corpse0000").SetActive(false);
+    private void DisableCorpse(PlayMakerFSM fsm) => fsm.gameObject.transform.Find("corpse0000").gameObject.SetActive(false);
 }

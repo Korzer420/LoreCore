@@ -1088,6 +1088,7 @@
       }
     ],
     "TravellerName": 4,
+    "RequiredLevel": 3,
     "ObjectName": "Hornet Abyss NPC",
     "FsmName": "Conversation Control"
   },
@@ -1123,6 +1124,7 @@
       }
     ],
     "TravellerName": 4,
+    "RequiredLevel": 4,
     "ObjectName": "Hornet Beast Den NPC",
     "FsmName": "Conversation Control"
   },
@@ -1158,6 +1160,7 @@
       }
     ],
     "TravellerName": 4,
+    "RequiredLevel": 5,
     "ObjectName": "Hornet Black Egg NPC",
     "FsmName": "Conversation Control"
   },
@@ -1193,6 +1196,7 @@
       }
     ],
     "TravellerName": 2,
+    "RequiredLevel": 1,
     "ObjectName": "/_NPCs/Tiso Bench NPC",
     "FsmName": "Conversation Control"
   },
@@ -1228,6 +1232,7 @@
       }
     ],
     "TravellerName": 2,
+    "RequiredLevel": 2,
     "ObjectName": "Tiso Lake NPC",
     "FsmName": "Conversation Control"
   },
@@ -1263,6 +1268,7 @@
       }
     ],
     "TravellerName": 2,
+    "RequiredLevel": 3,
     "ObjectName": "Tiso Col NPC",
     "FsmName": "Conversation Control"
   },
@@ -1365,6 +1371,7 @@
       }
     ],
     "TravellerName": 3,
+    "RequiredLevel": 1,
     "ObjectName": "/_NPCs/Zote Town",
     "FsmName": "Conversation Control"
   },
@@ -1400,6 +1407,7 @@
       }
     ],
     "TravellerName": 3,
+    "RequiredLevel": 2,
     "ObjectName": "Zote Ruins",
     "FsmName": "Conversation Control"
   },
@@ -1435,6 +1443,7 @@
       }
     ],
     "ObjectName": "/Zote Deepnest/Faller/NPC",
+    "RequiredLevel": 3,
     "FsmName": "Conversation Control"
   },
   {
@@ -1469,6 +1478,7 @@
       }
     ],
     "TravellerName": 3,
+    "RequiredLevel": 4,
     "ObjectName": "Zote Colosseum",
     "FsmName": "Conversation Control"
   },
@@ -1504,6 +1514,7 @@
       }
     ],
     "TravellerName": 3,
+    "RequiredLevel": 5,
     "ObjectName": "/_NPCs/Zote Final Scene/Zote Final",
     "FsmName": "Conversation Control"
   },
@@ -1574,6 +1585,7 @@
       }
     ],
     "TravellerName": 1,
+    "RequiredLevel": 1,
     "ObjectName": "Cloth NPC Tramway",
     "FsmName": "Conversation Control"
   },
@@ -1609,6 +1621,7 @@
       }
     ],
     "TravellerName": 1,
+    "RequiredLevel": 2,
     "ObjectName": "Cloth NPC 2",
     "FsmName": "Conversation Control"
   },
@@ -1644,6 +1657,7 @@
       }
     ],
     "TravellerName": 1,
+    "RequiredLevel": 3,
     "ObjectName": "Cloth NPC QG Entrance",
     "FsmName": "Conversation Control"
   },
@@ -1679,6 +1693,7 @@
       }
     ],
     "TravellerName": 1,
+    "RequiredLevel": 4,
     "ObjectName": "Cloth Ghost NPC",
     "FsmName": "Conversation Control"
   },
@@ -1714,6 +1729,7 @@
       }
     ],
     "TravellerName": 1,
+    "RequiredLevel": 4,
     "ObjectName": "Cloth NPC Town",
     "FsmName": "Conversation Control"
   },
@@ -1784,6 +1800,7 @@
       }
     ],
     "TravellerName": 0,
+    "RequiredLevel": 1,
     "ObjectName": "Quirrel Slug Shrine",
     "FsmName": "Conversation Control"
   },
@@ -1819,6 +1836,7 @@
       }
     ],
     "TravellerName": 0,
+    "RequiredLevel": 2,
     "ObjectName": "Quirrel Station NPC",
     "FsmName": "Conversation Control"
   },
@@ -1854,6 +1872,7 @@
       }
     ],
     "TravellerName": 0,
+    "RequiredLevel": 3,
     "ObjectName": "Quirrel Mantis NPC",
     "FsmName": "Conversation Control"
   },
@@ -1889,6 +1908,7 @@
       }
     ],
     "TravellerName": 0,
+    "RequiredLevel": 4,
     "ObjectName": "/RestBench/Quirrel Bench",
     "FsmName": "Conversation Control"
   },
@@ -1924,6 +1944,7 @@
       }
     ],
     "TravellerName": 0,
+    "RequiredLevel": 6,
     "ObjectName": "Quirrel Mines",
     "FsmName": "Conversation Control"
   },
@@ -1959,6 +1980,7 @@
       }
     ],
     "TravellerName": 0,
+    "RequiredLevel": 5,
     "ObjectName": "Quirrel Spa",
     "FsmName": "Conversation Control"
   },
@@ -1994,6 +2016,7 @@
       }
     ],
     "TravellerName": 0,
+    "RequiredLevel": 7,
     "ObjectName": "Quirrel Archive Ext",
     "FsmName": "Conversation Control"
   },
@@ -2029,6 +2052,7 @@
       }
     ],
     "TravellerName": 0,
+    "RequiredLevel": 8,
     "ObjectName": "/Dreamer Monomon/Quirrel Wounded",
     "FsmName": "Conversation Control"
   },
@@ -2064,6 +2088,7 @@
       }
     ],
     "TravellerName": 0,
+    "RequiredLevel": 9,
     "ObjectName": "Quirrel Lakeside",
     "FsmName": "Conversation Control"
   },
@@ -2791,11 +2816,8 @@
         "Loaded": true
       }
     ],
-    "Position": {
-      "x": 83.0,
-      "y": 45.41,
-      "z": 0.0
-    },
+    "XPosition": 83.0,
+    "YPosition": 45.41,
     "GameObjectName": null
   },
   {
@@ -2830,11 +2852,8 @@
         "Loaded": true
       }
     ],
-    "Position": {
-      "x": 87.22,
-      "y": 31.41,
-      "z": 0.0
-    },
+    "XPosition": 87.22,
+    "YPosition": 31.41,
     "GameObjectName": null
   },
   {
@@ -2901,11 +2920,8 @@
         "Loaded": true
       }
     ],
-    "Position": {
-      "x": 0.0,
-      "y": 0.0,
-      "z": 0.0
-    },
+    "XPosition": 0.0,
+    "YPosition": 0.0,
     "GameObjectName": "/Sycophant Dream/Inspect Region"
   },
   {
@@ -2940,11 +2956,8 @@
         "Loaded": true
       }
     ],
-    "Position": {
-      "x": 53.91,
-      "y": 129.41,
-      "z": 0.0
-    },
+    "XPosition": 53.91,
+    "YPosition": 129.41,
     "GameObjectName": null
   },
   {
@@ -3081,11 +3094,8 @@
         "Loaded": true
       }
     ],
-    "Position": {
-      "x": 12.29,
-      "y": 43.41,
-      "z": 0.0
-    },
+    "XPosition": 12.29,
+    "YPosition": 43.41,
     "GameObjectName": null
   },
   {
@@ -3120,11 +3130,8 @@
         "Loaded": true
       }
     ],
-    "Position": {
-      "x": 63.85,
-      "y": 114.41,
-      "z": 0.0
-    },
+    "XPosition": 63.85,
+    "YPosition": 114.41,
     "GameObjectName": null
   },
   {
@@ -3159,11 +3166,8 @@
         "Loaded": true
       }
     ],
-    "Position": {
-      "x": 20.18,
-      "y": 7.41,
-      "z": 0.0
-    },
+    "XPosition": 20.18,
+    "YPosition": 7.41,
     "GameObjectName": null
   },
   {
@@ -3198,11 +3202,9 @@
         "Loaded": true
       }
     ],
-    "Position": {
-      "x": 70.0,
-      "y": 4.31,
-      "z": 0.006
-    },
+    "XPosition": 70.0,
+    "YPosition": 4.31,
+    //"z": 0.006,
     "GameObjectName": null
   },
   {
@@ -3237,11 +3239,8 @@
         "Loaded": true
       }
     ],
-    "Position": {
-      "x": 0.0,
-      "y": 0.0,
-      "z": 0.0
-    },
+    "XPosition": 0.0,
+    "YPosition": 0.0,
     "GameObjectName": "Inspect Region Ghost"
   },
   {
@@ -3276,11 +3275,8 @@
         "Loaded": true
       }
     ],
-    "Position": {
-      "x": 0.0,
-      "y": 0.0,
-      "z": 0.0
-    },
+    "XPosition": 0.0,
+    "YPosition": 0.0,
     "GameObjectName": "Inspect Region Ghost"
   },
   {
@@ -3315,11 +3311,8 @@
         "Loaded": true
       }
     ],
-    "Position": {
-      "x": 0.0,
-      "y": 0.0,
-      "z": 0.0
-    },
+    "XPosition": 0.0,
+    "YPosition": 0.0,
     "GameObjectName": "Inspect Region Ghost"
   },
   {
@@ -3354,11 +3347,8 @@
         "Loaded": true
       }
     ],
-    "Position": {
-      "x": 0.0,
-      "y": 0.0,
-      "z": 0.0
-    },
+    "XPosition": 0.0,
+    "YPosition": 0.0,
     "GameObjectName": "Inspect Region Ghost"
   },
   {
@@ -3393,11 +3383,8 @@
         "Loaded": true
       }
     ],
-    "Position": {
-      "x": 0.0,
-      "y": 0.0,
-      "z": 0.0
-    },
+    "XPosition": 0.0,
+    "YPosition": 0.0,
     "GameObjectName": "Inspect Region Ghost"
   },
   {
@@ -3432,11 +3419,8 @@
         "Loaded": true
       }
     ],
-    "Position": {
-      "x": 0.0,
-      "y": 0.0,
-      "z": 0.0
-    },
+    "XPosition": 0.0,
+    "YPosition": 0.0,
     "GameObjectName": "Inspect Region Ghost"
   },
   {
@@ -3471,11 +3455,8 @@
         "Loaded": true
       }
     ],
-    "Position": {
-      "x": 0.0,
-      "y": 0.0,
-      "z": 0.0
-    },
+    "XPosition": 0.0,
+    "YPosition": 0.0,
     "GameObjectName": "Inspect Region Ghost"
   }
 ]

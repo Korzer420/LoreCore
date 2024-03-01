@@ -1,9 +1,10 @@
 using HutongGames.PlayMaker;
 using ItemChanger;
-using ItemChanger.Extensions;
+
 using ItemChanger.FsmStateActions;
 using ItemChanger.Locations;
 using ItemChanger.Util;
+using KorzUtils.Helper;
 using LoreCore.Data;
 using LoreCore.Items;
 using System.Linq;
@@ -17,10 +18,9 @@ namespace LoreCore.Locations;
 /// </summary>
 internal class InspectLocation : ContainerLocation
 {
-    /// <summary>
-    /// The position on which the inspect region should be spawned. Unused, if <see cref="GameObjectName"/> is not null/empty.
-    /// </summary>
-    public Vector3 Position { get; set; }
+    public float XPosition { get; set; }
+
+    public float YPosition { get; set; }
 
     /// <summary>
     /// The name of the game object, if an inspect region already exists. Using a game object, will make <see cref="Position"/> redundant.
@@ -59,8 +59,8 @@ internal class InspectLocation : ContainerLocation
         fsm.AddState(new FsmState(fsm.Fsm)
         {
             Name = "Give Items",
-            Actions = new FsmStateAction[]
-            {
+            Actions =
+            [
                 new Lambda(() => fsm.GetState("Idle").ClearTransitions()),
                 new AsyncLambda(callback => ItemUtility.GiveSequentially(Placement.Items, Placement, new GiveInfo
                 {
@@ -68,7 +68,7 @@ internal class InspectLocation : ContainerLocation
                     Container = Container.Tablet,
                     MessageType = MessageType.Any
                 }, callback), "CONVO_FINISH")
-            }
+            ]
         });
         fsm.GetState("Give Items").AddTransition("CONVO_FINISH", "Look Up End?");
         fsm.GetState("Hero Look Up?").ClearTransitions();
@@ -80,7 +80,7 @@ internal class InspectLocation : ContainerLocation
         // Also spawn a computer for record bela.
         if (name == LocationList.Lore_Tablet_Record_Bela)
         {
-            GameObject tablet = GameObject.Instantiate(LoreCore.Instance.PreloadedObjects["Glow Response Mage Computer"]);
+            GameObject tablet = Object.Instantiate(LoreCore.Instance.PreloadedObjects["Glow Response Mage Computer"]);
             tablet.name = "Mage_Computer_2";
             tablet.transform.localPosition = new(70f, 6.21f, .02f);
             tablet.SetActive(true);
@@ -88,9 +88,9 @@ internal class InspectLocation : ContainerLocation
 
         if (Placement.Items.All(x => x.IsObtained()))
             return;
-        GameObject inspectRegion = GameObject.Instantiate(LoreCore.Instance.PreloadedObjects["Inspect Region"]);
+        GameObject inspectRegion = Object.Instantiate(LoreCore.Instance.PreloadedObjects["Inspect Region"]);
         inspectRegion.name = name;
-        inspectRegion.transform.localPosition = Position;
+        inspectRegion.transform.localPosition = new(XPosition, YPosition);
         inspectRegion.SetActive(true);
     }
 }

@@ -1,8 +1,6 @@
 ﻿using HutongGames.PlayMaker;
-using InControl;
 using ItemChanger;
-using ItemChanger.Extensions;
-using ItemChanger.FsmStateActions;
+using KorzUtils.Data;
 using KorzUtils.Helper;
 using System.Linq;
 
@@ -12,8 +10,8 @@ internal class ReadItem : AbstractItem
 {
     #region Members
 
-    private readonly string[] _loreKeys = new string[]
-    {
+    private readonly string[] _loreKeys =
+    [
         "TUT_TAB_01",
         "TUT_TAB_02",
         "TUT_TAB_03",
@@ -48,7 +46,7 @@ internal class ReadItem : AbstractItem
         "WP_WORKSHOP_01",
         "WP_THRONE_01",
         "PLAQUE_WARN"
-    };
+    ];
 
     #endregion
 
@@ -89,14 +87,9 @@ internal class ReadItem : AbstractItem
             try
             {
                 // Try to display that the tablet is unreadable.
-                self.AddState(new HutongGames.PlayMaker.FsmState(self.Fsm)
-                {
-                    Name = "Show unreadable prompt",
-                    Actions = new HutongGames.PlayMaker.FsmStateAction[]
-                    {
-                        new Lambda(() => GameHelper.DisplayMessage("You can't read this."))
-                    }
-                });
+                self.AddState("Show unreadable prompt", () => GameHelper.DisplayMessage("You can't read this."), 
+                    FsmTransitionData.FromTargetState(self.GetState("Idle") == null ? "Out of Range" : "Idle")
+                    .WithEventName("FINISHED"));
 
                 // Best try to make the tablets unreadable
                 if (self.GetState("In Range") is FsmState)

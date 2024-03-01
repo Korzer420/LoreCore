@@ -1,11 +1,12 @@
 ﻿using HutongGames.PlayMaker.Actions;
 using ItemChanger;
-using ItemChanger.Extensions;
+
 using ItemChanger.FsmStateActions;
 using ItemChanger.Locations;
 using ItemChanger.Util;
 using KorzUtils.Helper;
 using LoreCore.Items;
+using LoreCore.Modules;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -29,13 +30,13 @@ internal class HornetFountainLocation : AutoLocation
     private void ModifyCutscene(PlayMakerFSM fsm)
     {
         if (Placement.AllObtained() || Placement.Items.All(x => x.WasEverObtained()) 
-            || !ListenItem.CanListen || TravellerLocation.Stages[Enums.Traveller.Hornet] < 1)
+            || !ListenItem.CanListen || TravellerControlModule.CurrentModule.Stages[Enums.Traveller.Hornet] < 1)
         {
-            GameObject.Destroy(fsm.gameObject);
+            Object.Destroy(fsm.gameObject);
             return;
         }
         // Remove destroy check.
-        fsm.GetState("Init").RemoveFirstActionOfType<PlayerDataBoolTest>();
+        fsm.GetState("Init").RemoveFirstAction<PlayerDataBoolTest>();
 
         fsm.AddState(new HutongGames.PlayMaker.FsmState(fsm.Fsm)
         {

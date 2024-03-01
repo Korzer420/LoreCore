@@ -1,7 +1,8 @@
 using ItemChanger;
-using ItemChanger.Extensions;
+
 using ItemChanger.FsmStateActions;
 using KorzUtils.Helper;
+using LoreCore.Modules;
 using System.Linq;
 
 namespace LoreCore.Locations.SpecialLocations;
@@ -28,7 +29,7 @@ internal class ZoteDeepnestLocation : DialogueLocation
             {
                 new Lambda(() => 
                 {
-                    if(TravellerLocation.Stages[Enums.Traveller.Zote] >= 3
+                    if(TravellerControlModule.CurrentModule.Stages[Enums.Traveller.Zote] >= 3
                     && !Placement.Items.All(x => x.IsObtained()))
                         fsm.SendEvent("FINISHED");
                     else

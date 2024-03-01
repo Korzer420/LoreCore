@@ -1,12 +1,10 @@
 using HutongGames.PlayMaker;
 using ItemChanger;
-using ItemChanger.Extensions;
+using KorzUtils.Helper;
 using ItemChanger.FsmStateActions;
-using ItemChanger.Items;
 using ItemChanger.Locations;
 using ItemChanger.Util;
 using System.Linq;
-using UnityEngine;
 
 namespace LoreCore.Locations;
 

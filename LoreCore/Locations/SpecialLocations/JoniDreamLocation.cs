@@ -1,5 +1,5 @@
-﻿using ItemChanger.Extensions;
-using ItemChanger.FsmStateActions;
+﻿using HutongGames.PlayMaker.Actions;
+using KorzUtils.Helper;
 using System;
 
 namespace LoreCore.Locations.SpecialLocations;
@@ -24,11 +24,14 @@ internal class JoniDreamLocation : GhostDialogueLocation
         {
             if (self.gameObject.name == "Ghost Activator" && self.transform.childCount > 0 
                 && string.Equals("Ghost NPC Joni", self.transform.GetChild(0)?.name))
-                self.GetState("Idle").ReplaceAction(new Lambda(() =>
+            {
+                self.GetState("Idle").RemoveFirstAction<BoolTest>();
+                self.GetState("Idle").InsertActions(0, () =>
                 {
                     if (PlayerData.instance.GetBool(nameof(PlayerData.instance.hasDreamNail)))
                         self.SendEvent("SHINY PICKED UP");
-                }), 0);
+                });
+            }
         }
         catch (Exception exception)
         {

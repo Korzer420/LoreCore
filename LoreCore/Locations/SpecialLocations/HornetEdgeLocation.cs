@@ -1,6 +1,6 @@
 ﻿using ItemChanger;
 using KorzUtils.Helper;
-using System.Collections;
+using LoreCore.Modules;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -25,8 +25,8 @@ internal class HornetEdgeLocation : DialogueLocation
 
     private void CheckSpawn(PlayMakerFSM fsm)
     {
-        if (TravellerLocation.Stages[Enums.Traveller.Hornet] < 2)
-            GameObject.Destroy(fsm.gameObject);
+        if (TravellerControlModule.CurrentModule.Stages[Enums.Traveller.Hornet] < 2)
+            Object.Destroy(fsm.gameObject);
     }
 
     // Abyss_06_Core -> Hornet Abyss NPC
