@@ -128,8 +128,8 @@ public class DialogueLocation : AutoLocation
                 fsm.AddState(new FsmState(fsm.Fsm)
                 {
                     Name = "Give Items",
-                    Actions = new FsmStateAction[]
-                    {
+                    Actions =
+                    [
                         new Lambda(() =>
                         {
                             PlayMakerFSM control = fsm.gameObject.LocateMyFSM("npc_control");
@@ -141,7 +141,7 @@ public class DialogueLocation : AutoLocation
                             Container = Container.Tablet,
                             MessageType = placement.Name == LocationList.Dreamer_Tablet ? MessageType.Big : MessageType.Any,
                         }, callback), "CONVO_FINISH")
-                    }
+                    ]
                 });
 
                 // Zote Dirtmouth 2....

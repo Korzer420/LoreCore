@@ -9,6 +9,7 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using UnityEngine;
 using static LoreCore.Data.ItemList;
@@ -52,6 +53,7 @@ public class LoreCore : Mod
         ("Ruins1_23", "Glow Response Mage Computer"), // Soul sanctum lore tablet.
         ("Ruins1_23", "Inspect Region"), // Inspect region for soul sanctum tablet.
         ("Ruins_Bathhouse", "Ghost NPC/Idle Pt"),
+        ("Fungus1_04_boss", "Dreamer Scene 1")
         // Npc for container (ToDo)
         //("Room_temple", "Quirrel"),
         //("Town", "_NPCs/Zote Town"),
@@ -90,7 +92,8 @@ public class LoreCore : Mod
             {
                 {"Glow Response Mage Computer", preloadedObjects["Ruins1_23"]["Glow Response Mage Computer"]},
                 {"Inspect Region", preloadedObjects["Ruins1_23"]["Inspect Region"]},
-                {"Ghost NPC/Idle Pt", preloadedObjects["Ruins_Bathhouse"]["Ghost NPC/Idle Pt"]}
+                {"Ghost NPC/Idle Pt", preloadedObjects["Ruins_Bathhouse"]["Ghost NPC/Idle Pt"]},
+                {"Dreamer Scene 1", preloadedObjects["Fungus1_04_boss"]["Dreamer Scene 1"]}
                 //{"Quirrel", preloadedObjects["Room_temple"]["Quirrel"]},
                 //{"Zote", preloadedObjects["Town"]["_NPCs/Zote Town"]},
                 //{"Bretta", preloadedObjects["Fungus2_23"]["Bretta Dazed"]},
@@ -132,9 +135,13 @@ public class LoreCore : Mod
     {
         if (generateSettings)
             ItemChangerMod.CreateSettingsProfile(false);
-        List<AbstractPlacement> placements = new();
+        // Check if rando already added the items.
+        if (ItemChanger.Internal.Ref.Settings.Placements?.Any(x => x.Value.Items.Any(x => x.name == $"{LoreTablets[4]}_Empowered")) == true)
+            return;
+        List<AbstractPlacement> placements = [];
         foreach (string item in LoreTablets)
             placements.Add(GeneratePlacement(item + "_Empowered", item));
+        ItemChangerMod.AddPlacements(placements);
     }
 
     private AbstractPlacement GeneratePlacement(string item, string location)

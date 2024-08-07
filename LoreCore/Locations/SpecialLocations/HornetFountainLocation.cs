@@ -41,15 +41,15 @@ internal class HornetFountainLocation : AutoLocation
         fsm.AddState(new HutongGames.PlayMaker.FsmState(fsm.Fsm)
         {
             Name = "Give items",
-            Actions = new HutongGames.PlayMaker.FsmStateAction[]
-            {
+            Actions =
+            [
                 new AsyncLambda(callback => ItemUtility.GiveSequentially(Placement.Items, Placement, new GiveInfo
                         {
                             FlingType = flingType,
                             Container = Container.Tablet,
                             MessageType = MessageType.Any,
                         }, callback), "CONVO_FINISH")
-            }
+            ]
         });
         fsm.GetState("Fade In").AdjustTransition("FINISHED", "Give items");
         fsm.GetState("Give items").AddTransition("CONVO_FINISH", "Jump");

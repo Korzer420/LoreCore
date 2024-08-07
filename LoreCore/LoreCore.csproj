@@ -97,6 +97,11 @@
 			<AutoGen>True</AutoGen>
 			<DependentUpon>InventoryText.resx</DependentUpon>
 		</Compile>
+		<Compile Update="Resources\Text\ElderbugText.Designer.cs">
+		  <DesignTime>True</DesignTime>
+		  <AutoGen>True</AutoGen>
+		  <DependentUpon>ElderbugText.resx</DependentUpon>
+		</Compile>
 		<Compile Update="Resources\Text\InspectText.Designer.cs">
 		  <DesignTime>True</DesignTime>
 		  <AutoGen>True</AutoGen>
@@ -108,6 +113,10 @@
 		<EmbeddedResource Update="Resources\InventoryText.resx">
 			<Generator>ResXFileCodeGenerator</Generator>
 			<LastGenOutput>InventoryText.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Resources\Text\ElderbugText.resx">
+		  <Generator>ResXFileCodeGenerator</Generator>
+		  <LastGenOutput>ElderbugText.Designer.cs</LastGenOutput>
 		</EmbeddedResource>
 		<EmbeddedResource Update="Resources\Text\InspectText.resx">
 		  <Generator>ResXFileCodeGenerator</Generator>

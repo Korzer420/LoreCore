@@ -6,9 +6,12 @@ using ItemChanger.Locations;
 using ItemChanger.Placements;
 using ItemChanger.Tags;
 using ItemChanger.Util;
+using KorzUtils.Data;
 using KorzUtils.Helper;
+using LoreCore.Data;
 using LoreCore.Items;
 using LoreCore.Modules;
+using LoreCore.Resources.Text;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,6 +39,10 @@ public class ElderbugPlacement : AbstractPlacement, IMultiCostPlacement, IPrimar
 
     public static ElderbugPlacement Instance { get; set; }
 
+    public bool IsRando { get; set; } = true;
+
+    public bool TalkedToElderbug { get; set; }
+
     #endregion
 
     #region Event handler
@@ -46,15 +53,19 @@ public class ElderbugPlacement : AbstractPlacement, IMultiCostPlacement, IPrimar
             AcquiredLore++;
     }
 
-    private void CanGiveItems(ref string value) => value = "Ah, I see that you've acquired some more knowledge. Let me reward you for that.";
+    private void CanGiveItems(ref string value) => value = ElderbugText.Enough;
+    
+    private void CannotGiveItems(ref string value) => value = ElderbugText.NotEnough;
 
-    private void CannotGiveItems(ref string value) => value = "It seems that you've not obtained enough knowledge yet. Come back to me once you a are a little... wiser.";
+    private void Introduction(ref string value) => value = ElderbugText.Introduction1;
+
+    private void IntroductionSecondPart(ref string value) => value = ElderbugText.Introduction2;
 
     private void Preview(ref string value)
     {
         value = "If you show me that you've got that much knowledge, I'll reward you with:\n";
         int entry = 1;
-        foreach (AbstractItem item in Items)
+        foreach (AbstractItem item in Items.Where(x => x.name != "Artifact_Lore"))
         {
             if (item.GetTag<CostTag>()?.Cost is LoreCost loreCost)
                 value += $"{item.GetPreviewName(this)} - {loreCost.GetCostText()}";
@@ -62,7 +73,7 @@ public class ElderbugPlacement : AbstractPlacement, IMultiCostPlacement, IPrimar
                 value += "??? - " + item.GetPreviewName(this);
             entry++;
             if (entry == 3)
-            { 
+            {
                 value += "<page>";
                 entry = 0;
             }
@@ -81,11 +92,13 @@ public class ElderbugPlacement : AbstractPlacement, IMultiCostPlacement, IPrimar
         self.AddState(new FsmState(self.Fsm)
         {
             Name = "Control",
-            Actions = new FsmStateAction[]
-            {
+            Actions =
+            [
                 new Lambda(() =>
                 {
-                    if (!PlayerData.instance.GetBool(nameof(PlayerData.instance.hasXunFlower))
+                    if (!IsRando && !TalkedToElderbug)
+                        self.SendEvent("GRANT");
+                    else if (!PlayerData.instance.GetBool(nameof(PlayerData.instance.hasXunFlower))
                     || PlayerData.instance.GetBool(nameof(PlayerData.instance.elderbugGaveFlower))
                     || PlayerData.instance.GetBool(nameof(PlayerData.instance.xunFlowerBroken)))
                         self.SendEvent("GENERIC");
@@ -94,13 +107,13 @@ public class ElderbugPlacement : AbstractPlacement, IMultiCostPlacement, IPrimar
                             ? "FLOWER REOFFER"
                             : "FLOWER OFFER");
                 })
-            }
+            ]
         });
         self.AddState(new FsmState(self.Fsm)
         {
             Name = Name,
-            Actions = new FsmStateAction[]
-            {
+            Actions =
+            [
                 new Lambda(() =>
                 {
                     List<AbstractItem> itemsToGive = new();
@@ -109,25 +122,25 @@ public class ElderbugPlacement : AbstractPlacement, IMultiCostPlacement, IPrimar
                         AbstractItem item = Items[i];
                         if (!item.IsObtained() && item.GetTag<CostTag>()?.Cost is LoreCost cost
                         && !cost.Paid && cost.CanPay())
-                        itemsToGive.Add(item);
+                            itemsToGive.Add(item);
                     }
 
                     string conversationName = Name;
                     conversationName = itemsToGive.Any()
-                    ? $"Elderbug_Task_Successful"
-                    : $"Elderbug_Task_Failed";
+                        ? $"Elderbug_Task_Successful"
+                        : $"Elderbug_Task_Failed";
                     self.GetState("Sly Rescued")
                     .GetFirstAction<CallMethodProper>().gameObject.GameObject.Value
                     .GetComponent<DialogueBox>()
                     .StartConversation(conversationName, "Elderbug");
                 })
-            }
+            ]
         });
         self.AddState(new FsmState(self.Fsm)
         {
             Name = $"{Name} Throw",
-            Actions = new FsmStateAction[]
-            {
+            Actions =
+            [
                 new Lambda(() =>
                 {
                     List<AbstractItem> itemsToGive = new();
@@ -136,20 +149,66 @@ public class ElderbugPlacement : AbstractPlacement, IMultiCostPlacement, IPrimar
                         AbstractItem item = Items[i];
                         if (!item.IsObtained() && item.GetTag<CostTag>()?.Cost is LoreCost cost
                         && !cost.Paid && cost.CanPay())
-                        itemsToGive.Add(item);
+                            itemsToGive.Add(item);
                     }
                     if (itemsToGive.Any())
                         ItemHelper.FlingShiny(self.gameObject, this, itemsToGive);
                 })
-            }
+            ]
+        });
+        self.AddState(new FsmState(self.Fsm)
+        {
+            Name = "Introduction",
+            Actions = 
+            [
+                new Lambda(() =>
+                {
+                    TalkedToElderbug = true;
+                    self.GetState("Sly Rescued")
+                        .GetFirstAction<CallMethodProper>().gameObject.GameObject.Value
+                        .GetComponent<DialogueBox>()
+                        .StartConversation("Introduction", "Elderbug");
+                })
+            ]
+        });
+        self.AddState(new FsmState(self.Fsm)
+        {
+            Name = "Power Artifact",
+            Actions =
+            [
+                new AsyncLambda(callback => ItemUtility.GiveSequentially([Items.First(x => x.name == "Artifact_Lore")], this, new GiveInfo
+                {
+                    FlingType = FlingType.DirectDeposit,
+                    Container = Container.Tablet,
+                    MessageType = MessageType.Big,
+                }, callback), "CONVO_FINISH")
+            ]
+        });
+        self.AddState(new FsmState(self.Fsm)
+        {
+            Name = "Introduction 2",
+            Actions =
+            [
+                new Lambda(() =>
+                {
+                    self.GetState("Sly Rescued")
+                        .GetFirstAction<CallMethodProper>().gameObject.GameObject.Value
+                        .GetComponent<DialogueBox>()
+                        .StartConversation("Introduction2", "Elderbug");
+                })
+            ]
         });
 
         self.GetState("Box Up").AdjustTransition("FINISHED", "Control");
         self.GetState("Control").AddTransition("GENERIC", Name);
         self.GetState("Control").AddTransition("FLOWER OFFER", "Flower Offer");
         self.GetState("Control").AddTransition("FLOWER REOFFER", "Flower Reoffer");
+        self.GetState("Control").AddTransition("GRANT", "Introduction");
         self.GetState(Name).AddTransition("CONVO_FINISH", $"{Name} Throw");
         self.GetState($"{Name} Throw").AddTransition("FINISHED", "Talk Finish");
+        self.GetState("Introduction").AddTransition("CONVO_FINISH", "Power Artifact");
+        self.GetState("Power Artifact").AddTransition("CONVO_FINISH", "Introduction 2");
+        self.GetState("Introduction 2").AddTransition("CONVO_FINISH", "Talk Finish");
     }
 
     private void ElderbugPreview(Scene scene)
@@ -200,7 +259,7 @@ public class ElderbugPlacement : AbstractPlacement, IMultiCostPlacement, IPrimar
                 itemPreviewBuilder.Append(Language.Language.Get("???", "IC"));
             else
                 itemPreviewBuilder.Append(cost.GetCostText());
-            
+
             string text = itemPreviewBuilder.ToString();
             itemPreviewBuilder.Clear();
 
@@ -222,6 +281,8 @@ public class ElderbugPlacement : AbstractPlacement, IMultiCostPlacement, IPrimar
         Events.AddSceneChangeEdit("Town", ElderbugPreview);
         Events.AddLanguageEdit(new("Elderbug", "Elderbug_Task_Successful"), CanGiveItems);
         Events.AddLanguageEdit(new("Elderbug", "Elderbug_Task_Failed"), CannotGiveItems);
+        Events.AddLanguageEdit(new("Elderbug", "Introduction"), Introduction);
+        Events.AddLanguageEdit(new("Elderbug", "Introduction2"), IntroductionSecondPart);
         Events.AddLanguageEdit(new("Lore Tablets", "Elderbug_Preview"), Preview);
         AbstractItem.AfterGiveGlobal += AbstractItem_AfterGiveGlobal;
         ItemChangerMod.Modules.GetOrAdd<LoreProgressModule>();
@@ -234,6 +295,8 @@ public class ElderbugPlacement : AbstractPlacement, IMultiCostPlacement, IPrimar
         Events.RemoveSceneChangeEdit("Town", ElderbugPreview);
         Events.RemoveLanguageEdit(new("Elderbug", "Elderbug_Task_Successful"), CanGiveItems);
         Events.RemoveLanguageEdit(new("Elderbug", "Elderbug_Task_Failed"), CannotGiveItems);
+        Events.RemoveLanguageEdit(new("Elderbug", "Introduction"), Introduction);
+        Events.RemoveLanguageEdit(new("Elderbug", "Introduction2"), IntroductionSecondPart);
         Events.RemoveLanguageEdit(new("Lore Tablets", "Elderbug_Preview"), Preview);
         AbstractItem.AfterGiveGlobal -= AbstractItem_AfterGiveGlobal;
         Instance = null;
