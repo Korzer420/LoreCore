@@ -135,6 +135,7 @@ public class LoreCore : Mod
         List<AbstractPlacement> placements = new();
         foreach (string item in LoreTablets)
             placements.Add(GeneratePlacement(item + "_Empowered", item));
+        ItemChangerMod.AddPlacements(placements);
     }
 
     private AbstractPlacement GeneratePlacement(string item, string location)
@@ -152,13 +153,21 @@ public class LoreCore : Mod
             };
             foreach (AbstractLocation location in jsonSerializer.Deserialize<List<AbstractLocation>>(new JsonTextReader(reader)))
                 Finder.DefineCustomLocation(location);
-            Finder.DefineCustomLocation(new DualLocation()
+            var clothEnd = new DualLocation()
             {
                 name = Cloth_End,
                 trueLocation = Finder.GetLocation(Cloth_Ghost),
                 falseLocation = Finder.GetLocation(Cloth_Town),
-                Test = new ClothTest()
-            });
+                Test = new ClothTest(),
+                tags = [.. Finder.GetLocation(Cloth_Ghost).tags]
+            };
+            clothEnd.GetTag<InteropTag>().Properties["SceneNames"] = new string[] { "Town", "Fungus3_23" };
+            clothEnd.GetTag<InteropTag>().Properties["MapLocations"] = new(string, float, float)[]
+            {
+                new("Fungus3_23", -0.4f, 0.1f),
+                new("Town", -0.3f, 0.5f)
+            };
+            Finder.DefineCustomLocation(clothEnd);
 
             using Stream itemStream = ResourceHelper.LoadResource<LoreCore>("Data.Items.json");
             using StreamReader reader2 = new(itemStream);

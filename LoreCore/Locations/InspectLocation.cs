@@ -36,6 +36,9 @@ internal class InspectLocation : ContainerLocation
         }
         else
             Events.AddFsmEdit(sceneName, new(GameObjectName, "inspect_region"), ModifyInspectRegion);
+        if (name == LocationList.Grimm_Machine)
+            Events.AddSceneChangeEdit("Town", BackupSpawn);
+        
     }
 
     protected override void OnUnload()
@@ -47,6 +50,8 @@ internal class InspectLocation : ContainerLocation
         }
         else
             Events.RemoveFsmEdit(sceneName, new(GameObjectName, "inspect_region"), ModifyInspectRegion);
+        if (name == LocationList.Grimm_Machine)
+            Events.RemoveSceneChangeEdit("Town", BackupSpawn);
     }
 
     private void ModifyInspectRegion(PlayMakerFSM fsm)
@@ -92,5 +97,11 @@ internal class InspectLocation : ContainerLocation
         inspectRegion.name = name;
         inspectRegion.transform.localPosition = new(XPosition, YPosition);
         inspectRegion.SetActive(true);
+    }
+
+    private void BackupSpawn(Scene scene)
+    {
+        if (!Placement.Items.All(x => x.IsObtained()) && PDHelper.NymmInTown)
+            ItemHelper.SpawnShiny(new(90.33f, 11.41f), Placement);
     }
 }

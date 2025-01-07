@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace LoreCore.Locations.SpecialLocations;
 
@@ -21,6 +22,7 @@ internal class GrimmSummonerDreamLocation : DreamNailLocation
     protected override void OnLoad()
     {
         base.OnLoad();
+        Events.AddSceneChangeEdit("Cliffs_06", BackupSpawn);
         Events.AddFsmEdit(sceneName, new("Sycophant Dream", "Activate Lantern"), BlockLantern);
         Events.AddFsmEdit(sceneName, new(GameObjectName, "FSM"), SummonerSpawn);
     }
@@ -28,6 +30,7 @@ internal class GrimmSummonerDreamLocation : DreamNailLocation
     protected override void OnUnload()
     {
         base.OnUnload();
+        Events.RemoveSceneChangeEdit("Cliffs_06", BackupSpawn);
         Events.RemoveFsmEdit(sceneName, new("Sycophant Dream", "Activate Lantern"), BlockLantern);
         Events.RemoveFsmEdit(sceneName, new(GameObjectName, "FSM"), SummonerSpawn);
     }
@@ -79,5 +82,13 @@ internal class GrimmSummonerDreamLocation : DreamNailLocation
         });
         fsm.GetState("Check").AdjustTransition("DEACTIVATE", "Clear Repeat");
         fsm.GetState("Clear Repeat").AddTransition("DEACTIVATE", "Deactivate");
+    }
+
+    private void BackupSpawn(Scene scene)
+    {
+        // Brumm + Machine -> 90.33, 11.41
+        // When the troupe is banished, just spawn a shiny there.
+        if (!Placement.Items.All(x => x.IsObtained()) && PDHelper.NymmInTown && PDHelper.HasDreamNail)
+            ItemHelper.SpawnShiny(new(47.57f, 4.5f), Placement);
     }
 }
