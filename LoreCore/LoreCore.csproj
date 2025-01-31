@@ -5,7 +5,7 @@
 		<TargetFramework>net472</TargetFramework>
 		<RootNamespace>LoreCore</RootNamespace>
 		<AssemblyTitle>LoreCore</AssemblyTitle>
-		<AssemblyVersion>0.6.1.0</AssemblyVersion>
+		<AssemblyVersion>0.6.2.0</AssemblyVersion>
 		<Deterministic>true</Deterministic>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 		<LangVersion>latest</LangVersion>

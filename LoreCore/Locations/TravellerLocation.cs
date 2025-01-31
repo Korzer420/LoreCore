@@ -57,14 +57,9 @@ public class TravellerLocation : DialogueLocation
             GameManager.instance.StartCoroutine(ActivateQuirrel(npc));
         }
 
-        RemoveSpawnConditions(npc);
-        if (Placement.Items.All(x => x.IsObtained()))
+        if (!Placement.Items.All(x => x.IsObtained()))
         {
-            npc.SetActive(false);
-            return;
-        }
-        else
-        {
+            RemoveSpawnConditions(npc);
             if (TravellerName == Traveller.Quirrel && ObjectName == "Quirrel Wounded" && !PlayerData.instance.GetBool(nameof(PlayerData.instance.summonedMonomon)))
                 npc.SetActive(false);
             else
