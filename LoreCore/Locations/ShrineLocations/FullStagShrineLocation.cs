@@ -11,8 +11,8 @@ public class FullStagShrineLocation : ShrineLocation
 {
     #region Members
 
-    private readonly string[] _stagKeys = new string[]
-    {
+    private readonly string[] _stagKeys =
+    [
         nameof(PlayerData.instance.openedCrossroads),
         nameof(PlayerData.instance.openedGreenpath),
         nameof(PlayerData.instance.openedHiddenStation),
@@ -21,8 +21,9 @@ public class FullStagShrineLocation : ShrineLocation
         nameof(PlayerData.instance.openedRuins1),
         nameof(PlayerData.instance.openedRuins2),
         nameof(PlayerData.instance.openedDeepnest),
-
-    };
+        nameof(PlayerData.instance.openedFungalWastes),
+        nameof(PlayerData.instance.openedStagNest),
+    ];
 
     #endregion
 
