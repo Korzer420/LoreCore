@@ -8,6 +8,8 @@ public static class ItemList
 
     public const string Listen_Ability = "Listen_Ability";
 
+    public const string Zote_Precept= "Precept_{0}";
+
     #region Lists
 
     public static string[] NpcItems => new string[]

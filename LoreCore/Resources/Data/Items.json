@@ -15,7 +15,8 @@
       "textType": 0,
       "name": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
-        "Value": "Happy Fate"
+        //"Value": "Happy Fate"
+        "Value": "Emilitia"
       },
       "shopDesc": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
@@ -46,7 +47,8 @@
       "textType": 0,
       "name": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
-        "Value": "Diamond Dash"
+        //"Value": "Diamond Dash"
+        "Value": "Myla <3"
       },
       "shopDesc": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
@@ -109,7 +111,8 @@
       "textType": 0,
       "name": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
-        "Value": "Bag of Mushrooms"
+        //"Value": "Bag of Mushrooms"
+        "Value": "Willoh"
       },
       "shopDesc": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
@@ -429,7 +432,8 @@
       "textType": 0,
       "name": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
-        "Value": "Mask Overcharge"
+        //"Value": "Mask Overcharge"
+        "Value": "Mask Maker"
       },
       "shopDesc": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
@@ -610,7 +614,8 @@
       "textType": 0,
       "name": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
-        "Value": "Best Mender in the World"
+        //"Value": "Best Mender in the World"
+        "Value": "Menderbug's diary"
       },
       "shopDesc": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
@@ -642,7 +647,8 @@
       "textType": 0,
       "name": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
-        "Value": "Grass Bombardement"
+        //"Value": "Grass Bombardement"
+        "Value": "Grasshopper"
       },
       "shopDesc": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
@@ -800,7 +806,8 @@
       "textType": 0,
       "name": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
-        "Value": "Caring Shell"
+        //"Value": "Caring Shell"
+        "Value": "Bretta"
       },
       "shopDesc": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
@@ -864,7 +871,8 @@
       "textType": 0,
       "name": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
-        "Value": "Relentless Swarm"
+        //"Value": "Relentless Swarm"
+        "Value": "Fluke Hermit"
       },
       "shopDesc": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
@@ -994,7 +1002,8 @@
       "textType": 1,
       "name": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
-        "Value": "Tourist"
+        //"Value": "Tourist",
+        "Value": "Hollow Knight plaque"
       },
       "shopDesc": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
@@ -1409,7 +1418,8 @@
       "textType": 0,
       "name": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
-        "Value": "Concussive Strikes"
+        //"Value": "Concussive Strikes"
+        "Value": "Bardoon"
       },
       "shopDesc": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
@@ -1469,7 +1479,8 @@
       "textType": 0,
       "name": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
-        "Value": "Follow the Light"
+        //"Value": "Follow the Light"
+        "Value": "Moss Prophet"
       },
       "shopDesc": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
@@ -1501,7 +1512,8 @@
       "textType": 0,
       "name": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
-        "Value": "Requiem"
+        //"Value": "Requiem"
+        "Value": "Gravedigger"
       },
       "shopDesc": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
@@ -1629,7 +1641,8 @@
       "textType": 1,
       "name": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
-        "Value": "Overwhelming Power"
+        //"Value": "Overwhelming Power"
+        "Value": "Lore"
       },
       "shopDesc": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
@@ -1661,7 +1674,8 @@
       "textType": 0,
       "name": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
-        "Value": "Life Insurance"
+        //"Value": "Life Insurance"
+        "Value": "Millibelle"
       },
       "shopDesc": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
@@ -1756,7 +1770,8 @@
       "textType": 0,
       "name": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
-        "Value": "Infested!"
+        //"Value": "Infested!"
+        "Value": "Midwife"
       },
       "shopDesc": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
@@ -1788,7 +1803,7 @@
       "textType": 0,
       "name": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
-        "Value": "Poggy Dialogue"
+        "Value": "Poggy"
       },
       "shopDesc": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
@@ -2492,7 +2507,8 @@
       "textType": 0,
       "name": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
-        "Value": "Queen's Thorns"
+        //"Value": "Queen's Thorns"
+        "Value": "White Lady"
       },
       "shopDesc": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
@@ -2705,7 +2721,8 @@
       "textType": 1,
       "name": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
-        "Value": "Ring of Flowers"
+        //"Value": "Ring of Flowers"
+        "Value": "Traitor's Grave"
       },
       "shopDesc": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
@@ -2871,7 +2888,8 @@
       "textType": 0,
       "name": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
-        "Value": "Blessing of the Butterfly"
+        //"Value": "Blessing of the Butterfly"
+        "Value": "Marissa"
       },
       "shopDesc": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
@@ -2967,7 +2985,8 @@
       "textType": 0,
       "name": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
-        "Value": "Joni's Protection"
+        //"Value": "Joni's Protection"
+        "Value": "Joni"
       },
       "shopDesc": {
         "$type": "ItemChanger.BoxedString, ItemChanger",
@@ -4284,5 +4303,36 @@
     "obtainState": 0,
     "Traveller": 4,
     "SoundClipName": "Hornet"
+  },
+  {
+    "$type": "LoreCore.Items.PowerLoreItem, LoreCore",
+    "loreSheet": "Zote",
+    "loreKey": "PRECEPT_1",
+    "textType": 0,
+    "name": "Precept_1",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.LoreUIDef, ItemChanger",
+      "lore": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "ZOTE",
+        "key": "PRECEPT_1"
+      },
+      "textType": 0,
+      "name": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "Zote Precept #1"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.BoxedString, ItemChanger",
+        "Value": "I only made this so expensive since I figured HE would see that as an appropiate price."
+      },
+      "sprite": {
+        "$type": "LoreCore.WrappedSprite, LoreCore",
+        "Key": "Zote"
+      }
+    },
+    "tags": [],
+    "obtainState": 0,
+    "SoundClipName": "Zote"
   }
 ]

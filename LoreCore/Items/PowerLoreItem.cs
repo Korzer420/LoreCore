@@ -33,7 +33,7 @@ public class PowerLoreItem : LoreItem
         string text = string.IsNullOrEmpty(loreKey)
             ? InspectText.ResourceManager.GetString(name)
             : Language.Language.Get(loreKey, loreSheet);
-        string finalText = AcquirePowerItem?.Invoke(loreKey, text);
+        string finalText = AcquirePowerItem?.Invoke(loreKey, text) ?? text;
 
         if (UIDef is LoreUIDef lore)
             lore.lore = new BoxedString(finalText ?? text);

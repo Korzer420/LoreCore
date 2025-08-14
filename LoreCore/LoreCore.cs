@@ -1,7 +1,9 @@
 ﻿using ItemChanger;
 using ItemChanger.Locations;
 using ItemChanger.Tags;
+using ItemChanger.UIDefs;
 using KorzUtils.Helper;
+using LoreCore.Items;
 using LoreCore.Locations;
 using LoreCore.Other;
 using Modding;
@@ -173,7 +175,26 @@ public class LoreCore : Mod
             using StreamReader reader2 = new(itemStream);
 
             foreach (AbstractItem item in jsonSerializer.Deserialize<List<AbstractItem>>(new JsonTextReader(reader2)))
+            {
+                // Revert lore power names.
+                if (item.name.EndsWith("_Empowered") && item.UIDef is LoreUIDef def)
+                    def.name = new BoxedString("Lore");
+
                 Finder.DefineCustomItem(item);
+            }
+
+            // We create the precept items manually.
+            PowerLoreItem preceptItem = Finder.GetItem(string.Format(Zote_Precept, 1)) as PowerLoreItem;
+            for (int i = 2; i < 58; i++)
+            {
+                PowerLoreItem precept = preceptItem.Clone() as PowerLoreItem;
+                precept.loreKey = $"PRECEPT_{i}";
+                precept.name = $"Precept_{i}";
+                LoreUIDef uiDef = (precept.UIDef as LoreUIDef);
+                (uiDef.lore as LanguageString).key = precept.loreKey;
+                (uiDef.name as BoxedString).Value = $"Zote Precept #{i}";
+                Finder.DefineCustomItem(precept);
+            }
 
             Finder.GetLocationOverride += Finder_GetLocationOverride;
             //Container.DefineContainer(new NpcContainer());
